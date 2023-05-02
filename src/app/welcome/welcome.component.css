@@ -4,17 +4,18 @@ body {
 
 .topnav {
     overflow: hidden;
+    width: 400px;
+    margin: 0 auto;
 }
 
 .topnav a {
-    float: left;
+    float: none;
     color: black;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
 }
-
 
 .topnav a:hover {
     background-color: #DEA615;
@@ -24,6 +25,24 @@ body {
 
 .topnav a.active {
     color: black;
+}
+
+/*tuplateksti-nappi*/
+#double-text {
+    border: none;
+    background: none;
+}
+
+
+/*teksti vaarinpain nav*/
+#upside {
+    font-size: 30px;
+    transform: rotate(180deg);
+}
+
+/*teksti oikeinpain nav*/
+#normal {
+    font-size: 30px;
 }
 
 /*top nav area*/
