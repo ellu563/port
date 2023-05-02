@@ -29,7 +29,7 @@ import { ContactComponent } from './contact/contact.component';
     MatToolbarModule,
     MatMenuModule,
     MatIconModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

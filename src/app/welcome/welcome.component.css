@@ -12,15 +12,19 @@ body {
     float: none;
     color: black;
     text-align: center;
-    padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
 }
 
-.topnav a:hover {
+.topnav #yellow:hover {
     background-color: #DEA615;
     color: black;
     border-radius: 10px;
+    padding: 15px;
+}
+
+#yellow {
+    padding: 15px;
 }
 
 .topnav a.active {
@@ -31,6 +35,7 @@ body {
 #double-text {
     border: none;
     background: none;
+    margin: 20px;
 }
 
 
@@ -38,11 +43,21 @@ body {
 #upside {
     font-size: 30px;
     transform: rotate(180deg);
+    margin-bottom: 0;
+}
+
+#upside:hover {
+    color: #DEA615;
 }
 
 /*teksti oikeinpain nav*/
 #normal {
     font-size: 30px;
+    margin-bottom: 0;
+}
+
+#normal:hover {
+    color: #DEA615;
 }
 
 /*top nav area*/
@@ -66,9 +81,10 @@ body {
     text-align: center;
 }
 
+/*
 .item1 #heading:hover {
     color: #DEA615;
-}
+}*/
 
 #about-me {
     font-size: 50px;
@@ -215,4 +231,15 @@ h1 {
     bottom: 30px;
     right: 40px;
     vertical-align: center;
+}
+
+.go-up p {
+    font-size: 25px;
+    align-self: center;
+    position: fixed;
+    bottom: 160px;
+    right: 78px;
+    height: 80px;
+    width: 90px;
+    border-radius: 50px;
 }
