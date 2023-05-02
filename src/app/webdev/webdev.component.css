@@ -1,0 +1,124 @@
+body {
+    font-family: 'Kosugi';
+}
+
+.topnav {
+    overflow: hidden;
+}
+
+.topnav a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+
+.topnav a:hover {
+    background-color: #DEA615;
+    color: black;
+    border-radius: 10px;
+}
+
+.topnav a.active {
+    color: black;
+}
+
+/*top nav area*/
+.item0 {
+    grid-area: header0;
+    background-color: #B8406B;
+    padding: 40px;
+}
+
+/*Name heading area*/
+.item1 {
+    grid-area: header;
+    background-color: #B8406B;
+    padding: 90px;
+    position: relative;
+}
+
+/*Item1 - Otsikko*/
+#heading {
+    font-size: 9rem;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    left: 0;
+}
+
+/*web-development*/
+.item2 {
+    grid-area: about;
+    background-color: #EF8F5A;
+    padding: 60px;
+    position: relative;
+}
+
+#about-me {
+    font-size: 30px;
+    right: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/*angular*/
+.item3 {
+    grid-area: aboutme;
+    background-color: #B8406B;
+    padding: 90px;
+}
+
+/*orange*/
+.item4 {
+    grid-area: projects;
+    background-color: #EF8F5A;
+    padding: 30px;
+    font-size: 22px;
+}
+
+/*projects h1*/
+h1 {
+    font-family: 'Kosugi';
+    font-size: 7rem;
+    text-align: center;
+}
+
+/*footer*/
+.item5 {
+    grid-area: footer;
+    background-color: #B8406B;
+    padding: 20px;
+}
+
+/*grid-container*/
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        'header0'
+        'header'
+        'about'
+        'aboutme'
+        'projects'
+        'footer';
+}
+
+/*go up*/
+
+.go-up {
+    background: yellow;
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    margin: 0;
+    position: fixed;
+    bottom: 30px;
+    right: 40px;
+    vertical-align: center;
+}
