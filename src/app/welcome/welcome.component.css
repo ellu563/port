@@ -45,9 +45,10 @@ body {
 #heading {
     font-size: 9rem;
     text-align: center;
-    position: relative;
-    bottom: 0;
-    left: 0;
+}
+
+.item1 #heading:hover {
+    color: #DEA615;
 }
 
 /*about me 1*/

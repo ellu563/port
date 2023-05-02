@@ -50,6 +50,10 @@ body {
     left: 0;
 }
 
+.item1 #heading:hover {
+    color: #DEA615;
+}
+
 /*graphic-design*/
 .item2 {
     grid-area: about;
