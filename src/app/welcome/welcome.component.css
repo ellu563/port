@@ -81,6 +81,13 @@ body {
     text-align: center;
 }
 
+.block-party-1,
+.block-party-2 {
+    display: inline-block;
+    width: 48%;
+    vertical-align: top;
+}
+
 
 #about-me {
     font-size: 50px;
