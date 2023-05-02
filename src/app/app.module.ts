@@ -12,6 +12,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { WebdevComponent } from './webdev/webdev.component';
 import { GraphicComponent } from './graphic/graphic.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { GraphicComponent } from './graphic/graphic.component';
     ToolbarComponent,
     WelcomeComponent,
     WebdevComponent,
-    GraphicComponent
+    GraphicComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,

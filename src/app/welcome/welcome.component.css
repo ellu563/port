@@ -70,17 +70,31 @@ body {
     color: #DEA615;
 }
 
+#about-me {
+    font-size: 50px;
+    right: 0;
+    text-align: left;
+    margin-left: 400px;
+}
+
+
+#intro {
+    font-size: 25px;
+    text-align: left;
+    margin-left: 400px;
+
+}
+
+#intro2 {
+    font-size: 25px;
+    text-align: center;
+    padding: 30px;
+}
+
 /*about me 1*/
 .item2 {
     grid-area: about;
     background-color: #DEA615;
-    padding: 60px;
-    position: relative;
-}
-
-#about-me {
-    font-size: 30px;
-    right: 0;
 }
 
 a {
@@ -154,7 +168,6 @@ a:hover .block-web2 {
 .item3 {
     grid-area: aboutme;
     background-color: #A480C0;
-    padding: 60px;
 }
 
 /*projects*/
@@ -193,11 +206,10 @@ h1 {
 
 /*go up*/
 
-.go-up {
-    background: yellow;
+.go-up img {
     border-radius: 50%;
-    height: 60px;
-    width: 60px;
+    height: 170px;
+    width: 170px;
     margin: 0;
     position: fixed;
     bottom: 30px;
