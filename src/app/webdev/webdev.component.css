@@ -58,8 +58,13 @@ body {
     position: relative;
 }
 
-#about-me {
+#web-dev-p {
     font-size: 30px;
+    right: 0;
+}
+
+#angular {
+    font-size: 20px;
     right: 0;
 }
 
