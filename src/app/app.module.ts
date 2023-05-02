@@ -10,12 +10,16 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatIconModule } from '@angular/material/icon';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { WebdevComponent } from './webdev/webdev.component';
+import { GraphicComponent } from './graphic/graphic.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ToolbarComponent,
-    WelcomeComponent
+    WelcomeComponent,
+    WebdevComponent,
+    GraphicComponent
   ],
   imports: [
     BrowserModule,
