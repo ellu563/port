@@ -68,6 +68,22 @@ a {
     color: black;
 }
 
+a:hover .block1 {
+    background-color: #B8406B;
+}
+
+a:hover .block2 {
+    background-color: #A480C0;
+}
+
+a:hover .block-web1 {
+    background-color: #A480C0;
+}
+
+a:hover .block-web2 {
+    background-color: #B8406B;
+}
+
 /*hide button padding, border, and background*/
 #blocks {
     width: 400px;
