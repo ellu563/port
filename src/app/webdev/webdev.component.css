@@ -175,6 +175,8 @@ a {
     font-family: 'Kosugi';
     text-align: center;
     font-size: 35px;
+    padding-bottom: 20px;
+    padding-top: 20px;
 }
 
 a:hover #full-p1 {
@@ -242,10 +244,14 @@ a:hover #full-p2 {
     background: none;
     transform: scale(3);
     color: #B8406B;
+    padding-bottom: 140px;
+    position: relative;
+    /*right*/
+    padding-right: 15px;
 }
 
 #prev:hover {
-    color: #DEA615;
+    color: black;
 }
 
 #next {
@@ -253,10 +259,15 @@ a:hover #full-p2 {
     background: none;
     transform: scale(3);
     color: #B8406B;
+    padding-bottom: 140px;
+    position: relative;
+    /*left*/
+    padding-left: 15px;
 }
 
+
 #next:hover {
-    color: #DEA615;
+    color: black;
 }
 
 /*go up*/
