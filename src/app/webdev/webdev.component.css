@@ -218,7 +218,8 @@ a:hover #full-p2 {
 #little-text {
     padding-top: 10px;
     font-family: 'Kosugi';
-    font-size: 17px;
+    font-size: 22px;
+    text-align: center;
 }
 
 .button-classi {
@@ -229,7 +230,7 @@ a:hover #full-p2 {
     border: none;
     background: none;
     margin: 20px;
-
+    width: 300px;
 }
 
 a:hover #contact-p {
