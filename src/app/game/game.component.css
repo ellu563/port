@@ -1,0 +1,156 @@
+body {
+    font-family: 'Kosugi';
+}
+
+.topnav {
+    overflow: hidden;
+    width: 400px;
+    margin: 0 auto;
+}
+
+.topnav a {
+    float: none;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav #yellow:hover {
+    background-color: #DEA615;
+    color: black;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+#yellow {
+    padding: 15px;
+}
+
+.topnav a.active {
+    color: black;
+}
+
+/*tuplateksti-nappi*/
+#double-text {
+    border: none;
+    background: none;
+    margin: 20px;
+}
+
+
+/*teksti vaarinpain nav*/
+#upside {
+    font-size: 30px;
+    transform: rotate(180deg);
+    margin-bottom: 0;
+}
+
+#upside:hover {
+    color: #DEA615;
+}
+
+/*teksti oikeinpain nav*/
+#normal {
+    font-size: 30px;
+    margin-bottom: 0;
+}
+
+#normal:hover {
+    color: #DEA615;
+}
+
+/*top nav area*/
+.item0 {
+    grid-area: header0;
+    background-color: #B8406B;
+    padding: 40px;
+}
+
+.bottomnav {
+    font-size: 25px;
+    text-align: center;
+}
+
+/*Name heading area*/
+.item1 {
+    grid-area: header;
+    background-color: #B8406B;
+    padding: 90px;
+    padding-bottom: 32px;
+    position: relative;
+}
+
+/*Item1 - Otsikko*/
+#heading {
+    font-size: 9rem;
+    text-align: center;
+}
+
+/*graphic-design*/
+.item2 {
+    grid-area: about;
+    background-color: #A480C0;
+    padding: 60px;
+    padding-bottom: 0;
+    position: relative;
+}
+
+#graphic-design {
+    font-size: 60px;
+    padding-top: 70px;
+    text-align: center;
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/*kuvat*/
+.item3 {
+    grid-area: aboutme;
+    background-color: #DEA615;
+    padding: 90px;
+}
+
+/*bottom yellow*/
+.item4 {
+    grid-area: projects;
+    background-color: #A480C0;
+    padding: 30px;
+    font-size: 22px;
+}
+
+/*footer*/
+.item5 {
+    grid-area: footer;
+    background-color: #B8406B;
+    padding: 20px;
+}
+
+/*grid-container*/
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        'header0'
+        'header'
+        'about'
+        'aboutme'
+        'projects'
+        'footer';
+}
+
+/*go up*/
+.go-up {
+    background: yellow;
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    margin: 0;
+    position: fixed;
+    bottom: 30px;
+    right: 40px;
+    vertical-align: center;
+}
