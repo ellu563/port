@@ -92,12 +92,15 @@ mat-icon {
     grid-area: about;
     background-color: #EF8F5A;
     padding: 60px;
+    padding-bottom: 0;
     position: relative;
 }
 
 #web-dev-p {
-    font-size: 30px;
-    right: 0;
+    font-size: 60px;
+    padding-top: 70px;
+    text-align: center;
+    position: relative;
 }
 
 #angular {
