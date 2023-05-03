@@ -37,18 +37,18 @@
 
             <!--menu-->
             <mat-toolbar>
-                <button mat-button [matMenuTriggerFor]="aboveMenu">
+                <button mat-button [matMenuTriggerFor]="afterMenu">
                     <mat-icon>menu</mat-icon>
                 </button>
                 <p id="angular">angular</p>
             </mat-toolbar>
 
-            <mat-menu #aboveMenu="matMenu" yPosition="above">
+            <mat-menu class="after" #afterMenu="matMenu" xPosition="after">
                 <button mat-menu-item><a routerLink="/welcome" routerLinkActive="active">
-                        Welcome sivu
+                        <p id="nav-p">Welcome sivu</p>
                     </a></button>
                 <button mat-menu-item><a routerLink="/web-development" routerLinkActive="active">
-                        Web development yms
+                        <p id="nav-p">Web development yms</p>
                     </a></button>
             </mat-menu>
             <app-projects></app-projects>
