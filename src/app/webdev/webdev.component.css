@@ -189,6 +189,14 @@ a {
     text-align: center;
 }
 
+a:hover #full-p1 {
+    background-color: #A480C0;
+}
+
+a:hover #full-p2 {
+    background-color: #B8406B;
+}
+
 #full-p1 {
     background-color: #B8406B;
     padding: 40px;
