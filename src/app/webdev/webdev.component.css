@@ -183,3 +183,37 @@ a {
     right: 40px;
     vertical-align: center;
 }
+
+#food {
+    font-family: 'Kosugi';
+    text-align: center;
+}
+
+#full-p1 {
+    background-color: #B8406B;
+    padding: 40px;
+    border-radius: 20px;
+    font-size: 20px;
+    font-family: 'Kosugi';
+    text-align: center;
+}
+
+#full-p2 {
+    background-color: #A480C0;
+    padding: 40px;
+    border-radius: 20px;
+    font-size: 20px;
+    font-family: 'Kosugi';
+    text-align: center;
+}
+
+.button-classi {
+    text-align: center;
+}
+
+#buttoni {
+    border: none;
+    background: none;
+    margin: 20px;
+
+}
