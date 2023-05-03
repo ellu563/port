@@ -67,6 +67,10 @@ body {
     padding: 40px;
 }
 
+.bottomnav {
+    font-size: 25px;
+}
+
 /*Name heading area*/
 .item1 {
     grid-area: header;

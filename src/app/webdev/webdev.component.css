@@ -76,6 +76,10 @@ body {
     position: relative;
 }
 
+mat-icon {
+    transform: scale(2);
+}
+
 /*Item1 - Otsikko*/
 #heading {
     font-size: 9rem;
@@ -97,9 +101,13 @@ body {
 }
 
 #angular {
-    font-size: 30px;
+    font-size: 35px;
     color: #DEA615;
     margin-left: 20px;
+}
+
+.bottomnav {
+    font-size: 25px;
 }
 
 mat-toolbar {
