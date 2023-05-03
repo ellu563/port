@@ -34,7 +34,24 @@
 
         <!--angular-->
         <div class="item3">
-            <p id="angular">angular</p>
+
+            <!--menu-->
+            <mat-toolbar>
+                <button mat-button [matMenuTriggerFor]="aboveMenu">
+                    <mat-icon>menu</mat-icon>
+                </button>
+                <p id="angular">angular</p>
+            </mat-toolbar>
+
+            <mat-menu #aboveMenu="matMenu" yPosition="above">
+                <button mat-menu-item><a routerLink="/welcome" routerLinkActive="active">
+                        Welcome sivu
+                    </a></button>
+                <button mat-menu-item><a routerLink="/web-development" routerLinkActive="active">
+                        Web development yms
+                    </a></button>
+            </mat-menu>
+            <app-projects></app-projects>
         </div>
 
         <!--orange-->
