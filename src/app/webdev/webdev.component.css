@@ -199,7 +199,7 @@ a:hover #full-p2 {
 
 #full-p1 {
     background-color: #B8406B;
-    padding: 40px;
+    padding: 30px;
     border-radius: 20px;
     font-size: 23px;
     font-family: 'Kosugi';
@@ -208,7 +208,7 @@ a:hover #full-p2 {
 
 #full-p2 {
     background-color: #A480C0;
-    padding: 40px;
+    padding: 30px;
     border-radius: 20px;
     font-size: 23px;
     font-family: 'Kosugi';
@@ -220,6 +220,16 @@ a:hover #full-p2 {
     font-family: 'Kosugi';
     font-size: 22px;
     text-align: center;
+}
+
+#fronttikuva {
+    width: 170px;
+    height: 170px;
+}
+
+#backkikuva {
+    width: 170px;
+    height: 170px;
 }
 
 .button-classi {
