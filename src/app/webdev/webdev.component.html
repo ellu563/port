@@ -56,6 +56,7 @@
 
         <!--orange-->
         <div class="item4">
+
             <h1 id="food">Restaurant food ordering app</h1>
 
             <div class="button-classi">
@@ -82,6 +83,18 @@
                     <p id="little-text2">Angular & TypeScript</p>
                 </button>
             </div>
+
+            <div class="container-carousel">
+                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner" role="listbox">
+                        <button id="prev" (click)="getPrev()"><mat-icon>arrow_left</mat-icon></button>
+                        <img src="{{ getSlide() }}" alt="slide" />
+                        <button id="next" (click)="getNext()"><mat-icon>arrow_right</mat-icon></button>
+                    </div>
+
+                </div>
+            </div>
+
         </div>
 
         <!--bottom nav-->
