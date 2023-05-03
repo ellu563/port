@@ -4,26 +4,60 @@ body {
 
 .topnav {
     overflow: hidden;
+    width: 400px;
+    margin: 0 auto;
 }
 
 .topnav a {
-    float: left;
+    float: none;
     color: black;
     text-align: center;
-    padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
 }
 
-
-.topnav a:hover {
+.topnav #yellow:hover {
     background-color: #DEA615;
     color: black;
     border-radius: 10px;
+    padding: 15px;
+}
+
+#yellow {
+    padding: 15px;
 }
 
 .topnav a.active {
     color: black;
+}
+
+/*tuplateksti-nappi*/
+#double-text {
+    border: none;
+    background: none;
+    margin: 20px;
+}
+
+
+/*teksti vaarinpain nav*/
+#upside {
+    font-size: 30px;
+    transform: rotate(180deg);
+    margin-bottom: 0;
+}
+
+#upside:hover {
+    color: #DEA615;
+}
+
+/*teksti oikeinpain nav*/
+#normal {
+    font-size: 30px;
+    margin-bottom: 0;
+}
+
+#normal:hover {
+    color: #DEA615;
 }
 
 /*top nav area*/
@@ -45,13 +79,6 @@ body {
 #heading {
     font-size: 9rem;
     text-align: center;
-    position: relative;
-    bottom: 0;
-    left: 0;
-}
-
-.item1 #heading:hover {
-    color: #DEA615;
 }
 
 /*graphic-design*/

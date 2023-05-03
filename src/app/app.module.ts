@@ -3,7 +3,6 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ToolbarComponent } from './toolbar/toolbar.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 
 import { MatToolbarModule } from '@angular/material/toolbar';
@@ -17,7 +16,6 @@ import { ContactComponent } from './contact/contact.component';
 @NgModule({
   declarations: [
     AppComponent,
-    ToolbarComponent,
     WelcomeComponent,
     WebdevComponent,
     GraphicComponent,
@@ -26,7 +24,6 @@ import { ContactComponent } from './contact/contact.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    MatToolbarModule,
     MatMenuModule,
     MatIconModule,
     BrowserAnimationsModule,
