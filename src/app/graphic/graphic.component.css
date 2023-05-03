@@ -154,3 +154,7 @@ a {
     right: 40px;
     vertical-align: center;
 }
+
+a:hover #contact-p {
+    color: #DEA615;
+}

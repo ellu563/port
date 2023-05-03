@@ -254,3 +254,7 @@ h1 {
     height: 80px;
     width: 90px;
 }
+
+a:hover #contact-p {
+    color: #DEA615;
+}
