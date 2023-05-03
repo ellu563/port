@@ -112,6 +112,7 @@ mat-icon {
 
 .bottomnav {
     font-size: 25px;
+    text-align: center;
 }
 
 mat-toolbar {

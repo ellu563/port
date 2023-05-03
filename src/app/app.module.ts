@@ -12,8 +12,8 @@ import { MatExpansionModule } from '@angular/material/expansion';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { WebdevComponent } from './webdev/webdev.component';
 import { GraphicComponent } from './graphic/graphic.component';
-import { ContactComponent } from './contact/contact.component';
 import { ProjectsComponent } from './projects/projects.component';
+import { GameComponent } from './game/game.component';
 import { MatSidenavModule } from '@angular/material/sidenav';
 
 
@@ -23,8 +23,8 @@ import { MatSidenavModule } from '@angular/material/sidenav';
     WelcomeComponent,
     WebdevComponent,
     GraphicComponent,
-    ContactComponent,
     ProjectsComponent,
+    GameComponent
   ],
   imports: [
     BrowserModule,
