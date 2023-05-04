@@ -1,5 +1,9 @@
 /*go up*/
 
+.go-up {
+    height: fit-content;
+}
+
 .go-up img {
     border-radius: 50%;
     height: 170px;

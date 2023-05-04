@@ -149,6 +149,7 @@ a {
     grid-area: projects;
     background-color: #EF8F5A;
     padding: 30px;
+    height: auto;
     font-size: 22px;
 }
 
@@ -169,6 +170,7 @@ a {
         'aboutme'
         'projects'
         'footer';
+
 }
 
 #food {
@@ -239,66 +241,6 @@ a:hover #full-p2 {
     width: 300px;
 }
 
-#prev {
-    border: none;
-    background: none;
-    transform: scale(3);
-    color: #B8406B;
-    padding-bottom: 140px;
-    position: relative;
-    /*right*/
-    padding-right: 15px;
-}
-
-#prev:hover {
-    color: #DEA615;
-}
-
-#next {
-    border: none;
-    background: none;
-    transform: scale(3);
-    color: #B8406B;
-    padding-bottom: 140px;
-    position: relative;
-    /*left*/
-    padding-left: 15px;
-}
-
-
-#next:hover {
-    color: #DEA615;
-}
-
 a:hover #contact-p {
     color: #DEA615;
-}
-
-#carouselExampleControls {
-    text-align: center;
-    position: relative;
-    width: 100%;
-    text-align: center;
-    padding-top: 20px;
-}
-
-#carouselExampleControls img {
-    width: 55%;
-    height: auto;
-    border-radius: 20px;
-}
-
-#carouselExampleControls .btn {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    background-color: #555;
-    color: white;
-    font-size: 16px;
-    padding: 12px 24px;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
 }

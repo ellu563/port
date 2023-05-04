@@ -84,20 +84,14 @@
                     <p id="little-text">3 person project</p>
                     <p id="little-text2">Angular & TypeScript</p>
                 </button>
+                <!--kuvakaruselli-komponentti-->
+                <app-carousel></app-carousel>
             </div>
-
-            <div class="container-carousel">
-                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-                    <div class="carousel-inner" role="listbox">
-                        <button id="prev" (click)="getPrev()"><mat-icon>keyboard_arrow_left</mat-icon></button>
-                        <img src="{{ getSlide() }}" alt="slide" />
-                        <button id="next" (click)="getNext()"><mat-icon>keyboard_arrow_right</mat-icon></button>
-                    </div>
-
-                </div>
-            </div>
-
         </div>
+
+
+        <!--go up-->
+        <app-side-game-button></app-side-game-button>
 
         <!--bottom nav-->
         <div class="item5">
@@ -107,8 +101,5 @@
                 </a>
             </div>
         </div>
-
-        <!--go up-->
-        <app-side-game-button></app-side-game-button>
     </div>
 </body>

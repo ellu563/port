@@ -1,0 +1,79 @@
+.container-carousel {
+    position: relative;
+}
+
+#prev,
+#next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    font-size: 80px;
+    height: 80px;
+    width: 80px;
+    z-index: 1;
+    margin-top: 5px;
+    /* asetetaan korkeus puoleen */
+}
+
+#prev {
+    left: 22%;
+    /* asetetaan vasemman reunan sijainti */
+}
+
+#next {
+    right: 22%;
+    /* asetetaan oikean reunan sijainti */
+}
+
+#mat-right {
+    font-size: 80px;
+    height: 80px;
+    width: 80px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    z-index: 999;
+    color: #B8406B;
+}
+
+#mat-left {
+    font-size: 80px;
+    height: 80px;
+    width: 80px;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    z-index: 999;
+    color: #B8406B;
+}
+
+#mat-right:hover {
+    color: #DEA615;
+}
+
+#mat-left:hover {
+    color: #DEA615;
+}
+
+
+#carouselExampleControls img {
+    width: 55%;
+    height: auto;
+    border-radius: 20px;
+    position: relative;
+    z-index: 0;
+}
+
+.carousel-inner {
+    overflow: hidden;
+}
+
+#carouselExampleControls {
+    position: relative;
+    width: 100%;
+    padding-top: 20px;
+}

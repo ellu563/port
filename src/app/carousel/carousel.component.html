@@ -1,1 +1,9 @@
-<p>haloo</p>
+<div class="container-carousel">
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner" role="listbox">
+            <img src="{{ getSlide() }}" alt="slide" />
+        </div>
+        <button id="prev" (click)="getPrev()"><mat-icon id="mat-right">keyboard_arrow_left</mat-icon></button>
+        <button id="next" (click)="getNext()"><mat-icon id="mat-left">keyboard_arrow_right</mat-icon></button>
+    </div>
+</div>
