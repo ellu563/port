@@ -1,3 +1,4 @@
+/*alemman*/
 .carousel-container {
     position: relative;
     margin: 0 auto;
@@ -33,15 +34,13 @@
     background: none;
     border: none;
     font-size: 2rem;
-    color: #B8406B;
-    background-color: #EF8F5A;
-    border-radius: 50%;
+    color: #A480C0;
     cursor: pointer;
     z-index: 1;
 }
 
 .arrow:hover {
-    background-color: #DEA615;
+    color: #DEA615;
 }
 
 .arrow-prev {
@@ -50,4 +49,81 @@
 
 .arrow-next {
     right: 5px;
+}
+
+#mat3 {
+    font-size: 50px;
+    width: 50px;
+    height: 50px;
+}
+
+#mat4 {
+    font-size: 50px;
+    width: 50px;
+    height: 50px;
+}
+
+/*ylemmän*/
+.carousel-container2 {
+    position: relative;
+    margin: 0 auto;
+    width: 80%;
+}
+
+.carousel2 {
+    display: flex;
+    overflow: hidden;
+}
+
+.carousel-inner2 {
+    display: flex;
+    transition: transform 0.4s ease-in-out;
+}
+
+.slide2 {
+    flex-shrink: 0;
+    width: 33.33%;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.slide2 img {
+    width: 100%;
+    height: auto;
+}
+
+.arrow2 {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: #A480C0;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.arrow2:hover {
+    color: #DEA615;
+}
+
+.arrow-prev2 {
+    left: 5px;
+}
+
+.arrow-next2 {
+    right: 5px;
+}
+
+#mat1 {
+    font-size: 50px;
+    width: 50px;
+    height: 50px;
+}
+
+#mat2 {
+    font-size: 50px;
+    width: 50px;
+    height: 50px;
 }

@@ -1,3 +1,18 @@
+<!--ylempi-->
+<div class="carousel-container2">
+    <div class="carousel2">
+        <div class="carousel-inner2" [style.transform]="'translateX(' + translateValue2 + '%)'">
+            <div *ngFor="let image of images2" class="slide2">
+                <img src="{{ image.src }}" alt="{{ image.alt }}">
+            </div>
+        </div>
+    </div>
+    <button class="arrow2 arrow-prev2" (click)="prevSlide2()"><mat-icon id="mat1"
+            style="transform: rotate(180deg);">trending_flat</mat-icon></button>
+    <button class="arrow2 arrow-next2" (click)="nextSlide2()"><mat-icon id="mat2">trending_flat</mat-icon></button>
+</div>
+
+<!--alempi-->
 <div class="carousel-container">
     <div class="carousel">
         <div class="carousel-inner" [style.transform]="'translateX(' + translateValue + '%)'">
@@ -6,6 +21,7 @@
             </div>
         </div>
     </div>
-    <button class="arrow arrow-prev" (click)="prevSlide()"><mat-icon>chevron_left</mat-icon></button>
-    <button class="arrow arrow-next" (click)="nextSlide()"><mat-icon>chevron_right</mat-icon></button>
+    <button class="arrow arrow-prev" (click)="prevSlide()"><mat-icon id="mat3"
+            style="transform: rotate(180deg);">trending_flat</mat-icon></button>
+    <button class="arrow arrow-next" (click)="nextSlide()"><mat-icon id="mat4">trending_flat</mat-icon></button>
 </div>
