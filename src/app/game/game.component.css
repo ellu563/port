@@ -141,16 +141,3 @@ a {
         'projects'
         'footer';
 }
-
-/*go up*/
-.go-up {
-    background: yellow;
-    border-radius: 50%;
-    height: 60px;
-    width: 60px;
-    margin: 0;
-    position: fixed;
-    bottom: 30px;
-    right: 40px;
-    vertical-align: center;
-}

@@ -16,6 +16,7 @@ import { ProjectsComponent } from './projects/projects.component';
 import { GameComponent } from './game/game.component';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { CarouselComponent } from './carousel/carousel.component';
+import { SideGameButtonComponent } from './side-game-button/side-game-button.component';
 
 
 @NgModule({
@@ -26,7 +27,8 @@ import { CarouselComponent } from './carousel/carousel.component';
     GraphicComponent,
     ProjectsComponent,
     GameComponent,
-    CarouselComponent
+    CarouselComponent,
+    SideGameButtonComponent
   ],
   imports: [
     BrowserModule,

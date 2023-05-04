@@ -270,29 +270,6 @@ a:hover #full-p2 {
     color: black;
 }
 
-/*go up*/
-
-.go-up img {
-    border-radius: 50%;
-    height: 170px;
-    width: 170px;
-    margin: 0;
-    position: fixed;
-    bottom: 30px;
-    right: 40px;
-    vertical-align: center;
-}
-
-.go-up p {
-    font-size: 25px;
-    align-self: center;
-    position: fixed;
-    bottom: 160px;
-    right: 78px;
-    height: 80px;
-    width: 90px;
-}
-
 a:hover #contact-p {
     color: #DEA615;
 }
