@@ -1,8 +1,15 @@
-.big-container {
+.container {
     margin: 20px;
-    padding: 30px;
+    padding: 50px;
+    background-color: white;
+    border-radius: 50px;
+    width: 65%;
 }
 
 mat-slider {
     width: 30%;
+}
+
+button {
+    margin-top: 30px;
 }
