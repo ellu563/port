@@ -244,3 +244,13 @@ a:hover #full-p2 {
 a:hover #contact-p {
     color: #DEA615;
 }
+
+.mat-tab-group {
+    font-family: 'Kosugi';
+    font-size: 17px;
+}
+
+.mat-tab-label {
+    font-family: 'Kosugi';
+    font-size: 35px;
+}

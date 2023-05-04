@@ -18,6 +18,7 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { CarouselComponent } from './carousel/carousel.component';
 import { SideGameButtonComponent } from './side-game-button/side-game-button.component';
 import { GraphicCarouselComponent } from './graphic-carousel/graphic-carousel.component';
+import { MatTabsModule } from '@angular/material/tabs';
 
 
 @NgModule({
@@ -41,7 +42,8 @@ import { GraphicCarouselComponent } from './graphic-carousel/graphic-carousel.co
     BrowserAnimationsModule,
     MatSidenavModule,
     MatExpansionModule,
-    MatButtonModule
+    MatButtonModule,
+    MatTabsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
