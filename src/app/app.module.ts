@@ -8,6 +8,8 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
+import { MatSlider, MatSliderModule } from '@angular/material/slider';
+import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { WebdevComponent } from './webdev/webdev.component';
@@ -19,6 +21,10 @@ import { CarouselComponent } from './carousel/carousel.component';
 import { SideGameButtonComponent } from './side-game-button/side-game-button.component';
 import { GraphicCarouselComponent } from './graphic-carousel/graphic-carousel.component';
 import { MatTabsModule } from '@angular/material/tabs';
+import { MatCheckboxModule } from '@angular/material/checkbox';
+import { MatInputModule } from '@angular/material/input';
+import { LoanComponent } from './loan/loan.component';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -31,7 +37,8 @@ import { MatTabsModule } from '@angular/material/tabs';
     GameComponent,
     CarouselComponent,
     SideGameButtonComponent,
-    GraphicCarouselComponent
+    GraphicCarouselComponent,
+    LoanComponent
   ],
   imports: [
     BrowserModule,
@@ -43,7 +50,12 @@ import { MatTabsModule } from '@angular/material/tabs';
     MatSidenavModule,
     MatExpansionModule,
     MatButtonModule,
-    MatTabsModule
+    MatTabsModule,
+    MatCheckboxModule,
+    MatSliderModule,
+    MatFormFieldModule,
+    MatInputModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
