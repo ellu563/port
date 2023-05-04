@@ -17,7 +17,7 @@
 .slide {
     flex-shrink: 0;
     width: 33.33%;
-    padding: 10px;
+    padding: 0;
     box-sizing: border-box;
 }
 
@@ -33,16 +33,21 @@
     background: none;
     border: none;
     font-size: 2rem;
-    color: lime;
-    background-color: yellow;
+    color: #B8406B;
+    background-color: #EF8F5A;
+    border-radius: 50%;
     cursor: pointer;
     z-index: 1;
 }
 
+.arrow:hover {
+    background-color: #DEA615;
+}
+
 .arrow-prev {
-    left: 0;
+    left: 5px;
 }
 
 .arrow-next {
-    right: 0;
+    right: 5px;
 }
