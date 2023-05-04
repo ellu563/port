@@ -27,7 +27,7 @@ export class LoanComponent implements OnInit {
     this.loaner.phoneNumber;
     this.loaner.calculate;
 
-    // alustetaan nämä nyt 0, vaikka ne olisi myös voinut alustaa suoraan vakio arvoiksi 500e, ja 1v
+    // alustetaan nämä nyt 0, vaikka ne olisi myös voinut alustaa suoraan vakio arvoiksi esim. 500e, ja 1v
     this.amount = 0;
     this.time = 0;
 
@@ -40,7 +40,7 @@ export class LoanComponent implements OnInit {
   // lähetä tieto servicelle
   onSubmit(e: any) {
     this.loanService.onSubmit(e.value);
-    // laitetaan lähetyksn jälkeen vielä alkuarvot lomakkeelle määrään, aikaan, ja summaan
+    // laitetaan lähetyksen jälkeen vielä alkuarvot lomakkeelle määrään, aikaan, ja summaan
     // jotta lomake tyhjenee
     this.amount = 0;
     this.time = 0;
