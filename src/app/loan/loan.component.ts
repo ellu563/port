@@ -27,7 +27,7 @@ export class LoanComponent implements OnInit {
     this.loaner.phoneNumber;
     this.loaner.calculate;
 
-    // alustetaan nämä nyt 0, vaikka ne olisi myös voinut alustaa suoraan vakio arvoiksi esim. 500e, ja 1v
+    // alustetaan 0
     this.amount = 0;
     this.time = 0;
 
@@ -63,7 +63,6 @@ export class LoanComponent implements OnInit {
   addTogether() {
     if (this.time >= 1 && this.amount >= 500) {// laitetaan vielä ehto
       // niin saadaan summa vasta kun molemmat dokumentissa annetut arvot on ylittyneet
-
       this.loaner.calculate = (this.interest).toFixed(2);
     }
   }
