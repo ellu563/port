@@ -124,10 +124,12 @@ a {
 
 a:hover .block1 {
     background-color: #B8406B;
+    color: #DEA615;
 }
 
 a:hover .block2 {
     background-color: #A480C0;
+    color: #DEA615;
 }
 
 a:hover .block-web1 {
@@ -136,6 +138,10 @@ a:hover .block-web1 {
 
 a:hover .block-web2 {
     background-color: #B8406B;
+}
+
+a:hover #p-web {
+    color: #DEA615;
 }
 
 /*hide button padding, border, and background*/
