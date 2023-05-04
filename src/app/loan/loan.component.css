@@ -1,9 +1,11 @@
 .container {
     margin: 20px;
     padding: 50px;
-    background-color: white;
-    border-radius: 50px;
-    width: 65%;
+    background-color: #f9ffe3;
+    width: 80%;
+    box-shadow: 9px 12px;
+    border: 1px solid;
+    border-radius: 10px;
 }
 
 mat-slider {
