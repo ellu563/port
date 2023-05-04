@@ -14,17 +14,14 @@
     width: 80px;
     z-index: 1;
     margin-top: 5px;
-    /* asetetaan korkeus puoleen */
 }
 
 #prev {
     left: 22%;
-    /* asetetaan vasemman reunan sijainti */
 }
 
 #next {
     right: 22%;
-    /* asetetaan oikean reunan sijainti */
 }
 
 #mat-right {
