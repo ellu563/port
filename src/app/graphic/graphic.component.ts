@@ -13,7 +13,6 @@ import { trigger, transition, style, animate } from '@angular/animations';
       ]),
     ]),
   ],
-
 })
 export class GraphicComponent implements OnInit {
 
