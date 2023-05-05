@@ -144,13 +144,29 @@ a {
 
 /*peli*/
 
+.container-cards {
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    /* määrittää rivien koon */
+    grid-template-columns: repeat(4, 1fr);
+    /* määrittää sarakkeiden koon */
+    grid-gap: 10px;
+    /* määrittää rivien ja sarakkeiden välit */
+}
+
 .card {
-    height: 200px;
+    margin: 10px;
+    padding: 10px;
 }
 
 .front img,
 .back img {
     height: 33%;
-    width: 33%;
+    width: 20%;
     object-fit: contain;
+}
+
+/*vain etupuolelle*/
+.front img:hover {
+    filter: brightness(85%);
 }
