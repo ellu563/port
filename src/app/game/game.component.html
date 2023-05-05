@@ -29,12 +29,14 @@
 
         <!--PLAY-->
         <div class="item2">
-            <p id="graphic-design">play</p>
+            <!--memory-game text slidataan sisään-->
+            <p id="graphic-design" [@slideInLeft]>memory game</p>
         </div>
 
         <!--peli-->
         <div class="item3">
 
+            <!--peli alkaa-->
             <div class="container-cards">
                 <div class="card-class" *ngFor="let card of cards">
                     <div class="card" (click)="selectCard(card)">
@@ -47,8 +49,6 @@
                     </div>
                 </div>
             </div>
-
-
         </div>
 
         <!--yellow-->
