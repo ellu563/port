@@ -141,3 +141,16 @@ a {
         'projects'
         'footer';
 }
+
+/*peli*/
+
+.card {
+    height: 200px;
+}
+
+.front img,
+.back img {
+    height: 33%;
+    width: 33%;
+    object-fit: contain;
+}

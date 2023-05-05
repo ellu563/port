@@ -27,13 +27,31 @@
             </a>
         </div>
 
-        <!--graphic design heading-->
+        <!--PLAY-->
         <div class="item2">
             <p id="graphic-design">PLAY</p>
         </div>
 
-        <!--kuvat-->
+        <!--peli-->
         <div class="item3">
+
+            <div class="container mt-3">
+                <h1 class="text-center">Muistipeli</h1>
+                <hr>
+                <div class="row">
+                    <div class="col-md-4" *ngFor="let card of cards">
+                        <div class="card" (click)="selectCard(card)">
+                            <div class="front" *ngIf="!card.flipped">
+                                <img src="{{ card.frontImage }}" alt="{{ card.title }}">
+                            </div>
+                            <div class="back" *ngIf="card.flipped">
+                                <img src="{{ card.backImage }}" alt="Takapuoli">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
 
         </div>
 
