@@ -62,7 +62,7 @@ export class LoanComponent implements OnInit {
   // lasku yhteen
   addTogether() {
     if (this.time >= 1 && this.amount >= 500) {// laitetaan vielä ehto
-      // niin saadaan summa vasta kun molemmat dokumentissa annetut arvot on ylittyneet
+      // jotta saadaan summa vasta kun molemmat dokumentissa annetut arvot on ylittyneet
       this.loaner.calculate = (this.interest).toFixed(2);
     }
   }
