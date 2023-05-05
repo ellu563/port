@@ -25,6 +25,8 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatInputModule } from '@angular/material/input';
 import { LoanComponent } from './loan/loan.component';
 import { FormsModule } from '@angular/forms';
+import { environment } from 'src/environments/environment';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -55,7 +57,8 @@ import { FormsModule } from '@angular/forms';
     MatSliderModule,
     MatFormFieldModule,
     MatInputModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
