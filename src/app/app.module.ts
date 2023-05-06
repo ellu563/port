@@ -30,6 +30,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 
 import { AngularFireModule } from '@angular/fire/compat';
 import { AngularFirestore } from '@angular/fire/compat/firestore';
+import { TodayIsComponent } from './today-is/today-is.component';
 
 
 @NgModule({
@@ -43,7 +44,8 @@ import { AngularFirestore } from '@angular/fire/compat/firestore';
     CarouselComponent,
     SideGameButtonComponent,
     GraphicCarouselComponent,
-    LoanComponent
+    LoanComponent,
+    TodayIsComponent
   ],
   imports: [
     BrowserModule,

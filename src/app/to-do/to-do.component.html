@@ -1,1 +1,9 @@
-<p>to-do works!</p>
+<h1>to-do:</h1>
+<table style="width:100%">
+    <tr *ngFor="let taskk of taskList">
+        <td [class.fade]="taskk.payload.doc.data().completed">{{ taskk.payload.doc.data().task }}</td>
+
+        <td [hidden]="taskk.payload.doc.data().completed" (click)="deleteNow(taskk)">
+            <i class="material-icons">check</i>
+    </tr>
+</table>
