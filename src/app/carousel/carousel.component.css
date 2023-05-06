@@ -33,7 +33,7 @@
     left: 0;
     transform: translateY(-50%);
     z-index: 999;
-    color: #B8406B;
+    color: black;
 }
 
 #mat-left {
@@ -45,7 +45,7 @@
     right: 0;
     transform: translateY(-50%);
     z-index: 999;
-    color: #B8406B;
+    color: black;
 }
 
 #mat-right:hover {
