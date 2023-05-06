@@ -167,3 +167,25 @@ a {
 .front img:hover {
     filter: brightness(85%);
 }
+
+
+/*new game button*/
+#start {
+    background-color: yellow;
+    border: none;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-family: 'Kosugi';
+    text-align: center;
+}
+
+/*new game button*/
+#start:hover {
+    background-color: #fbbebf;
+}
+
+* {
+    cursor: cell;
+}

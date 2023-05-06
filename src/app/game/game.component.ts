@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { trigger, state, transition, style, animate } from '@angular/animations';
 
+// card interface
 interface Card {
   id: number,
   title: string;
@@ -31,7 +32,7 @@ export class GameComponent implements OnInit {
   // slide
   shouldSlide = true;
 
-  // logiikka
+  // logiikkaa varten
   selectedCards: any[] = [];
   matchedCards: any[] = [];
 
@@ -66,7 +67,7 @@ export class GameComponent implements OnInit {
     }
   }
 
-  // uudelleen peli
+  // uudelleen peli, sekoitetaan kortit
   startGame(): void {
     this.shuffleCards();
     this.resetCards();
@@ -120,7 +121,7 @@ export class GameComponent implements OnInit {
         setTimeout(() => {
           alert('Onneksi olkoon, voitit pelin!');
           this.startGame();
-        }, 2000);
+        }, 1000);
       }
     }
   }
