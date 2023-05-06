@@ -6,10 +6,10 @@ import { GraphicComponent } from './graphic/graphic.component';
 import { GameComponent } from './game/game.component';
 import { CarouselComponent } from './carousel/carousel.component';
 import { GraphicCarouselComponent } from './graphic-carousel/graphic-carousel.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: '/welcome', pathMatch: 'full' },
-  { path: 'welcome', component: WelcomeComponent },
+  { path: '', component: WelcomeComponent },
   { path: 'web-development', component: WebdevComponent },
   { path: 'graphic-design', component: GraphicComponent },
   { path: 'game', component: GameComponent },

@@ -35,6 +35,7 @@ import { TaskComponent } from './task/task.component';
 import { GroceriesComponent } from './groceries/groceries.component';
 import { TopBarTodayComponent } from './top-bar-today/top-bar-today.component';
 import { ToDoComponent } from './to-do/to-do.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 
 @NgModule({
@@ -53,7 +54,8 @@ import { ToDoComponent } from './to-do/to-do.component';
     TaskComponent,
     GroceriesComponent,
     TopBarTodayComponent,
-    ToDoComponent
+    ToDoComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
