@@ -7,6 +7,7 @@ interface Card {
   frontImage: string;
   backImage: string;
   flipped: boolean;
+  matched: boolean;
 }
 
 @Component({
@@ -27,30 +28,71 @@ interface Card {
 
 export class GameComponent implements OnInit {
 
+  // slide
   shouldSlide = true;
 
-  cards: Card[] = [
-    { id: 1, title: 'Kissa', frontImage: 'assets/images/tikkari.jpg', backImage: 'assets/images/kullerssoni.jpg', flipped: false },
-    { id: 2, title: 'Koira', frontImage: 'assets/images/tikkari.jpg', backImage: 'assets/images/pekkull.jpg', flipped: false },
-    { id: 3, title: 'Lehmä', frontImage: 'assets/images/tikkari.jpg', backImage: 'assets/images/kulssi.jpg', flipped: false },
-    { id: 4, title: 'Pöllö', frontImage: 'assets/images/tikkari.jpg', backImage: 'assets/images/olut.png', flipped: false },
+  // logiikka
+  selectedCards: any[] = [];
+  matchedCards: any[] = [];
 
-    { id: 5, title: 'Kissa', frontImage: 'assets/images/tikkari.jpg', backImage: 'assets/images/kullerssoni.jpg', flipped: false },
-    { id: 6, title: 'Koira', frontImage: 'assets/images/tikkari.jpg', backImage: 'assets/images/pekkull.jpg', flipped: false },
-    { id: 7, title: 'Lehmä', frontImage: 'assets/images/tikkari.jpg', backImage: 'assets/images/kulssi.jpg', flipped: false },
-    { id: 8, title: 'Pöllö', frontImage: 'assets/images/tikkari.jpg', backImage: 'assets/images/olut.png', flipped: false },
+  cards: Card[] = [
+    { id: 1, title: 'Kissa', backImage: 'assets/images/kullerssoni.jpg', frontImage: 'assets/images/tikkari.jpg', flipped: false, matched: false },
+    { id: 2, title: 'Koira', backImage: 'assets/images/pekkull.jpg', frontImage: 'assets/images/tikkari.jpg', flipped: false, matched: false },
+    { id: 3, title: 'Lehmä', backImage: 'assets/images/kulssi.jpg', frontImage: 'assets/images/tikkari.jpg', flipped: false, matched: false },
+    { id: 4, title: 'Pöllö', backImage: 'assets/images/olut.png', frontImage: 'assets/images/tikkari.jpg', flipped: false, matched: false },
+
+    { id: 5, title: 'Kissa', backImage: 'assets/images/kullerssoni.jpg', frontImage: 'assets/images/tikkari.jpg', flipped: false, matched: false },
+    { id: 6, title: 'Koira', backImage: 'assets/images/pekkull.jpg', frontImage: 'assets/images/tikkari.jpg', flipped: false, matched: false },
+    { id: 7, title: 'Lehmä', backImage: 'assets/images/kulssi.jpg', frontImage: 'assets/images/tikkari.jpg', flipped: false, matched: false },
+    { id: 8, title: 'Pöllö', backImage: 'assets/images/olut.png', frontImage: 'assets/images/tikkari.jpg', flipped: false, matched: false },
   ];
 
-  flippedCards: Card[] = [];
-  matchedCards: Card[] = [];
 
   constructor() { }
 
   ngOnInit(): void {
+    this.cards.forEach((card) => {
+      card.flipped = false;
+    });
   }
 
-  selectCard(card: Card) {
+  selectCard(card: any) {
+    if (!card.flipped && this.selectedCards.length < 2) {
+      card.flipped = true;
+      this.selectedCards.push(card);
 
-    card.flipped = !card.flipped;
+      if (this.selectedCards.length === 2) {
+        this.checkForMatch();
+      }
+    }
   }
+
+  checkForMatch() {
+    if (
+      this.selectedCards[0].backImage === this.selectedCards[1].backImage &&
+      this.selectedCards[0].id !== this.selectedCards[1].id
+    ) {
+      this.selectedCards[0].matched = true;
+      this.selectedCards[1].matched = true;
+      this.selectedCards = [];
+      this.checkForWin();
+    } else {
+      setTimeout(() => {
+        this.selectedCards.forEach((card) => {
+          card.flipped = false;
+        });
+
+        this.selectedCards = [];
+      }, 1000);
+    }
+  }
+
+  checkForWin() {
+    const matchedCount = this.cards.filter((card) => card.matched).length;
+    if (matchedCount === this.cards.length) {
+      alert('Onneksi olkoon, voitit pelin!');
+      // Voit lisätä tähän logiikkaa pelin uudelleen aloittamiseen
+    }
+  }
+
 }
