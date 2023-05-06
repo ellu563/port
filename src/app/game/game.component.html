@@ -39,8 +39,8 @@
             <!--peli alkaa-->
             <div class="container-cards">
                 <div class="card-class" *ngFor="let card of cards">
-                    <div class="card" (click)="selectCard(card)"
-                        [ngClass]="{'flipped': card.flipped, 'matched': card.matched}">
+                    <div class="card" (click)="selectCard(card)" [@cardFlip]="card.flipped ? 'flipped' : 'default'"
+                        [ngClass]="{'matched': card.matched}">
                         <div class="front" *ngIf="!card.flipped">
                             <img src="{{ card.frontImage }}" alt="{{ card.title }}">
                         </div>

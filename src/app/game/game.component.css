@@ -4,7 +4,6 @@ body {
 
 .topnav {
     overflow: hidden;
-    width: 400px;
     margin: 0 auto;
 }
 
@@ -147,21 +146,49 @@ a {
 .container-cards {
     display: grid;
     grid-template-rows: repeat(4);
-    /* määrittää rivien koon */
     grid-template-columns: repeat(4, 2fr);
-    /* määrittää sarakkeiden koon */
     grid-gap: 0px;
-    /* määrittää rivien ja sarakkeiden välit */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+/*korteille media queryt*/
+@media (max-width: 768px) {
+    .container-cards {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        /* Lisätään väliä korttien väliin */
+    }
+}
+
+@media (max-width: 480px) {
+    .container-cards {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+        /* Lisätään väliä korttien väliin */
+    }
+}
+
+
+.card-class {
+    margin-bottom: 270px;
+    padding: 0;
+    position: relative;
+}
+
+.card {
+    position: absolute;
+}
 
 .front img,
 .back img {
-    height: 70%;
-    width: 70%;
-    object-fit: contain;
+    height: 240px;
+    width: 190px;
+    object-fit: cover;
     border-radius: 20px;
 }
+
 
 /*vain etupuolelle*/
 .front img:hover {

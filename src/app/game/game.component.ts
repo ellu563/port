@@ -23,7 +23,17 @@ interface Card {
         animate('0.7s ease', style({ transform: 'translateX(0%)' })),
       ]),
     ]),
-    /* animations card-flip tanne */
+    /* animations card-flip */
+    trigger('cardFlip', [
+      state('default', style({
+        transform: 'none'
+      })),
+      state('flipped', style({
+        transform: 'perspective(1000px) rotateY(180deg) scaleX(-1)'
+      })),
+      transition('default => flipped', animate('300ms ease-out')),
+      transition('flipped => default', animate('300ms ease-in'))
+    ])
   ],
 })
 
