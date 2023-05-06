@@ -3,19 +3,24 @@
     height: auto;
     margin: auto;
     padding: 200px;
-    padding-top: 100px;
+    padding-top: 90px;
     font-family: 'Kosugi';
+    position: relative;
 }
 
 #frenchie {
     margin: 10px;
+    padding-top: 60px;
     width: 100%;
 }
 
 h1 {
     font-family: 'Kosugi';
     font-size: 200px;
-    margin-bottom: 50px;
+    margin-bottom: 100px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 a {
@@ -30,6 +35,9 @@ button {
     border: none;
     text-align: center;
     font-size: 20px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 button:hover {
