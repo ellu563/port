@@ -1,0 +1,18 @@
+.container {
+    width: 400px;
+    height: auto;
+    margin: auto;
+    padding: 200px;
+    padding-top: 100px;
+}
+
+#frenchie {
+    margin: 10px;
+    width: 100%;
+}
+
+h1 {
+    font-family: 'Kosugi';
+    font-size: 200px;
+    margin-bottom: 50px;
+}

@@ -9,12 +9,15 @@ import { GraphicCarouselComponent } from './graphic-carousel/graphic-carousel.co
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 const routes: Routes = [
-  { path: '', component: WelcomeComponent },
+  { path: '', redirectTo: 'welcome', pathMatch: 'full' },
+  { path: 'welcome', component: WelcomeComponent },
   { path: 'web-development', component: WebdevComponent },
   { path: 'graphic-design', component: GraphicComponent },
   { path: 'game', component: GameComponent },
   { path: 'carousel', component: CarouselComponent },
-  { path: 'graphic-carousel', component: GraphicCarouselComponent }
+  { path: 'graphic-carousel', component: GraphicCarouselComponent },
+  // 404-virhereitti
+  { path: '**', component: PageNotFoundComponent, pathMatch: 'full' }
 ];
 
 @NgModule({
