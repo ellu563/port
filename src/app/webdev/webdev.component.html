@@ -42,11 +42,13 @@
                 <mat-tab-group>
                     <mat-tab label="Finnkino API" id="tab1"></mat-tab>
                     <mat-tab label="Loan calculator" id="tab2"><app-loan></app-loan></mat-tab>
-                    <mat-tab label="Today app" id="tab3">
-                        <app-top-bar-today></app-top-bar-today>
-                        <app-today-is></app-today-is>
-                        <app-task></app-task>
-                        <app-to-do></app-to-do>
+                    <mat-tab label="Today app with Firebase" id="tab3">
+                        <div class="app-container">
+                            <app-top-bar-today></app-top-bar-today>
+                            <app-today-is></app-today-is>
+                            <app-task></app-task>
+                            <app-to-do></app-to-do>
+                        </div>
                     </mat-tab>
                     <mat-tab label="Something" id="tab4"></mat-tab>
                 </mat-tab-group>

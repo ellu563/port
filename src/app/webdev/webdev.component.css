@@ -268,3 +268,16 @@ a:hover #contact-p {
     margin-right: auto;
     width: 54%;
 }
+
+.app-container {
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    padding: 50px;
+    background-color: #2E8B57;
+    width: 65%;
+    align-items: center;
+    box-shadow: 9px 12px;
+    border: 1px solid;
+    border-radius: 10px;
+}
