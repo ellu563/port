@@ -50,9 +50,33 @@ export class GameComponent implements OnInit {
 
   constructor() { }
 
+  // kutsutaan shuffleCards()-metodia ennen korttien tilan nollaamista
   ngOnInit(): void {
+    this.shuffleCards();
     this.cards.forEach((card) => {
       card.flipped = false;
+    });
+  }
+
+  // shuffleCards()-metodi käyttää Fisher-Yates-algoritmia 
+  shuffleCards() {
+    for (let i = this.cards.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [this.cards[i], this.cards[j]] = [this.cards[j], this.cards[i]];
+    }
+  }
+
+  // uudelleen peli
+  startGame(): void {
+    this.shuffleCards();
+    this.resetCards();
+  }
+
+  // uudelleen peli
+  resetCards(): void {
+    this.cards.forEach((card) => {
+      card.flipped = false;
+      card.matched = false;
     });
   }
 
@@ -67,6 +91,7 @@ export class GameComponent implements OnInit {
     }
   }
 
+  // etsi vastaava
   checkForMatch() {
     if (
       this.selectedCards[0].backImage === this.selectedCards[1].backImage &&
@@ -90,8 +115,13 @@ export class GameComponent implements OnInit {
   checkForWin() {
     const matchedCount = this.cards.filter((card) => card.matched).length;
     if (matchedCount === this.cards.length) {
-      alert('Onneksi olkoon, voitit pelin!');
-      // Voit lisätä tähän logiikkaa pelin uudelleen aloittamiseen
+      if (matchedCount === this.cards.length) {
+        /* laitetaan pieni viive niin onnittelut eivät tule liian ajoissa */
+        setTimeout(() => {
+          alert('Onneksi olkoon, voitit pelin!');
+          this.startGame();
+        }, 2000);
+      }
     }
   }
 
