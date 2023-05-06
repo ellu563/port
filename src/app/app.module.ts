@@ -28,6 +28,9 @@ import { FormsModule } from '@angular/forms';
 import { environment } from 'src/environments/environment';
 import { ReactiveFormsModule } from '@angular/forms';
 
+import { AngularFireModule } from '@angular/fire/compat';
+import { AngularFirestore } from '@angular/fire/compat/firestore';
+
 
 @NgModule({
   declarations: [
@@ -58,7 +61,9 @@ import { ReactiveFormsModule } from '@angular/forms';
     MatFormFieldModule,
     MatInputModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    AngularFireModule.initializeApp(environment.firebaseConfig),
+    AngularFirestore,
   ],
   providers: [],
   bootstrap: [AppComponent]
