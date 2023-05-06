@@ -29,11 +29,12 @@ import { environment } from 'src/environments/environment';
 import { ReactiveFormsModule } from '@angular/forms';
 
 import { AngularFireModule } from '@angular/fire/compat';
-import { AngularFirestore } from '@angular/fire/compat/firestore';
+import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
 import { TodayIsComponent } from './today-is/today-is.component';
 import { TaskComponent } from './task/task.component';
 import { GroceriesComponent } from './groceries/groceries.component';
 import { TopBarTodayComponent } from './top-bar-today/top-bar-today.component';
+import { ToDoComponent } from './to-do/to-do.component';
 
 
 @NgModule({
@@ -51,7 +52,8 @@ import { TopBarTodayComponent } from './top-bar-today/top-bar-today.component';
     TodayIsComponent,
     TaskComponent,
     GroceriesComponent,
-    TopBarTodayComponent
+    TopBarTodayComponent,
+    ToDoComponent
   ],
   imports: [
     BrowserModule,
@@ -71,7 +73,7 @@ import { TopBarTodayComponent } from './top-bar-today/top-bar-today.component';
     FormsModule,
     ReactiveFormsModule,
     AngularFireModule.initializeApp(environment.firebaseConfig),
-    AngularFirestore,
+    AngularFirestoreModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
