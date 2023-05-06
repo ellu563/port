@@ -9,7 +9,12 @@ export class TodayIsComponent implements OnInit {
 
   constructor() { }
 
+  public today = Date.now();
+
   ngOnInit(): void {
+    setInterval(() => {
+      this.today = Date.now();
+    }, 100);
   }
 
 }
