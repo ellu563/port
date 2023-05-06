@@ -5,13 +5,13 @@
 export const environment = {
   production: false,
   firebaseConfig: {
-    apiKey: 'AIzaSyAQiNsLvp-f-rHA2cU5eS1DyVuzDuMhT8c',
-    authDomain: 'projektiwebk.firebaseapp.com',
-    projectId: 'projektiwebk',
-    storageBucket: 'projektiwebk.appspot.com',
-    messagingSenderId: '346536881807',
-    appId: '1:346536881807:web:c21403a0c524c121028afa',
-    measurementId: 'G-G8GJHMQJHK',
+    apiKey: 'AIzaSyBP7m0eGk7z72lS07oDlAe8n-qtDm0TFsw',
+    authDomain: 'uustoday-b9423.firebaseapp.com',
+    projectId: 'uustoday-b9423',
+    storageBucket: 'uustoday-b9423.appspot.com',
+    messagingSenderId: '758273072271',
+    appId: '1:758273072271:web:7c109cfa66435ff987e4fa',
+    measurementId: 'G-PW83Q3W00T',
   },
 };
 /*

@@ -1,9 +1,9 @@
 <h1>to-do:</h1>
 <table style="width:100%">
-    <tr *ngFor="let taskk of taskList">
-        <td [class.fade]="taskk.payload.doc.data().completed">{{ taskk.payload.doc.data().task }}</td>
+    <tr *ngFor="let messs of mesList">
+        <td [class.fade]="messs.payload.doc.data().completed">{{ messs.payload.doc.data().task }}</td>
 
-        <td [hidden]="taskk.payload.doc.data().completed" (click)="deleteNow(taskk)">
+        <td [hidden]="messs.payload.doc.data().completed" (click)="deleteNow(messs)">
             <i class="material-icons">check</i>
     </tr>
 </table>

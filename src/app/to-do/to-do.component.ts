@@ -8,7 +8,7 @@ import { TaskService } from '../services/task.service';
 })
 export class ToDoComponent implements OnInit {
 
-  taskList: any;
+  mesList: any;
 
   constructor(public taskService: TaskService) { }
 
@@ -18,7 +18,7 @@ export class ToDoComponent implements OnInit {
   }
 
   getTasks = () =>
-    this.taskService.getTasks().subscribe((res: any) => (this.taskList = res));
+    this.taskService.getTasks().subscribe((res: any) => (this.mesList = res));
 
   deleteNow = (data: any) => this.taskService.deleteTask(data);
 
