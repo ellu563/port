@@ -1,1 +1,22 @@
-<p>groceries works!</p>
+<h1>groceries:</h1>
+<img src="assets/images/sovellusbanaani1-01.png" style="width:100%">
+
+<form [formGroup]="this.groceService.form" novalidate>
+
+    <input placeholder="gimme a list name" formControlName="name" type="text">
+
+
+    <label>Some of your favourites:</label>
+    <button class="buttonssit" *ngFor="let grocery of groceries" (click)="addG(grocery)">
+        {{grocery}}
+    </button>
+    <ul class="collection">
+        <li *ngFor="let grocery of groCeries">
+            <span class="col s11"> {{ grocery }} </span>
+            <a class="col s1" (click)="removeG(grocery)">x</a>
+        </li>
+    </ul>
+
+    <button class="button" (click)="onSubmit()">Send</button>
+
+</form>

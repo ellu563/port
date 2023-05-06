@@ -33,6 +33,7 @@ import { AngularFirestore } from '@angular/fire/compat/firestore';
 import { TodayIsComponent } from './today-is/today-is.component';
 import { TaskComponent } from './task/task.component';
 import { GroceriesComponent } from './groceries/groceries.component';
+import { TopBarTodayComponent } from './top-bar-today/top-bar-today.component';
 
 
 @NgModule({
@@ -49,7 +50,8 @@ import { GroceriesComponent } from './groceries/groceries.component';
     LoanComponent,
     TodayIsComponent,
     TaskComponent,
-    GroceriesComponent
+    GroceriesComponent,
+    TopBarTodayComponent
   ],
   imports: [
     BrowserModule,
