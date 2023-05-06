@@ -32,6 +32,7 @@ import { AngularFireModule } from '@angular/fire/compat';
 import { AngularFirestore } from '@angular/fire/compat/firestore';
 import { TodayIsComponent } from './today-is/today-is.component';
 import { TaskComponent } from './task/task.component';
+import { GroceriesComponent } from './groceries/groceries.component';
 
 
 @NgModule({
@@ -47,7 +48,8 @@ import { TaskComponent } from './task/task.component';
     GraphicCarouselComponent,
     LoanComponent,
     TodayIsComponent,
-    TaskComponent
+    TaskComponent,
+    GroceriesComponent
   ],
   imports: [
     BrowserModule,

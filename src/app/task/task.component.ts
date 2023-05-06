@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { TaskService } from '../services/task.service';
 
 @Component({
   selector: 'app-task',
@@ -7,9 +8,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TaskComponent implements OnInit {
 
-  constructor() { }
+  constructor(public taskService: TaskService) { }
 
   ngOnInit(): void {
+  }
+
+  // onSubmit lähettää lomakkeen tiedon firebaseen
+  onSubmit() {
+    let data = this.taskService.form.value;
+    this.taskService
+      .addTask(data)
+      .then((res) => {
+        console.log(res);
+        alert('Task added!');
+      })
+      .catch((error) => console.error(error));
+    this.taskService.form.reset(); // tyhjentää lomakkeen
   }
 
 }
