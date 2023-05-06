@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { trigger, transition, style, animate } from '@angular/animations';
+import { trigger, state, transition, style, animate } from '@angular/animations';
 
 interface Card {
   id: number,
@@ -13,7 +13,7 @@ interface Card {
   selector: 'app-game',
   templateUrl: './game.component.html',
   styleUrls: ['./game.component.css'],
-  /* slideriä varten */
+  /* slideriä varten, slide in left */
   animations: [
     trigger('slideInLeft', [
       transition(':enter', [
@@ -21,6 +21,7 @@ interface Card {
         animate('0.7s ease', style({ transform: 'translateX(0%)' })),
       ]),
     ]),
+    /* animations card-flip tanne */
   ],
 })
 
