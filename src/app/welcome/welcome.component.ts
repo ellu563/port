@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ElementRef, ViewChild } from '@angular/core';
 import { trigger, transition, style, animate } from '@angular/animations';
+
 
 @Component({
   selector: 'app-welcome',
@@ -11,7 +12,7 @@ import { trigger, transition, style, animate } from '@angular/animations';
         style({ transform: 'translateX(-100%)' }),
         animate('0.7s ease', style({ transform: 'translateX(0%)' })),
       ]),
-    ]),
+    ])
   ],
 })
 export class WelcomeComponent implements OnInit {
@@ -20,5 +21,8 @@ export class WelcomeComponent implements OnInit {
 
   ngOnInit(): void {
   }
+
+
+
 
 }
