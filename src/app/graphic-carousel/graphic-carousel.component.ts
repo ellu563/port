@@ -26,12 +26,8 @@ export class GraphicCarouselComponent implements OnInit {
       alt: 'Image 4'
     },
     {
-      src: 'assets/images/kulssi.jpg',
+      src: 'assets/images/hrilainen.jpg',
       alt: 'Image 5'
-    },
-    {
-      src: 'assets/images/kulssi.jpg',
-      alt: 'Image 6'
     }
   ];
 

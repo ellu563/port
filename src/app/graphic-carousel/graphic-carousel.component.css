@@ -2,7 +2,7 @@
 .carousel-container {
     position: relative;
     margin: 0 auto;
-    width: 80%;
+    width: 100%;
 }
 
 .carousel {
@@ -21,7 +21,7 @@
     padding: 0;
     box-sizing: border-box;
     position: relative;
-    height: 200px;
+    height: 250px;
     /* Määritä haluamasi korkeus */
 }
 
@@ -73,7 +73,7 @@
 .carousel-container2 {
     position: relative;
     margin: 0 auto;
-    width: 80%;
+    width: 100%;
 }
 
 .carousel2 {
