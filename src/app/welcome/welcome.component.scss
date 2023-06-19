@@ -1,0 +1,43 @@
+/* contact.component.scss */
+.bottomnav {
+    position: relative;
+    text-align: center;
+}
+
+#contact-p {
+    color: black;
+    cursor: pointer;
+}
+
+#wave-effect {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #DEA615;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.5s ease;
+}
+
+#wave-effect.active {
+    opacity: 1;
+    animation: wave-animation 1.5s infinite;
+}
+
+@keyframes wave-animation {
+    0% {
+        transform: scale(0);
+    }
+
+    50% {
+        transform: scale(1);
+        opacity: 0.7;
+    }
+
+    100% {
+        transform: scale(2);
+        opacity: 0;
+    }
+}
