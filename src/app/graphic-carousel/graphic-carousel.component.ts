@@ -68,7 +68,7 @@ export class GraphicCarouselComponent implements OnInit {
 
     /*alempi*/
     this.intervalId = setInterval(() => {
-      this.nextSlide();
+      this.nextSlide2();
     }, 3000);
   }
 
