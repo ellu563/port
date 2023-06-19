@@ -49,12 +49,12 @@ export class GameComponent implements OnInit {
   cards: Card[] = [
     { id: 1, title: 'Mansikka', backImage: 'assets/images/mansikka.jpeg', frontImage: 'assets/images/tikkari.jpg', flipped: false, matched: false },
     { id: 2, title: 'Mustikka', backImage: 'assets/images/mustikka.jpeg', frontImage: 'assets/images/tikkari.jpg', flipped: false, matched: false },
-    { id: 3, title: 'Kiiwi', backImage: 'assets/images/kiiwi.jpeg', frontImage: 'assets/images/tikkari.jpg', flipped: false, matched: false },
+    { id: 3, title: 'Fruit', backImage: 'assets/images/fruit.jpeg', frontImage: 'assets/images/tikkari.jpg', flipped: false, matched: false },
     { id: 4, title: 'Marja', backImage: 'assets/images/marja.jpeg', frontImage: 'assets/images/tikkari.jpg', flipped: false, matched: false },
 
     { id: 5, title: 'Mansikka', backImage: 'assets/images/mansikka.jpeg', frontImage: 'assets/images/tikkari.jpg', flipped: false, matched: false },
     { id: 6, title: 'Mustikka', backImage: 'assets/images/mustikka.jpeg', frontImage: 'assets/images/tikkari.jpg', flipped: false, matched: false },
-    { id: 7, title: 'Kiiwi', backImage: 'assets/images/kiiwi.jpeg', frontImage: 'assets/images/tikkari.jpg', flipped: false, matched: false },
+    { id: 7, title: 'Fruit', backImage: 'assets/images/fruit.jpeg', frontImage: 'assets/images/tikkari.jpg', flipped: false, matched: false },
     { id: 8, title: 'Marja', backImage: 'assets/images/marja.jpeg', frontImage: 'assets/images/tikkari.jpg', flipped: false, matched: false },
   ];
 
