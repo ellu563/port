@@ -28,13 +28,13 @@ export class WelcomeComponent implements OnInit {
   /*sama web-dev osiolle*/
   hoverWeb: boolean = false;
 
+  /*for contact me*/
+  waveActive: boolean = false;
+
   /*graphic design*/
   onHover(): void {
     this.hover = true;
   }
-
-  /*for contact me*/
-  waveActive: boolean = false;
 
   onLeave(): void {
     this.hover = false;
