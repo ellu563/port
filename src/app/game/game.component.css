@@ -216,3 +216,8 @@ a {
 * {
     cursor: cell;
 }
+
+/*for p*/
+#imgs {
+    font-size: 14px;
+}
