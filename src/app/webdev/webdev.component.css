@@ -182,11 +182,11 @@ a {
 }
 
 a:hover #full-p1 {
-    background-color: #DEA615;
+    background-color: #A480C0;
 }
 
 a:hover #full-p2 {
-    background-color: #DEA615;
+    background-color: #A480C0;
 }
 
 #full-p1 {
@@ -199,7 +199,7 @@ a:hover #full-p2 {
 }
 
 #full-p2 {
-    background-color: #A480C0;
+    background-color: #B8406B;
     padding: 30px;
     border-radius: 20px;
     font-size: 23px;
@@ -274,7 +274,7 @@ a:hover #contact-p {
     margin-top: 20px;
     margin-bottom: 15px;
     padding: 50px;
-    background-color: #2E8B57;
+    background-color: #A480C0;
     width: 65%;
     align-items: center;
     box-shadow: 9px 12px;
