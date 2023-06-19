@@ -10,19 +10,19 @@ export class GraphicCarouselComponent implements OnInit {
   /*alempi*/
   images = [
     {
-      src: 'assets/images/kulssi.jpg',
+      src: 'assets/images/space-1.JPG',
       alt: 'Image 1'
     },
     {
-      src: 'assets/images/kulssi.jpg',
+      src: 'assets/images/teapot3-01.jpg',
       alt: 'Image 2'
     },
     {
-      src: 'assets/images/kulssi.jpg',
+      src: 'assets/images/girlanddog.jpg',
       alt: 'Image 3'
     },
     {
-      src: 'assets/images/kulssi.jpg',
+      src: 'assets/images/pinkitkukat.jpg',
       alt: 'Image 4'
     },
     {
@@ -38,28 +38,24 @@ export class GraphicCarouselComponent implements OnInit {
   /*ylempi*/
   images2 = [
     {
-      src: 'assets/images/kullerssoni.jpg',
+      src: 'assets/images/mads.jpg',
       alt: 'Image 1'
     },
     {
-      src: 'assets/images/kullerssoni.jpg',
+      src: 'assets/images/game-hall.jpg',
       alt: 'Image 2'
     },
     {
-      src: 'assets/images/kullerssoni.jpg',
+      src: 'assets/images/super.jpg',
       alt: 'Image 3'
     },
     {
-      src: 'assets/images/kullerssoni.jpg',
+      src: 'assets/images/avaruusdubet.jpg',
       alt: 'Image 4'
     },
     {
-      src: 'assets/images/kullerssoni.jpg',
+      src: 'assets/images/pekka-long.jpg',
       alt: 'Image 5'
-    },
-    {
-      src: 'assets/images/kullerssoni.jpg',
-      alt: 'Image 6'
     }
   ];
 

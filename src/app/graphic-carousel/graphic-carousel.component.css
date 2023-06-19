@@ -20,12 +20,18 @@
     width: 33.33%;
     padding: 0;
     box-sizing: border-box;
+    position: relative;
+    height: 200px;
+    /* Määritä haluamasi korkeus */
 }
 
 .slide img {
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: cover;
 }
+
+
 
 .arrow {
     position: absolute;
