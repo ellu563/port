@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { trigger, transition, style, animate } from '@angular/animations';
 
 @Component({
@@ -29,5 +29,7 @@ export class SideGameButtonComponent implements OnInit {
   ngOnInit(): void {
     this.delay = 20000;
   }
+
+
 
 }

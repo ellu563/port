@@ -3,3 +3,7 @@
     text-decoration: none;
     font-size: 25px;
 }
+
+a:hover #contact-p {
+    color: #DEA615;
+}

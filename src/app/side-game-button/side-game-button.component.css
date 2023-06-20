@@ -1,7 +1,16 @@
-/*go up*/
+/* go up */
+@keyframes blink {
+    0% {
+        box-shadow: 0 0 5px yellow;
+    }
 
-.go-up {
-    height: fit-content;
+    50% {
+        box-shadow: 0 0 20px yellow;
+    }
+
+    100% {
+        box-shadow: 0 0 5px yellow;
+    }
 }
 
 .go-up img {
@@ -13,10 +22,15 @@
     bottom: 30px;
     right: 40px;
     vertical-align: center;
+    animation: blink 2s 10;
+    animation-delay: 4s;
+    /*4 sekunnin viive*/
 }
 
 .go-up img:hover {
     filter: brightness(85%);
+    animation: none;
+    /*pysäytä animaatio, kun hiiri on kuvan päällä*/
 }
 
 .go-up p {
