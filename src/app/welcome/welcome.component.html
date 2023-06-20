@@ -37,7 +37,7 @@
 
         <!--about me/second part-->
         <div class="item3">
-            <p id="intro2">currently studying data processing at LAB University of Applied Sciences</p>
+            <p id="intro2">studying data processing at LAB University of Applied Sciences</p>
         </div>
 
         <!--projects-->
@@ -81,14 +81,8 @@
         <app-side-game-button></app-side-game-button>
 
         <!--bottom nav-->
-        <!-- contact.component.html -->
         <div class="item5">
-            <div class="bottomnav">
-                <a href="mailto:elina.partinen1@gmail.com" (click)="sendEmail()">
-                    <p id="contact-p">Contact me</p>
-                    <div id="wave-effect" [ngClass]="{'active': waveActive}"></div>
-                </a>
-            </div>
+            <app-contact-me></app-contact-me>
         </div>
 
 

@@ -36,6 +36,7 @@ import { GroceriesComponent } from './groceries/groceries.component';
 import { TopBarTodayComponent } from './top-bar-today/top-bar-today.component';
 import { ToDoComponent } from './to-do/to-do.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { ContactMeComponent } from './contact-me/contact-me.component';
 
 
 @NgModule({
@@ -56,6 +57,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     TopBarTodayComponent,
     ToDoComponent,
     PageNotFoundComponent,
+    ContactMeComponent,
   ],
   imports: [
     BrowserModule,
