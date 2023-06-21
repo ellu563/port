@@ -36,6 +36,9 @@ import { TopBarTodayComponent } from './top-bar-today/top-bar-today.component';
 import { ToDoComponent } from './to-do/to-do.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { ContactMeComponent } from './contact-me/contact-me.component';
+import { TicketsComponent } from './tickets/tickets.component';
+
+import { MatGridListModule } from '@angular/material/grid-list';
 
 
 @NgModule({
@@ -56,6 +59,7 @@ import { ContactMeComponent } from './contact-me/contact-me.component';
     ToDoComponent,
     PageNotFoundComponent,
     ContactMeComponent,
+    TicketsComponent,
   ],
   imports: [
     BrowserModule,
@@ -76,6 +80,7 @@ import { ContactMeComponent } from './contact-me/contact-me.component';
     ReactiveFormsModule,
     AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFirestoreModule,
+    MatGridListModule
   ],
   providers: [],
   bootstrap: [AppComponent]

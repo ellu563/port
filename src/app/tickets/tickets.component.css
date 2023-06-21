@@ -1,0 +1,22 @@
+.big-container {
+    margin: 20px;
+    padding: 30px;
+}
+
+mat-form-field {
+    display: block;
+}
+
+.plus,
+.minus {
+    padding: 45px;
+}
+
+.buyer {
+    width: 20%;
+}
+
+.basic {
+    display: inline;
+    width: 800px;
+}
