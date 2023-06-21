@@ -52,8 +52,8 @@
                         <div class="block-web-content">
                             <p><span [ngClass]="{'hidden': hoverWeb}" id="p-web">web</span></p>
                             <p><span [ngClass]="{'hidden': hoverWeb}" id="p-web">dev</span></p>
-                            <p><span [ngClass]="{'hidden': !hoverWeb}" id="p-web">go</span></p>
-                            <p><span [ngClass]="{'hidden': !hoverWeb}" id="p-web">in</span></p>
+                            <p><span [ngClass]="{'hidden': !hoverWeb}" id="p-web">step</span></p>
+                            <p><span [ngClass]="{'hidden': !hoverWeb}" id="p-web">inside</span></p>
                         </div>
                         <div class="block-web2"></div>
                     </a>
@@ -66,11 +66,11 @@
                     <a routerLink="/graphic-design" routerLinkActive="active">
                         <div class="block1">
                             <span *ngIf="!hover">graphic</span>
-                            <span *ngIf="hover">go</span>
+                            <span *ngIf="hover">learn</span>
                         </div>
                         <div class="block2">
                             <span *ngIf="!hover">design</span>
-                            <span *ngIf="hover">in</span>
+                            <span *ngIf="hover">more</span>
                         </div>
                     </a>
                 </button>
