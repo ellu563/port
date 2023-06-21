@@ -22,7 +22,7 @@
     bottom: 30px;
     right: 40px;
     vertical-align: center;
-    animation: blink 2s 10;
+    animation: blink 2s 5;
     animation-delay: 4s;
     /*4 sekunnin viive*/
 }
@@ -31,6 +31,10 @@
     filter: brightness(85%);
     animation: none;
     /*pysäytä animaatio, kun hiiri on kuvan päällä*/
+}
+
+.go-up img:active {
+    animation: none;
 }
 
 .go-up p {

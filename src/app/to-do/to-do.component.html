@@ -1,4 +1,4 @@
-<h1>to-do:</h1>
+<img id="today" src="assets/images/to-do.png" style="width:37%">
 <table style="width:100%">
     <tr *ngFor="let messs of mesList">
         <td [class.fade]="messs.payload.doc.data().completed">{{ messs.payload.doc.data().task }}</td>

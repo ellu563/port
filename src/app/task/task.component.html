@@ -1,9 +1,9 @@
-<h1>add tasks:</h1>
+<img id="today" src="assets/images/tasks.png" style="width:60%">
 
 <form [formGroup]="this.taskService.form" novalidate>
 
     <input placeholder="Write here" formControlName="task" type="text" class="formi">
 
-    <button class="button" (click)="onSubmit()">Add to your to-do list</button>
+    <button class="button" (click)="onSubmit()">Add to your list</button>
 
 </form>

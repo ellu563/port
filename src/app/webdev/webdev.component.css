@@ -274,7 +274,8 @@ a:hover #contact-p {
     margin-top: 20px;
     margin-bottom: 15px;
     padding: 50px;
-    background-color: #A480C0;
+    background-color: white;
+    /*today apin taustavari*/
     width: 65%;
     align-items: center;
     box-shadow: 9px 12px;
