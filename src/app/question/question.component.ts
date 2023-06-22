@@ -52,6 +52,24 @@ export class QuestionComponent implements OnInit {
         { teksti: 'Vaihtoehto C', kuvaUrl: 'assets/images/super.jpg' },
         { teksti: 'Vaihtoehto D', kuvaUrl: 'assets/images/super.jpg' }
       ]
+    },
+    {
+      kysymys: 'Kysymys 5',
+      vaihtoehdot: [
+        { teksti: 'Vaihtoehto A', kuvaUrl: 'assets/images/birtd-email.png' },
+        { teksti: 'Vaihtoehto B', kuvaUrl: 'assets/images/birtd-email.png' },
+        { teksti: 'Vaihtoehto C', kuvaUrl: 'assets/images/birtd-email.png' },
+        { teksti: 'Vaihtoehto D', kuvaUrl: 'assets/images/birtd-email.png' }
+      ]
+    },
+    {
+      kysymys: 'Kysymys 6',
+      vaihtoehdot: [
+        { teksti: 'Vaihtoehto A', kuvaUrl: 'assets/images/super.jpg' },
+        { teksti: 'Vaihtoehto B', kuvaUrl: 'assets/images/super.jpg' },
+        { teksti: 'Vaihtoehto C', kuvaUrl: 'assets/images/super.jpg' },
+        { teksti: 'Vaihtoehto D', kuvaUrl: 'assets/images/super.jpg' }
+      ]
     }
   ];
 

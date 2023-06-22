@@ -1,5 +1,5 @@
 .kysely-container {
-    max-width: 600px;
+    max-width: 700px;
     margin: 0 auto;
     padding: 20px;
 }
@@ -9,10 +9,9 @@
 }
 
 .aloitus-laatikko {
-    border: 3px dotted black;
-    background-color: #DEA615;
+    background-color: #4682B4;
     border-radius: 20px;
-    padding: 20px;
+    padding: 0px;
     height: 500px;
     width: 500px;
     text-align: center;
@@ -25,15 +24,14 @@
 }
 
 .aloitus-kuva {
-    max-width: 200px;
+    max-width: 500px;
     height: auto;
     margin-bottom: 20px;
 }
 
 .kysymys-laatikko,
 .tulos-laatikko {
-    border: 3px dotted black;
-    background-color: #DEA615;
+    background-color: #4682B4;
     border-radius: 20px;
     padding: 20px;
     height: 500px;
@@ -72,4 +70,13 @@
     transform: scale(0.9);
     opacity: 0.8;
     filter: grayscale(50%);
+}
+
+.aloita-button {
+    background-color: #f2f2f2;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
 }

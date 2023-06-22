@@ -1,17 +1,17 @@
 <div *ngIf="!kyselyAloitettu" class="kysely-container">
     <div class="aloitus-sivu">
         <div class="aloitus-laatikko">
-            <h2>Tervetuloa kyselyyn!</h2>
-            <img src="assets/images/github.png" width="100px" alt="Kuva" class="aloitus-kuva">
-            <button (click)="aloitaKysely()">Aloita</button>
+            <h2>Mikä hahmo oisit The Wire sarjasta?</h2>
+            <img src="assets/images/wire.jpg" alt="Kuva" class="aloitus-kuva">
+            <button (click)="aloitaKysely()" class="aloita-button">Aloita</button>
         </div>
     </div>
 </div>
 
 <div *ngIf="!tulos && kyselyAloitettu" class="kysely-container">
-    <!--<div *ngIf="nykyinenKysymysIndeksi > 0">
+    <div *ngIf="nykyinenKysymysIndeksi > 0">
         <button (click)="siirryEdelliseenKysymykseen()">Edellinen</button>
-    </div>-->
+    </div>
     <div class="kysymys-laatikko">
         <h2>{{ kysymykset[nykyinenKysymysIndeksi].kysymys }}</h2>
         <div class="vastaus-vaihtoehdot">
@@ -23,11 +23,11 @@
             </div>
         </div>
     </div>
-    <!--<div class="navigointi">
+    <div class="navigointi">
         <div *ngIf="nykyinenKysymysIndeksi < kysymykset.length - 1">
             <button (click)="siirrySeuraavaanKysymykseen()">Seuraava</button>
         </div>
-    </div>-->
+    </div>
 </div>
 
 <div *ngIf="tulos" class="kysely-container">
