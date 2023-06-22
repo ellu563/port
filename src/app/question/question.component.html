@@ -1,4 +1,17 @@
-<div *ngIf="!tulos" class="kysely-container">
+<div *ngIf="!kyselyAloitettu" class="kysely-container">
+    <div class="aloitus-sivu">
+        <div class="aloitus-laatikko">
+            <h2>Tervetuloa kyselyyn!</h2>
+            <img src="assets/images/github.png" width="100px" alt="Kuva" class="aloitus-kuva">
+            <button (click)="aloitaKysely()">Aloita</button>
+        </div>
+    </div>
+</div>
+
+<div *ngIf="!tulos && kyselyAloitettu" class="kysely-container">
+    <div *ngIf="nykyinenKysymysIndeksi > 0">
+        <button (click)="siirryEdelliseenKysymykseen()">Edellinen</button>
+    </div>
     <div class="kysymys-laatikko">
         <h2>{{ kysymykset[nykyinenKysymysIndeksi].kysymys }}</h2>
         <div class="vastaus-vaihtoehdot">
@@ -11,9 +24,9 @@
         </div>
     </div>
     <div class="navigointi">
-        <button *ngIf="nykyinenKysymysIndeksi > 0" (click)="siirryEdelliseenKysymykseen()">&lt;</button>
-        <button *ngIf="nykyinenKysymysIndeksi < kysymykset.length - 1"
-            (click)="siirrySeuraavaanKysymykseen()">&gt;</button>
+        <div *ngIf="nykyinenKysymysIndeksi < kysymykset.length - 1">
+            <button (click)="siirrySeuraavaanKysymykseen()">Seuraava</button>
+        </div>
     </div>
 </div>
 
@@ -21,6 +34,6 @@
     <div class="tulos-laatikko">
         <h2>Tulos:</h2>
         <p>{{ tulos }}</p>
-        <button (click)="nollaaTulos()">Tee testi uudelleen</button>
+        <button (click)="nollaaTulos()">Aloita testi uudelleen</button>
     </div>
 </div>

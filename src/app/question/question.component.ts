@@ -35,12 +35,21 @@ export class QuestionComponent implements OnInit {
         { teksti: 'Vaihtoehto D', kuvaUrl: 'assets/images/ts.png' }
       ]
     },
-    // Lisää muut kysymykset tarpeen mukaan
+    {
+      kysymys: 'Kysymys 3',
+      vaihtoehdot: [
+        { teksti: 'Vaihtoehto A', kuvaUrl: 'assets/images/pekkull.jpg' },
+        { teksti: 'Vaihtoehto B', kuvaUrl: 'assets/images/pekkull.jpg' },
+        { teksti: 'Vaihtoehto C', kuvaUrl: 'assets/images/pekkull.jpg' },
+        { teksti: 'Vaihtoehto D', kuvaUrl: 'assets/images/pekkull.jpg' }
+      ]
+    }
   ];
 
   nykyinenKysymysIndeksi = 0;
   vastaukset: string[] = [];
   tulos: string | null = null;
+  kyselyAloitettu = false;
 
   ngOnInit(): void {
   }
@@ -70,6 +79,10 @@ export class QuestionComponent implements OnInit {
     this.vastaukset = [];
     this.tulos = null;
     this.nykyinenKysymysIndeksi = 0;
+    this.kyselyAloitettu = false;
   }
 
+  aloitaKysely() {
+    this.kyselyAloitettu = true;
+  }
 }
