@@ -18,7 +18,7 @@ interface Kysymys {
 export class QuestionComponent implements OnInit {
   kysymykset: Kysymys[] = [
     {
-      kysymys: 'Kysymys 1',
+      kysymys: 'blabla',
       vaihtoehdot: [
         { teksti: 'Vaihtoehto 1', kuvaUrl: 'assets/images/ang.png' },
         { teksti: 'Vaihtoehto 2', kuvaUrl: 'assets/images/ang.png' },
@@ -27,16 +27,16 @@ export class QuestionComponent implements OnInit {
       ]
     },
     {
-      kysymys: 'Kysymys 2',
+      kysymys: 'Joku yrittää ryöstää sinut kadulla, mitä teet?',
       vaihtoehdot: [
-        { teksti: 'Vaihtoehto A', kuvaUrl: 'assets/images/ts.png' },
-        { teksti: 'Vaihtoehto B', kuvaUrl: 'assets/images/ts.png' },
-        { teksti: 'Vaihtoehto C', kuvaUrl: 'assets/images/ts.png' },
-        { teksti: 'Vaihtoehto D', kuvaUrl: 'assets/images/ts.png' }
+        { teksti: 'Soitat poliisille.', kuvaUrl: 'assets/images/ts.png' },
+        { teksti: 'Soitat kaverit apuun.', kuvaUrl: 'assets/images/ts.png' },
+        { teksti: 'Ryöstät itse ryöstäjän.', kuvaUrl: 'assets/images/ts.png' },
+        { teksti: 'Yrität juosta karkuun.', kuvaUrl: 'assets/images/ts.png' }
       ]
     },
     {
-      kysymys: 'Kysymys 3',
+      kysymys: 'Muut ihmiset ovat mielestäsi...',
       vaihtoehdot: [
         { teksti: 'Vaihtoehto A', kuvaUrl: 'assets/images/pekkull.jpg' },
         { teksti: 'Vaihtoehto B', kuvaUrl: 'assets/images/pekkull.jpg' },
