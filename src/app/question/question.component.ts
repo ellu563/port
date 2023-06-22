@@ -35,7 +35,7 @@ export class QuestionComponent implements OnInit {
         { teksti: 'Vaihtoehto D', kuvaUrl: 'assets/images/ts.png' }
       ]
     },
-    // jos tarvitsee lisää kysymyksiä
+    // Lisää muut kysymykset tarpeen mukaan
   ];
 
   nykyinenKysymysIndeksi = 0;

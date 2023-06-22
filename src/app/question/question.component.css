@@ -4,9 +4,12 @@
     padding: 20px;
 }
 
-.kysymys-laatikko,
-.tulos-laatikko {
-    border: 3px solid #ccc;
+.aloitus-sivu {
+    text-align: center;
+}
+
+.aloitus-laatikko {
+    border: 3px dotted black;
     background-color: #DEA615;
     border-radius: 20px;
     padding: 20px;
@@ -14,7 +17,29 @@
     width: 500px;
     text-align: center;
     overflow: auto;
-    /*vierityspalkki, jos sisältö ylittää laatikon koon */
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.aloitus-kuva {
+    max-width: 200px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.kysymys-laatikko,
+.tulos-laatikko {
+    border: 3px dotted black;
+    background-color: #DEA615;
+    border-radius: 20px;
+    padding: 20px;
+    height: 500px;
+    width: 500px;
+    text-align: center;
+    overflow: auto;
 }
 
 .vastaus-vaihtoehdot {
