@@ -7,6 +7,7 @@ import { GameComponent } from './game/game.component';
 import { CarouselComponent } from './carousel/carousel.component';
 import { GraphicCarouselComponent } from './graphic-carousel/graphic-carousel.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { QuestionComponent } from './question/question.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'welcome', pathMatch: 'full' },
@@ -16,6 +17,7 @@ const routes: Routes = [
   { path: 'game', component: GameComponent },
   { path: 'carousel', component: CarouselComponent },
   { path: 'graphic-carousel', component: GraphicCarouselComponent },
+  { path: 'questions', component: QuestionComponent },
   // 404-virhereitti
   { path: '**', component: PageNotFoundComponent, pathMatch: 'full' }
 ];

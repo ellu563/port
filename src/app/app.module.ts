@@ -39,6 +39,7 @@ import { ContactMeComponent } from './contact-me/contact-me.component';
 import { TicketsComponent } from './tickets/tickets.component';
 
 import { MatGridListModule } from '@angular/material/grid-list';
+import { QuestionComponent } from './question/question.component';
 
 
 @NgModule({
@@ -60,6 +61,7 @@ import { MatGridListModule } from '@angular/material/grid-list';
     PageNotFoundComponent,
     ContactMeComponent,
     TicketsComponent,
+    QuestionComponent,
   ],
   imports: [
     BrowserModule,

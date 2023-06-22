@@ -1,0 +1,26 @@
+<div *ngIf="!tulos" class="kysely-container">
+    <div class="kysymys-laatikko">
+        <h2>{{ kysymykset[nykyinenKysymysIndeksi].kysymys }}</h2>
+        <div class="vastaus-vaihtoehdot">
+            <div *ngFor="let vaihtoehto of kysymykset[nykyinenKysymysIndeksi].vaihtoehdot; let i = index"
+                class="vastaus-vaihtoehto">
+                <img [src]="vaihtoehto.kuvaUrl" alt="Vaihtoehto {{ i + 1 }}"
+                    (click)="tallennaVastaus(vaihtoehto.teksti)" id="q-img" />
+                <p>{{ vaihtoehto.teksti }}</p>
+            </div>
+        </div>
+    </div>
+    <div class="navigointi">
+        <button *ngIf="nykyinenKysymysIndeksi > 0" (click)="siirryEdelliseenKysymykseen()">&lt;</button>
+        <button *ngIf="nykyinenKysymysIndeksi < kysymykset.length - 1"
+            (click)="siirrySeuraavaanKysymykseen()">&gt;</button>
+    </div>
+</div>
+
+<div *ngIf="tulos" class="kysely-container">
+    <div class="tulos-laatikko">
+        <h2>Tulos:</h2>
+        <p>{{ tulos }}</p>
+        <button (click)="nollaaTulos()">Tee testi uudelleen</button>
+    </div>
+</div>

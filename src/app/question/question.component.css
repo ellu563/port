@@ -1,0 +1,50 @@
+.kysely-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.kysymys-laatikko,
+.tulos-laatikko {
+    border: 3px solid #ccc;
+    background-color: #DEA615;
+    border-radius: 20px;
+    padding: 20px;
+    height: 500px;
+    width: 500px;
+    text-align: center;
+    overflow: auto;
+    /*vierityspalkki, jos sisältö ylittää laatikon koon */
+}
+
+.vastaus-vaihtoehdot {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.vastaus-vaihtoehto {
+    text-align: center;
+}
+
+.vastaus-vaihtoehto img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+#q-img {
+    width: 100px;
+    height: 100px;
+}
+
+#q-img:hover {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+}
+
+#q-img:active {
+    transform: scale(0.9);
+    opacity: 0.8;
+    filter: grayscale(50%);
+}
