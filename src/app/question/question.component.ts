@@ -18,12 +18,12 @@ interface Kysymys {
 export class QuestionComponent implements OnInit {
   kysymykset: Kysymys[] = [
     {
-      kysymys: 'blabla',
+      kysymys: 'Uutislähetyksessä kerrotaan kulmakioskin ryöstöstä, oletko sinä...',
       vaihtoehdot: [
-        { teksti: 'Vaihtoehto 1', kuvaUrl: 'assets/images/ang.png' },
-        { teksti: 'Vaihtoehto 2', kuvaUrl: 'assets/images/ang.png' },
-        { teksti: 'Vaihtoehto 3', kuvaUrl: 'assets/images/ang.png' },
-        { teksti: 'Vaihtoehto 4', kuvaUrl: 'assets/images/ang.png' }
+        { teksti: 'Yrittämässä saada varasta kiinni.', kuvaUrl: 'assets/images/ang.png' },
+        { teksti: 'Ohikulkumatkalla ja jäät katsomaan tapahtumia.', kuvaUrl: 'assets/images/ang.png' },
+        { teksti: 'Sinulla saattoi ehkä olla jotain tekemistä asian kanssa.', kuvaUrl: 'assets/images/ang.png' },
+        { teksti: 'Olit ryöstäjä.', kuvaUrl: 'assets/images/ang.png' }
       ]
     },
     {
@@ -38,37 +38,37 @@ export class QuestionComponent implements OnInit {
     {
       kysymys: 'Muut ihmiset ovat mielestäsi...',
       vaihtoehdot: [
-        { teksti: 'Vaihtoehto A', kuvaUrl: 'assets/images/pekkull.jpg' },
-        { teksti: 'Vaihtoehto B', kuvaUrl: 'assets/images/pekkull.jpg' },
-        { teksti: 'Vaihtoehto C', kuvaUrl: 'assets/images/pekkull.jpg' },
-        { teksti: 'Vaihtoehto D', kuvaUrl: 'assets/images/pekkull.jpg' }
+        { teksti: 'Yleensä mukavia ja ystävällisiä.', kuvaUrl: 'assets/images/pekkull.jpg' },
+        { teksti: 'Riippuu aina henkilöstä.', kuvaUrl: 'assets/images/pekkull.jpg' },
+        { teksti: 'Useimmiten töykeitä.', kuvaUrl: 'assets/images/pekkull.jpg' },
+        { teksti: 'Et voi sietää heitä.', kuvaUrl: 'assets/images/pekkull.jpg' }
       ]
     },
     {
-      kysymys: 'Kysymys 4',
+      kysymys: 'Uusi asukas muuttaa naapurustoosi ja käyttäytyy ylimielisesti sinua kohtaan, sinä...',
       vaihtoehdot: [
-        { teksti: 'Vaihtoehto A', kuvaUrl: 'assets/images/super.jpg' },
-        { teksti: 'Vaihtoehto B', kuvaUrl: 'assets/images/super.jpg' },
-        { teksti: 'Vaihtoehto C', kuvaUrl: 'assets/images/super.jpg' },
-        { teksti: 'Vaihtoehto D', kuvaUrl: 'assets/images/super.jpg' }
+        { teksti: 'Yrität olla isompi ihminen ja unohtaa asian.', kuvaUrl: 'assets/images/super.jpg' },
+        { teksti: 'Pyydät naapuria olemaan hieman kohteliaampi.', kuvaUrl: 'assets/images/super.jpg' },
+        { teksti: 'Varoitat naapuria tylystä käytöksestä.', kuvaUrl: 'assets/images/super.jpg' },
+        { teksti: 'Näytät uudelle naapurille oman paikkansa.', kuvaUrl: 'assets/images/super.jpg' }
       ]
     },
     {
-      kysymys: 'Kysymys 5',
+      kysymys: 'Olet varastanut käynnissä olevan auton, mikä näistä kuvaa sinua parhaiten...',
       vaihtoehdot: [
-        { teksti: 'Vaihtoehto A', kuvaUrl: 'assets/images/birtd-email.png' },
-        { teksti: 'Vaihtoehto B', kuvaUrl: 'assets/images/birtd-email.png' },
-        { teksti: 'Vaihtoehto C', kuvaUrl: 'assets/images/birtd-email.png' },
-        { teksti: 'Vaihtoehto D', kuvaUrl: 'assets/images/birtd-email.png' }
+        { teksti: 'Kaverisi yllyttänyt sinut siihen.', kuvaUrl: 'assets/images/birtd-email.png' },
+        { teksti: 'Sinun on saatava rahaa auton myynnistä.', kuvaUrl: 'assets/images/birtd-email.png' },
+        { teksti: 'Et normaalisti varastaisi autoa, mutta sinulla on käynnissä hätätilanne joka vaatii sitä.', kuvaUrl: 'assets/images/birtd-email.png' },
+        { teksti: 'Auto on luultavasti jonkun rikkaan kuka ei kaipaa sitä, joten näit tilaisuutesi tulleen.', kuvaUrl: 'assets/images/birtd-email.png' }
       ]
     },
     {
-      kysymys: 'Kysymys 6',
+      kysymys: 'Sinun on valvottava syyn X takia koko yö, sinä...',
       vaihtoehdot: [
-        { teksti: 'Vaihtoehto A', kuvaUrl: 'assets/images/super.jpg' },
-        { teksti: 'Vaihtoehto B', kuvaUrl: 'assets/images/super.jpg' },
-        { teksti: 'Vaihtoehto C', kuvaUrl: 'assets/images/super.jpg' },
-        { teksti: 'Vaihtoehto D', kuvaUrl: 'assets/images/super.jpg' }
+        { teksti: 'Juot kahvia ja yrität pysyä hereillä.', kuvaUrl: 'assets/images/super.jpg' },
+        { teksti: 'Saatat torkahtaa välillä, mutta saat valvottua melkein koko yön.', kuvaUrl: 'assets/images/super.jpg' },
+        { teksti: 'Lepuutat silmiäsi puolet yöstä.', kuvaUrl: 'assets/images/super.jpg' },
+        { teksti: 'Nukahdat vahingossa koko yöksi.', kuvaUrl: 'assets/images/super.jpg' }
       ]
     }
   ];
