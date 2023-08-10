@@ -16,6 +16,14 @@ interface Kysymys {
   styleUrls: ['./question.component.css']
 })
 export class QuestionComponent implements OnInit {
+
+  hahmoVastaukset = {
+    jimmy: 0,
+    omar: 0,
+    avon: 0,
+    bubbles: 0
+  };
+
   kysymykset: Kysymys[] = [
     {
       kysymys: 'Uutislähetyksessä kerrotaan kulmakioskin ryöstöstä, oletko sinä...',
@@ -87,6 +95,76 @@ export class QuestionComponent implements OnInit {
       this.nykyinenKysymysIndeksi++;
     } else {
       this.tulos = 'Tähän tulee tulos';
+    }
+
+
+    // uutta 
+    const nykyinenKysymys = this.kysymykset[this.nykyinenKysymysIndeksi];
+
+    for (const vaihtoehto of nykyinenKysymys.vaihtoehdot) {
+      if (vaihtoehto.teksti === vastaus) {
+        if (nykyinenKysymys.kysymys.includes('kulmakioskin ryöstöstä')) {
+          if (vaihtoehto.teksti === 'Yrittämässä saada varasta kiinni.') {
+            this.hahmoVastaukset.jimmy++;
+          } else if (vaihtoehto.teksti === 'Ohikulkumatkalla ja jäät katsomaan tapahtumia.') {
+            this.hahmoVastaukset.bubbles++;
+          } else if (vaihtoehto.teksti === 'Sinulla saattoi ehkä olla jotain tekemistä asian kanssa.') {
+            this.hahmoVastaukset.avon++;
+          } else if (vaihtoehto.teksti === 'Olit ryöstäjä.') {
+            this.hahmoVastaukset.omar++;
+          }
+        } else if (nykyinenKysymys.kysymys.includes('Joku yrittää ryöstää sinut kadulla')) {
+          if (vaihtoehto.teksti === 'Soitat poliisille.') {
+            this.hahmoVastaukset.jimmy++;
+          } else if (vaihtoehto.teksti === 'Soitat kaverit apuun.') {
+            this.hahmoVastaukset.avon++;
+          } else if (vaihtoehto.teksti === 'Ryöstät itse ryöstäjän.') {
+            this.hahmoVastaukset.omar++;
+          } else if (vaihtoehto.teksti === 'Yrität juosta karkuun.') {
+            this.hahmoVastaukset.bubbles++;
+          }
+        } else if (nykyinenKysymys.kysymys.includes('Muut ihmiset ovat mielestäsi...')) {
+          if (vaihtoehto.teksti === 'Yleensä mukavia ja ystävällisiä.') {
+            this.hahmoVastaukset.jimmy++;
+          } else if (vaihtoehto.teksti === 'Riippuu aina henkilöstä.') {
+            this.hahmoVastaukset.bubbles++;
+          } else if (vaihtoehto.teksti === 'Useimmiten töykeitä.') {
+            this.hahmoVastaukset.avon++;
+          } else if (vaihtoehto.teksti === 'Et voi sietää heitä.') {
+            this.hahmoVastaukset.omar++;
+          }
+        } else if (nykyinenKysymys.kysymys.includes('Uusi asukas muuttaa naapurustoosi')) {
+          if (vaihtoehto.teksti === 'Yrität olla isompi ihminen ja unohtaa asian.') {
+            this.hahmoVastaukset.bubbles++;
+          } else if (vaihtoehto.teksti === 'Pyydät naapuria olemaan hieman kohteliaampi.') {
+            this.hahmoVastaukset.jimmy++;
+          } else if (vaihtoehto.teksti === 'Varoitat naapuria tylystä käytöksestä.') {
+            this.hahmoVastaukset.omar++;
+          } else if (vaihtoehto.teksti === 'Näytät uudelle naapurille oman paikkansa.') {
+            this.hahmoVastaukset.avon++;
+          }
+        } else if (nykyinenKysymys.kysymys.includes('Olet varastanut käynnissä olevan auton')) {
+          if (vaihtoehto.teksti === 'Kaverisi yllyttänyt sinut siihen.') {
+            this.hahmoVastaukset.bubbles++;
+          } else if (vaihtoehto.teksti === 'Sinun on saatava rahaa auton myynnistä.') {
+            this.hahmoVastaukset.avon++;
+          } else if (vaihtoehto.teksti === 'Et normaalisti varastaisi autoa, mutta sinulla on käynnissä hätätilanne joka vaatii sitä.') {
+            this.hahmoVastaukset.jimmy++;
+          } else if (vaihtoehto.teksti === 'Auto on luultavasti jonkun rikkaan kuka ei kaipaa sitä, joten näit tilaisuutesi tulleen.') {
+            this.hahmoVastaukset.omar++;
+          }
+        } else if (nykyinenKysymys.kysymys.includes('Sinun on valvottava syyn X takia koko yö')) {
+          if (vaihtoehto.teksti === 'Juot kahvia ja yrität pysyä hereillä.') {
+            this.hahmoVastaukset.avon++;
+          } else if (vaihtoehto.teksti === 'Saatat torkahtaa välillä, mutta saat valvottua melkein koko yön.') {
+            this.hahmoVastaukset.jimmy++;
+          } else if (vaihtoehto.teksti === 'Lepuutat silmiäsi puolet yöstä.') {
+            this.hahmoVastaukset.omar++;
+          } else if (vaihtoehto.teksti === 'Nukahdat vahingossa koko yöksi.') {
+            this.hahmoVastaukset.bubbles++;
+          }
+        }
+      }
     }
   }
 
