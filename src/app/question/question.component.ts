@@ -161,7 +161,7 @@ export class QuestionComponent implements OnInit {
           }
         }
       }
-      // siirrytään seuraavaan vasta tässä vaiheessa?
+      // siirrytään seuraavaan vasta tässä vaiheessa
       this.nykyinenKysymysIndeksi++;
     } else {
       // kuka saa eniten pisteitä
