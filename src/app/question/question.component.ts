@@ -161,6 +161,7 @@ export class QuestionComponent implements OnInit {
           }
         }
       }
+      // siirrytään seuraavaan vasta tässä vaiheessa?
       this.nykyinenKysymysIndeksi++;
     } else {
       // kuka saa eniten pisteitä
@@ -172,13 +173,13 @@ export class QuestionComponent implements OnInit {
       );
 
       if (enitenPisteita === this.hahmoVastaukset.jimmy) {
-        this.tulos = 'Olet Jimmy McNulty.';
+        this.tulos = 'Olet Jimmy McNulty - lannistumaton ja kompromissiton. Omaat vahvan omistautumisen ja halun paljastaa totuus, vaikka se tarkoittaisi ristiriitoja vallitsevan järjestelmän kanssa. Älykkyytesi ja intohimosi voivat toisinaan johdattaa sinut vaikeisiin tilanteisiin, mutta et pelkää haastaa epäkohtia.';
       } else if (enitenPisteita === this.hahmoVastaukset.omar) {
-        this.tulos = 'Olet Omat Little.';
+        this.tulos = 'Olet Omar Little - rohkea ja mystinen. Sinulla on vahva oikeudentunto ja kunnioitat omia sääntöjäsi. Pelkäämättömyytesi ja älykkyytesi tekevät sinusta arvaamattoman ja kunnioitetun hahmon. Sinulla on moraalisia periaatteita ja kykyä toimia omalla tavallasi.';
       } else if (enitenPisteita === this.hahmoVastaukset.avon) {
-        this.tulos = 'Olet Avon Barksdale.';
+        this.tulos = 'Olet Avon Barksdale - karismaattinen ja määrätietoinen. Sinulla on kyky johtaa ja viedä asioita eteenpäin tiukalla kurilla. Vaikka toimit omalla tavallasi, sinulla on oma moraalikoodisi. Valta ja strategia ohjaavat toimintaasi, ja sinua kunnioitetaan johtajana.';
       } else if (enitenPisteita === this.hahmoVastaukset.bubbles) {
-        this.tulos = 'Olet Bubbles.';
+        this.tulos = 'Olet Bubbles - sydämellinen ja selviytyjä. Kamppailet vaikeuksien kanssa, mutta säilytät toiveikkuuden ja halun parantua. Olet herkkä ja auttavainen, ja ihmiset pitävät sinusta lämpimän luonteesi takia. Tarinasi kertoo toivosta ja taistelusta vaikeiden olosuhteiden keskellä.';
       }
     }
 
@@ -205,6 +206,8 @@ export class QuestionComponent implements OnInit {
   }
 
   aloitaKysely() {
-    this.kyselyAloitettu = true;
+    if (!this.kyselyAloitettu) {
+      this.kyselyAloitettu = true;
+    }
   }
 }
