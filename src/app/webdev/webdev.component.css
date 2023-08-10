@@ -96,7 +96,7 @@ mat-icon {
 .item2 {
     grid-area: about;
     background-color: #EF8F5A;
-    padding: 60px;
+    padding: 20px;
     padding-bottom: 0;
     position: relative;
 }
