@@ -4,6 +4,17 @@
     font-size: 25px;
 }
 
+.bottomnav {
+
+    background-image: ('assets/images/tausta.png');
+    background-size: cover;
+    /* Kuva venytetään/kutistetaan tarvittaessa elementin kokoiseksi */
+    background-position: center;
+    /* Kuva sijoitetaan keskelle elementtiä */
+    background-repeat: no-repeat;
+    /* Kuva ei toistu */
+}
+
 a:hover #contact-p {
     color: #DEA615;
 }

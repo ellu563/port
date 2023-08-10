@@ -17,7 +17,7 @@ body {
 }
 
 .topnav #yellow:hover {
-    background-color: #DEA615;
+    background-color: #ff9d43;
     color: black;
     border-radius: 10px;
     padding: 15px;
@@ -47,7 +47,7 @@ body {
 }
 
 #upside:hover {
-    color: #DEA615;
+    color: #ff9d43;
 }
 
 /*teksti oikeinpain nav*/
@@ -57,7 +57,7 @@ body {
 }
 
 #normal:hover {
-    color: #DEA615;
+    color: #ff9d43;
 }
 
 /*top nav area*/
@@ -65,14 +65,19 @@ body {
     grid-area: header0;
     background-color: #B8406B;
     padding: 40px;
+    background-image: url('/assets/images/logo1.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: block;
 }
 
 /*Name heading area*/
 .item1 {
     grid-area: header;
-    background-color: #B8406B;
-    padding: 90px;
-    padding-bottom: 32px;
+    /*background-color: #B8406B;*/
+    padding: 120px;
+    padding-bottom: 120px;
     position: relative;
 }
 
@@ -112,7 +117,7 @@ body {
 /*about me 1*/
 .item2 {
     grid-area: about;
-    background-color: #DEA615;
+    background-color: #9C244F;
     padding: 30px;
 }
 
@@ -187,14 +192,14 @@ a:hover .block-web2 {
 /*about me 2*/
 .item3 {
     grid-area: aboutme;
-    background-color: #A480C0;
+    background-color: #d34a7c;
     padding: 30px;
 }
 
 /*projects*/
 .item4 {
     grid-area: projects;
-    background-color: #EF8F5A;
+    background-color: #ff9d43;
     padding: 90px;
     font-size: 22px;
 }
@@ -215,7 +220,7 @@ h1 {
 /*footer*/
 .item5 {
     grid-area: footer;
-    background-color: #B8406B;
+    background-color: #d34a7c;
     padding: 20px;
 }
 

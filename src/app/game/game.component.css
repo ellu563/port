@@ -63,8 +63,22 @@ body {
 /*top nav area*/
 .item0 {
     grid-area: header0;
-    background-color: #fbbebf;
+    background-color: #B8406B;
     padding: 40px;
+    background-image: url('/assets/images/vih-05.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: block;
+}
+
+/*Name heading area*/
+.item1 {
+    grid-area: header;
+    /*background-color: #B8406B;*/
+    padding: 120px;
+    padding-bottom: 120px;
+    position: relative;
 }
 
 .bottomnav {
@@ -72,14 +86,6 @@ body {
     text-align: center;
 }
 
-/*Name heading area*/
-.item1 {
-    grid-area: header;
-    background-color: #fbbebf;
-    padding: 90px;
-    padding-bottom: 32px;
-    position: relative;
-}
 
 /*Item1 - Otsikko*/
 #heading {

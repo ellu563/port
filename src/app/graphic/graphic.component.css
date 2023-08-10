@@ -65,20 +65,25 @@ body {
     grid-area: header0;
     background-color: #B8406B;
     padding: 40px;
-}
-
-.bottomnav {
-    font-size: 25px;
-    text-align: center;
+    background-image: url('/assets/images/logo1.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: block;
 }
 
 /*Name heading area*/
 .item1 {
     grid-area: header;
-    background-color: #B8406B;
-    padding: 90px;
-    padding-bottom: 32px;
+    /*background-color: #B8406B;*/
+    padding: 120px;
+    padding-bottom: 120px;
     position: relative;
+}
+
+.bottomnav {
+    font-size: 25px;
+    text-align: center;
 }
 
 /*Item1 - Otsikko*/
