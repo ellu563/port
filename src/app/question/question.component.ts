@@ -28,7 +28,7 @@ export class QuestionComponent implements OnInit {
   kysymykset: Kysymys[] = [
     {
       kysymys: 'Uutislähetyksessä kerrotaan kulmakioskin ryöstöstä, oletko sinä...',
-      kysymysKuvaUrl: 'assets/images/wire1.jpg',
+      kysymysKuvaUrl: 'assets/images/thewire1.jpg',
       vaihtoehdot: [
         { teksti: 'Yrittämässä saada varasta kiinni.', kuvaUrl: 'assets/images/ang.png' },
         { teksti: 'Ohikulkumatkalla ja jäät katsomaan tapahtumia.', kuvaUrl: 'assets/images/ang.png' },
