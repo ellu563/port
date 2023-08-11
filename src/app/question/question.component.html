@@ -34,10 +34,12 @@
     <div class="tulos-laatikko">
         <h2>Tuloksesi:</h2>
         <p>{{ tulos }}</p>
-        <img *ngIf="tulos.includes('Jimmy McNulty')" src="assets/images/jimmy1.jpg" width="80%" alt="Jimmy McNulty">
-        <img *ngIf="tulos.includes('Omar Little')" src="assets/images/omar.jpg" width="80%" alt="Omar Little">
-        <img *ngIf="tulos.includes('Avon Barksdale')" src="assets/images/avon.jpg" width="80%" alt="Avon Barksdale">
-        <img *ngIf="tulos.includes('Bubbles')" src="assets/images/bubbles.jpg" width="80%" alt="Bubbles">
+        <img class="answer-img" *ngIf="tulos.includes('Jimmy McNulty')" src="assets/images/jimmy1.jpg"
+            alt="Jimmy McNulty">
+        <img class="answer-img" *ngIf="tulos.includes('Omar Little')" src="assets/images/omar.jpg" alt="Omar Little">
+        <img class="answer-img" *ngIf="tulos.includes('Avon Barksdale')" src="assets/images/avon.jpg"
+            alt="Avon Barksdale">
+        <img class="answer-img" *ngIf="tulos.includes('Bubbles')" src="assets/images/bubbles.jpg" alt="Bubbles">
         <button (click)="nollaaTulos()" class="nollaa-button">Aloita testi uudelleen</button>
     </div>
 </div>
