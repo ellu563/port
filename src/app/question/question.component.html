@@ -9,9 +9,9 @@
 </div>
 
 <div *ngIf="!tulos && kyselyAloitettu" class="kysely-container">
-    <div *ngIf="nykyinenKysymysIndeksi > 0">
+    <!--<div *ngIf="nykyinenKysymysIndeksi > 0">
         <button (click)="siirryEdelliseenKysymykseen()">Edellinen</button>
-    </div>
+    </div>-->
     <div class="kysymys-laatikko">
         <img [src]="kysymykset[nykyinenKysymysIndeksi].kysymysKuvaUrl" alt="Kysymys Kuva" class="kysymys-kuva">
         <h2>{{ kysymykset[nykyinenKysymysIndeksi].kysymys }}</h2>
@@ -22,11 +22,12 @@
             </div>
         </div>
     </div>
+    <!--
     <div class="navigointi">
         <div *ngIf="nykyinenKysymysIndeksi < kysymykset.length - 1">
             <button (click)="siirrySeuraavaanKysymykseen()">Seuraava</button>
         </div>
-    </div>
+    </div>-->
 </div>
 
 <div *ngIf="tulos" class="kysely-container">
@@ -37,6 +38,6 @@
         <img *ngIf="tulos.includes('Omar Little')" src="assets/images/omar.jpg" width="80%" alt="Omar Little">
         <img *ngIf="tulos.includes('Avon Barksdale')" src="assets/images/avon.jpg" width="80%" alt="Avon Barksdale">
         <img *ngIf="tulos.includes('Bubbles')" src="assets/images/bubbles.jpg" width="80%" alt="Bubbles">
-        <button (click)="nollaaTulos()">Aloita testi uudelleen</button>
+        <button (click)="nollaaTulos()" class="nollaa-button">Aloita testi uudelleen</button>
     </div>
 </div>
