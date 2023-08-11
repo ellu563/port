@@ -1,7 +1,7 @@
 <div *ngIf="!kyselyAloitettu" class="kysely-container">
     <div class="aloitus-sivu">
         <div class="aloitus-laatikko">
-            <h2>Mikä hahmo oisit The Wire sarjasta?</h2>
+            <h2>Mikä hahmo olisit The Wire sarjasta?</h2>
             <img src="assets/images/wire.jpg" alt="Kuva" class="aloitus-kuva">
             <button (click)="aloitaKysely()" class="aloita-button">Aloita</button>
         </div>
@@ -13,12 +13,11 @@
         <button (click)="siirryEdelliseenKysymykseen()">Edellinen</button>
     </div>
     <div class="kysymys-laatikko">
+        <img [src]="kysymykset[nykyinenKysymysIndeksi].kysymysKuvaUrl" alt="Kysymys Kuva" class="kysymys-kuva">
         <h2>{{ kysymykset[nykyinenKysymysIndeksi].kysymys }}</h2>
         <div class="vastaus-vaihtoehdot">
             <div *ngFor="let vaihtoehto of kysymykset[nykyinenKysymysIndeksi].vaihtoehdot; let i = index"
-                class="vastaus-vaihtoehto">
-                <img [src]="vaihtoehto.kuvaUrl" alt="Vaihtoehto {{ i + 1 }}"
-                    (click)="tallennaVastaus(vaihtoehto.teksti)" id="q-img" />
+                class="vastaus-vaihtoehto" (click)="tallennaVastaus(vaihtoehto.teksti)">
                 <p>{{ vaihtoehto.teksti }}</p>
             </div>
         </div>

@@ -7,6 +7,7 @@ interface VastausVaihtoehto {
 
 interface Kysymys {
   kysymys: string;
+  kysymysKuvaUrl: string; // Lisätty kysymyskuva URL
   vaihtoehdot: VastausVaihtoehto[];
 }
 
@@ -27,6 +28,7 @@ export class QuestionComponent implements OnInit {
   kysymykset: Kysymys[] = [
     {
       kysymys: 'Uutislähetyksessä kerrotaan kulmakioskin ryöstöstä, oletko sinä...',
+      kysymysKuvaUrl: 'assets/images/wire1.jpg',
       vaihtoehdot: [
         { teksti: 'Yrittämässä saada varasta kiinni.', kuvaUrl: 'assets/images/ang.png' },
         { teksti: 'Ohikulkumatkalla ja jäät katsomaan tapahtumia.', kuvaUrl: 'assets/images/ang.png' },
@@ -36,6 +38,7 @@ export class QuestionComponent implements OnInit {
     },
     {
       kysymys: 'Joku yrittää ryöstää sinut kadulla, mitä teet?',
+      kysymysKuvaUrl: 'assets/images/wire2.jpg',
       vaihtoehdot: [
         { teksti: 'Soitat poliisille.', kuvaUrl: 'assets/images/ts.png' },
         { teksti: 'Soitat kaverit apuun.', kuvaUrl: 'assets/images/ts.png' },
@@ -45,6 +48,7 @@ export class QuestionComponent implements OnInit {
     },
     {
       kysymys: 'Muut ihmiset ovat mielestäsi...',
+      kysymysKuvaUrl: 'assets/images/wire3.jpg',
       vaihtoehdot: [
         { teksti: 'Yleensä mukavia ja ystävällisiä.', kuvaUrl: 'assets/images/pekkull.jpg' },
         { teksti: 'Riippuu aina henkilöstä.', kuvaUrl: 'assets/images/pekkull.jpg' },
@@ -54,6 +58,7 @@ export class QuestionComponent implements OnInit {
     },
     {
       kysymys: 'Uusi asukas muuttaa naapurustoosi ja käyttäytyy ylimielisesti sinua kohtaan, sinä...',
+      kysymysKuvaUrl: 'assets/images/wire5.jpg',
       vaihtoehdot: [
         { teksti: 'Yrität olla isompi ihminen ja unohtaa asian.', kuvaUrl: 'assets/images/super.jpg' },
         { teksti: 'Pyydät naapuria olemaan hieman kohteliaampi.', kuvaUrl: 'assets/images/super.jpg' },
@@ -63,6 +68,7 @@ export class QuestionComponent implements OnInit {
     },
     {
       kysymys: 'Olet varastanut käynnissä olevan auton, mikä näistä kuvaa sinua parhaiten...',
+      kysymysKuvaUrl: 'assets/images/wire4.jpg',
       vaihtoehdot: [
         { teksti: 'Kaverisi yllyttänyt sinut siihen.', kuvaUrl: 'assets/images/birtd-email.png' },
         { teksti: 'Sinun on saatava rahaa auton myynnistä.', kuvaUrl: 'assets/images/birtd-email.png' },
@@ -72,6 +78,7 @@ export class QuestionComponent implements OnInit {
     },
     {
       kysymys: 'Sinun on valvottava syyn X takia koko yö, sinä...',
+      kysymysKuvaUrl: 'assets/images/wire6.jpg',
       vaihtoehdot: [
         { teksti: 'Juot kahvia ja yrität pysyä hereillä.', kuvaUrl: 'assets/images/super.jpg' },
         { teksti: 'Saatat torkahtaa välillä, mutta saat valvottua melkein koko yön.', kuvaUrl: 'assets/images/super.jpg' },
