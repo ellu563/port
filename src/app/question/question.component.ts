@@ -215,6 +215,10 @@ export class QuestionComponent implements OnInit {
     this.tulos = null;
     this.nykyinenKysymysIndeksi = 0;
     this.kyselyAloitettu = false;
+    this.hahmoVastaukset.avon = 0;
+    this.hahmoVastaukset.bubbles = 0;
+    this.hahmoVastaukset.omar = 0;
+    this.hahmoVastaukset.jimmy = 0;
   }
 
   aloitaKysely() {
