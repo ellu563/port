@@ -26,7 +26,7 @@ mat-form-field {
 }
 
 .big-container {
-    border: 1px solid black;
+    border: 1.5px solid black;
 }
 
 .ticket-div {
@@ -39,6 +39,8 @@ mat-form-field {
 /*ns.red-container vaan nimeamisen vuoksi, ei liity punaiseen*/
 .red-container {
     display: flex;
+    width: 85%;
+    margin: 20px;
 }
 
 .red-section {
