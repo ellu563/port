@@ -55,7 +55,7 @@ mat-form-field {
 
 .white-section {
     flex: 65;
-    background-color: white;
+    background-color: #f9f3ed;
     padding: 20px;
     border: 1px solid black;
     text-align: center;
@@ -73,7 +73,6 @@ mat-form-field {
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    opacity: 0.8;
     z-index: -1;
 }
 

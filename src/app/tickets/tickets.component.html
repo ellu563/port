@@ -14,15 +14,14 @@
 
         <div class="big-container">
 
-            <img src="assets/images/tiketti-01.png" width="80%">
-
             <form #form1="ngForm" (ngSubmit)="onSubmit(form1); form1.resetForm()">
 
                 <div class="tickets">
 
                     <!--peruslippu-->
                     <div class="basic">
-                        <h2>Peruslippu</h2>
+                        <!--perus-->
+                        <img src="assets/images/tix-06.png" width="80%">
                         <mat-grid-list cols="4" rowHeight="100px">
                             <mat-grid-tile>
                                 <div class="minus">
@@ -38,7 +37,8 @@
 
                     <!--student lippu-->
                     <div class="student">
-                        <h2>Opiskelijalippu</h2>
+                        <!--student-->
+                        <img src="assets/images/tix-07.png" width="80%">
                         <mat-grid-list cols="4" rowHeight="100px">
                             <mat-grid-tile>
                                 <div class="minus">
@@ -56,7 +56,8 @@
 
                     <!--senior lippu-->
                     <div class="senior">
-                        <h2>Seniorilippu</h2>
+                        <!--senior-->
+                        <img src="assets/images/tix8-08.png" width="80%">
                         <mat-grid-list cols="4" rowHeight="100px">
                             <mat-grid-tile>
                                 <div class="minus">
