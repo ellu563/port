@@ -65,7 +65,7 @@ body {
     grid-area: header0;
     background-color: #B8406B;
     padding: 40px;
-    background-image: url('/assets/images/vih-05.png');
+    background-image: url('/assets/images/popopo-05.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -185,6 +185,8 @@ a {
 .card {
     position: absolute;
     padding: 0;
+    width: 100px;
+    height: 150px;
 }
 
 .front img,
@@ -204,7 +206,7 @@ a {
 
 /*new game button*/
 #start {
-    background-color: yellow;
+    background-color: #a0255d;
     border: none;
     padding: 20px;
     margin-top: 20px;

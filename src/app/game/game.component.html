@@ -47,10 +47,11 @@
                     <div class="card" (click)="selectCard(card)" [@cardFlip]="card.flipped ? 'flipped' : 'default'"
                         [ngClass]="{'matched': card.matched}">
                         <div class="front" *ngIf="!card.flipped">
-                            <img src="{{ card.frontImage }}" alt="{{ card.title }}">
+                            <img class="f" src="{{ card.frontImage }}" alt="{{ card.title }}">
                         </div>
                         <div class="back" *ngIf="card.flipped">
-                            <img src="{{ card.backImage }}" alt="Takapuoli" *ngIf="card.flipped || card.matched">
+                            <img class="b" src="{{ card.backImage }}" alt="Takapuoli"
+                                *ngIf="card.flipped || card.matched">
                         </div>
                     </div>
                 </div>
