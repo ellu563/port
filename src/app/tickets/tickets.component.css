@@ -1,8 +1,3 @@
-.big-container {
-    margin: 20px;
-    padding: 30px;
-}
-
 mat-form-field {
     display: block;
 }
@@ -19,4 +14,17 @@ mat-form-field {
 .basic {
     display: inline;
     width: 800px;
+}
+
+.container {
+    margin: 20px;
+    padding: 50px;
+    background-color: #f9f3ed;
+    box-shadow: 9px 12px;
+    border: 1px solid;
+    border-radius: 10px;
+}
+
+.ticket-div {
+    margin-top: 20px;
 }

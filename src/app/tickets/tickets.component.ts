@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { MatCheckboxChange } from '@angular/material/checkbox';
 import { Buyer } from '../buyer';
 import { TicketService } from '../services/ticket.service';
+import { NgForm } from '@angular/forms';
 
 /* Lipunvaraus lomake maatalousnayttelyyn, jossa paivittyy summa.
    Sitä varten tehty: Buyer class.
@@ -88,6 +89,7 @@ export class TicketsComponent implements OnInit {
   }
 
   // lahetys
+  /*
   onSubmit(e: any) {
     // nollataan myös määrätiedot lahetyksen jälkeen
     this.buyer.result = 0;
@@ -102,7 +104,31 @@ export class TicketsComponent implements OnInit {
     console.log("Etunimi: " + e.value.firstName);
     console.log("Sukunimi: " + e.value.lastName);
     console.log("Sahkopostiosoite: " + e.value.email);
-    */
+    
+  }*/
+
+  showConfirmation = false;
+
+  onSubmit(form: NgForm) {
+    if (form.valid) {
+      // nollataan myös määrätiedot lahetyksen jälkeen
+      this.buyer.result = 0;
+      this.buyer.studentresult = 0;
+      this.buyer.seniorresult = 0;
+
+      // lähetetään servicelle
+      this.ticketService.onSubmit(form.value);
+
+      /* tulostetaan tiedot konsoliin
+      console.log("Lopullinen hinta: " + e.value.finalPrice + " €");
+      console.log("Etunimi: " + e.value.firstName);
+      console.log("Sukunimi: " + e.value.lastName);
+      console.log("Sahkopostiosoite: " + e.value.email);*/
+
+      this.showConfirmation = true;
+    }
+
+
   }
 
 }
