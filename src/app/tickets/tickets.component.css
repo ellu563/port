@@ -25,6 +25,57 @@ mat-form-field {
     border-radius: 10px;
 }
 
+.big-container {
+    border: 1px solid black;
+}
+
 .ticket-div {
     margin-top: 20px;
+}
+
+
+
+/*for tickets under here*/
+/*ns.red-container vaan nimeamisen vuoksi, ei liity punaiseen*/
+.red-container {
+    display: flex;
+}
+
+.red-section {
+    flex: 35;
+    background-color: #b00b46;
+    padding: 20px;
+    color: white;
+    position: relative;
+    z-index: 1;
+}
+
+
+.white-section {
+    flex: 65;
+    background-color: #f9f3ed;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+
+.image-overlay {
+    position: absolute;
+    top: -20%;
+    left: 0;
+    width: 100%;
+    height: 120%;
+    background-image: url('/assets/images/made.jpg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.8;
+    z-index: -1;
+}
+
+
+/*H2*/
+.tickets,
+.tickets2 {
+    font-family: 'Kosugi';
 }
