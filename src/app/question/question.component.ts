@@ -7,7 +7,7 @@ interface VastausVaihtoehto {
 
 interface Kysymys {
   kysymys: string;
-  kysymysKuvaUrl: string; // Lisätty kysymyskuva URL
+  kysymysKuvaUrl: string;
   vaihtoehdot: VastausVaihtoehto[];
 }
 
