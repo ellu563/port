@@ -169,6 +169,11 @@ export class QuestionComponent implements OnInit {
         }
       }
       // siirrytään seuraavaan vasta tässä vaiheessa
+      console.log("Tulokset: ")
+      console.log("avon: " + this.hahmoVastaukset.avon);
+      console.log("bubbles: " + this.hahmoVastaukset.bubbles);
+      console.log("jimmy: " + this.hahmoVastaukset.jimmy);
+      console.log("omar: " + this.hahmoVastaukset.omar);
       this.nykyinenKysymysIndeksi++;
     } else {
       // kuka saa eniten pisteitä
