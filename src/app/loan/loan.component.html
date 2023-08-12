@@ -1,87 +1,99 @@
-<div class="container">
-    <h1>Lainalaskuri</h1>
+<div class="flex-container">
+    <div class="yellow-box">Pankki</div>
+    <div class="blue-box">Hanki kortti tänään</div>
+</div>
 
-    <h4>Lainan määrä</h4>
+<div class="white-bg">
 
-    <mat-slider min="500" max="10000" step="100" [(ngModel)]="amount" (change)="addAmount(amount); addTogether();">
-        <input>
-    </mat-slider>{{amount}} €
+    <div class="container">
 
-    <h4>Laina-aika</h4>
+        <h1>Lainalaskuri</h1>
 
-    <div class="slid">
-        <mat-slider min="1" max="10" step="1" [(ngModel)]="time" (change)="addTime(time); addTogether();">
-            <input matSliderThumb>
-        </mat-slider>{{time}} v
+        <h4>Lainan määrä</h4>
+
+        <mat-slider min="500" max="10000" step="100" [(ngModel)]="amount" (change)="addAmount(amount); addTogether();">
+            <input>
+        </mat-slider>{{amount}} €
+
+        <h4>Laina-aika</h4>
+
+        <div class="slid">
+            <mat-slider min="1" max="10" step="1" [(ngModel)]="time" (change)="addTime(time); addTogether();">
+                <input matSliderThumb>
+            </mat-slider>{{time}} v
+        </div>
+
+        <form #form1="ngForm" (ngSubmit)="onSubmit(form1); form1.resetForm()">
+
+            <h4>Arvioitu kuukausierä</h4>
+            <mat-form-field>
+                <input matInput name="calculate" [(ngModel)]="loaner.calculate" #calculate="ngModel">
+            </mat-form-field>€
+
+            <h2>Hakijan perustiedot</h2>
+
+            <div class="block1">
+                <!--id, regex suomalaiselle henkilotunnukselle-->
+                <mat-form-field>
+                    <input matInput placeholder="Henkilötunnus" name="id" [(ngModel)]="loaner.id" #id="ngModel"
+                        pattern="^(0[1-9]|[12]\d|3[01])(0[1-9]|1[0-2])([0-9]\d\+|\d\d-|[0-9]\dA)\d{3}[\dA-Z]$" required>
+                    <mat-error *ngIf="id.hasError('required')">Kirjoita henkilötunnus</mat-error>
+                    <mat-error *ngIf="id.hasError('pattern')">Henkilötunnuksen on oltava oikeassa muodossa</mat-error>
+                </mat-form-field>
+
+                <!--etunimi, regex kirjaimille, max 2-->
+                <mat-form-field>
+                    <input matInput placeholder="Etunimi" name="firstName" [(ngModel)]="loaner.firstName"
+                        #fname="ngModel" required minlength="2" pattern="^[a-zA-Z]*$">
+                    <mat-error *ngIf="fname.hasError('required')">Kirjoita etunimi</mat-error>
+                    <mat-error *ngIf="fname.hasError('minlength')">Etunimen on oltava 2 merkkiä pitkä</mat-error>
+                    <mat-error *ngIf="fname.hasError('pattern')">Etunimen on oltava oikeassa muodossa</mat-error>
+                </mat-form-field>
+
+                <!--sukunimi, regex kirjaimille, max 2-->
+                <mat-form-field>
+                    <input matInput placeholder="Sukunimi" name="lastName" [(ngModel)]="loaner.lastName"
+                        #lname="ngModel" required minlength="2" pattern="^[a-zA-Z]*$">
+                    <mat-error *ngIf="lname.hasError('required')">Kirjoita sukunimi</mat-error>
+                    <mat-error *ngIf="lname.hasError('minlength')">Sukunimen on oltava 2 merkkiä pitkä</mat-error>
+                    <mat-error *ngIf="lname.hasError('pattern')">Sukunimen on oltava oikeassa muodossa</mat-error>
+                </mat-form-field>
+            </div>
+
+            <div class="block2">
+                <!--email, regex sahkopostille-->
+                <mat-form-field>
+                    <input matInput placeholder="Sähköpostiosoite" name="email" [(ngModel)]="loaner.email"
+                        #email="ngModel" required minlength="5"
+                        pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$">
+                    <mat-error *ngIf="email.hasError('required')">Kirjoita sähköpostiosoite</mat-error>
+                    <mat-error *ngIf="email.hasError('minlength')">Sähköpostiosoitteen oltava minimissään 5 merkkiä
+                        pitkä</mat-error>
+                    <mat-error *ngIf="email.hasError('pattern')">Sähköpostiosoite on oltava oikeassa
+                        muodossa</mat-error>
+                </mat-form-field>
+
+                <!--puhelinnumero, regex puhelinnumerolle-->
+                <mat-form-field>
+                    <input matInput placeholder="Puhelinnumero" name="phoneNumber" [(ngModel)]="loaner.phoneNumber"
+                        #phoneNumber="ngModel" required
+                        pattern="^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$">
+                    <mat-error *ngIf="phoneNumber.hasError('required')">Kirjoita puhelinnumero</mat-error>
+                    <mat-error *ngIf="phoneNumber.hasError('pattern')">Puhelinnumeron on oltava oikeassa
+                        muodossa</mat-error>
+                </mat-form-field>
+            </div>
+
+            <!--sopimusehdot hyväksyttävä-->
+            <div class="checkbox">
+                <mat-checkbox class="example-margin" name="box" #box="ngModel" [(ngModel)]="loaner.box" required>Olen
+                    hyväksynyt
+                    sopimusehdot ja annan suostumukseni henkilötietojeni käsittelyyn.
+                    <mat-error *ngIf="box?.touched && box?.invalid">Ehdot on hyväksyttävä.</mat-error>
+                </mat-checkbox>
+            </div>
+
+            <button type="submit" mat-raised-button color="accent" [disabled]="form1.invalid">LÄHETÄ HAKEMUS</button>
+        </form>
     </div>
-
-    <form #form1="ngForm" (ngSubmit)="onSubmit(form1); form1.resetForm()">
-
-        <h4>Arvioitu kuukausierä</h4>
-        <mat-form-field>
-            <input matInput name="calculate" [(ngModel)]="loaner.calculate" #calculate="ngModel">
-        </mat-form-field>€
-
-        <h2>Hakijan perustiedot</h2>
-
-        <div class="block1">
-            <!--id, regex suomalaiselle henkilotunnukselle-->
-            <mat-form-field>
-                <input matInput placeholder="Henkilötunnus" name="id" [(ngModel)]="loaner.id" #id="ngModel"
-                    pattern="^(0[1-9]|[12]\d|3[01])(0[1-9]|1[0-2])([0-9]\d\+|\d\d-|[0-9]\dA)\d{3}[\dA-Z]$" required>
-                <mat-error *ngIf="id.hasError('required')">Kirjoita henkilötunnus</mat-error>
-                <mat-error *ngIf="id.hasError('pattern')">Henkilötunnuksen on oltava oikeassa muodossa</mat-error>
-            </mat-form-field>
-
-            <!--etunimi, regex kirjaimille, max 2-->
-            <mat-form-field>
-                <input matInput placeholder="Etunimi" name="firstName" [(ngModel)]="loaner.firstName" #fname="ngModel"
-                    required minlength="2" pattern="^[a-zA-Z]*$">
-                <mat-error *ngIf="fname.hasError('required')">Kirjoita etunimi</mat-error>
-                <mat-error *ngIf="fname.hasError('minlength')">Etunimen on oltava 2 merkkiä pitkä</mat-error>
-                <mat-error *ngIf="fname.hasError('pattern')">Etunimen on oltava oikeassa muodossa</mat-error>
-            </mat-form-field>
-
-            <!--sukunimi, regex kirjaimille, max 2-->
-            <mat-form-field>
-                <input matInput placeholder="Sukunimi" name="lastName" [(ngModel)]="loaner.lastName" #lname="ngModel"
-                    required minlength="2" pattern="^[a-zA-Z]*$">
-                <mat-error *ngIf="lname.hasError('required')">Kirjoita sukunimi</mat-error>
-                <mat-error *ngIf="lname.hasError('minlength')">Sukunimen on oltava 2 merkkiä pitkä</mat-error>
-                <mat-error *ngIf="lname.hasError('pattern')">Sukunimen on oltava oikeassa muodossa</mat-error>
-            </mat-form-field>
-        </div>
-
-        <div class="block2">
-            <!--email, regex sahkopostille-->
-            <mat-form-field>
-                <input matInput placeholder="Sähköpostiosoite" name="email" [(ngModel)]="loaner.email" #email="ngModel"
-                    required minlength="5" pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$">
-                <mat-error *ngIf="email.hasError('required')">Kirjoita sähköpostiosoite</mat-error>
-                <mat-error *ngIf="email.hasError('minlength')">Sähköpostiosoitteen oltava minimissään 5 merkkiä
-                    pitkä</mat-error>
-                <mat-error *ngIf="email.hasError('pattern')">Sähköpostiosoite on oltava oikeassa muodossa</mat-error>
-            </mat-form-field>
-
-            <!--puhelinnumero, regex puhelinnumerolle-->
-            <mat-form-field>
-                <input matInput placeholder="Puhelinnumero" name="phoneNumber" [(ngModel)]="loaner.phoneNumber"
-                    #phoneNumber="ngModel" required pattern="^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$">
-                <mat-error *ngIf="phoneNumber.hasError('required')">Kirjoita puhelinnumero</mat-error>
-                <mat-error *ngIf="phoneNumber.hasError('pattern')">Puhelinnumeron on oltava oikeassa
-                    muodossa</mat-error>
-            </mat-form-field>
-        </div>
-
-        <!--sopimusehdot hyväksyttävä-->
-        <div class="checkbox">
-            <mat-checkbox class="example-margin" name="box" #box="ngModel" [(ngModel)]="loaner.box" required>Olen
-                hyväksynyt
-                sopimusehdot ja annan suostumukseni henkilötietojeni käsittelyyn.
-                <mat-error *ngIf="box?.touched && box?.invalid">Ehdot on hyväksyttävä.</mat-error>
-            </mat-checkbox>
-        </div>
-
-        <button type="submit" mat-raised-button color="accent" [disabled]="form1.invalid">LÄHETÄ HAKEMUS</button>
-    </form>
 </div>
