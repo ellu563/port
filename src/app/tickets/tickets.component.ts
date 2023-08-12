@@ -41,11 +41,11 @@ export class TicketsComponent implements OnInit {
 
   // peruslippu
   addValue(btn: string): void {
-    if (btn == '+') {
+    if (btn == '+' && this.buyer.result < 10) {
       this.buyer.result++;
       this.buyer.finalPrice = this.buyer.result * this.basicTicket + (this.buyer.studentresult * this.studentTicket) + (this.buyer.seniorresult * this.seniorTicket);
     }
-    else if (btn == '-') {
+    else if (btn == '-' && this.buyer.result > 0) {
       this.buyer.result--;
       this.buyer.finalPrice = this.buyer.result * this.basicTicket + (this.buyer.studentresult * this.studentTicket) + (this.buyer.seniorresult * this.seniorTicket);
     }
@@ -53,11 +53,11 @@ export class TicketsComponent implements OnInit {
 
   // opiskelijalippu
   addValueStudent(btn: string): void {
-    if (btn == '+') {
+    if (btn == '+' && this.buyer.studentresult < 10) {
       this.buyer.studentresult++;
       this.buyer.finalPrice = this.buyer.studentresult * this.studentTicket + (this.buyer.result * this.basicTicket) + (this.buyer.seniorresult * this.seniorTicket);
     }
-    else if (btn == '-') {
+    else if (btn == '-' && this.buyer.studentresult > 0) {
       this.buyer.studentresult--;
       this.buyer.finalPrice = this.buyer.studentresult * this.studentTicket + (this.buyer.result * this.basicTicket) + (this.buyer.seniorresult * this.seniorTicket);;
     }
@@ -65,11 +65,11 @@ export class TicketsComponent implements OnInit {
 
   // seniorlippu
   addValueSenior(btn: string): void {
-    if (btn == '+') {
+    if (btn == '+' && this.buyer.seniorresult < 10) {
       this.buyer.seniorresult++;
       this.buyer.finalPrice = this.buyer.seniorresult * this.seniorTicket + (this.buyer.result * this.basicTicket) + (this.buyer.studentresult * this.studentTicket);
     }
-    else if (btn == '-') {
+    else if (btn == '-' && this.buyer.seniorresult > 0) {
       this.buyer.seniorresult--;
       this.buyer.finalPrice = this.buyer.seniorresult * this.seniorTicket + (this.buyer.result * this.basicTicket) + (this.buyer.studentresult * this.studentTicket);;
     }

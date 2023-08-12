@@ -8,15 +8,24 @@ mat-form-field {
 }
 
 .buyer {
-    width: 20%;
+    width: 100%;
+    text-align: center;
 }
 
-.basic {
-    display: inline;
-    width: 800px;
+
+.basic,
+.student,
+.senior {
+    text-align: center;
+}
+
+.tickets {
+    margin: 20px;
 }
 
 .container {
+    display: flex;
+    flex-direction: column;
     margin: 20px;
     padding: 50px;
     background-color: #f9f3ed;
@@ -80,4 +89,12 @@ mat-form-field {
 .tickets,
 .tickets2 {
     font-family: 'Kosugi';
+}
+
+.mat-form-field {
+    margin: 10px;
+}
+
+.send-button {
+    margin-bottom: 25px;
 }
