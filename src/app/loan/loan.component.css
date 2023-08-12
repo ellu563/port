@@ -43,5 +43,10 @@ button {
 }
 
 .whole-thing {
-    width: 75%;
+    width: 70%;
+}
+
+.send-b {
+    background-color: #cba006;
+    color: black;
 }
