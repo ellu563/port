@@ -1,8 +1,7 @@
 .container {
     margin: 20px;
     padding: 50px;
-    background-color: #f9f3ed;
-    width: 80%;
+    background-color: #f4f3f3;
 }
 
 mat-slider {
@@ -28,13 +27,21 @@ button {
 .blue-box {
     background-color: #3878b1;
     flex: 40;
-    padding: 20px;
+    padding: 10px;
     text-align: center;
     color: white;
 }
 
 .white-bg {
     background-color: white;
-    width: 90%;
     padding: 20px;
+}
+
+.headline {
+    text-align: center;
+    font-size: 50px;
+}
+
+.whole-thing {
+    width: 75%;
 }
