@@ -8,7 +8,8 @@
 
     <div class="white-section">
 
-        <h2 class="tickets">TICKETS</h2>
+        <h2 class="tickets1">TICKETS</h2>
+        <img src="assets/images/boll-09.png" width="50%">
         <h2 class="tickets2">CHERYL BLOSSOM</h2>
         <h2 class="tickets2">OLYMPIC STADION 2023</h2>
 
@@ -21,15 +22,17 @@
                     <!--peruslippu-->
                     <div class="basic">
                         <!--perus-->
-                        <img src="assets/images/tix-06.png" width="80%">
+                        <img src="assets/images/tiks-06.png" width="85%">
                         <mat-grid-list cols="1" rowHeight="100px">
                             <mat-grid-tile>
                                 <div class="minus">
-                                    <button type="button" mat-fab color="accent" (click)="addValue('-')">-</button>
+                                    <button type="button" class="minus-a" mat-fab color="accent"
+                                        (click)="addValue('-')">-</button>
                                 </div>
                                 <p>{{buyer.result}}</p>
                                 <div class="plus">
-                                    <button type="button" mat-fab color="accent" (click)="addValue('+')">+</button>
+                                    <button type="button" class="minus-a" mat-fab color="accent"
+                                        (click)="addValue('+')">+</button>
                                 </div>
                             </mat-grid-tile>
                         </mat-grid-list>
@@ -38,16 +41,16 @@
                     <!--student lippu-->
                     <div class="student">
                         <!--student-->
-                        <img src="assets/images/tix-07.png" width="80%">
+                        <img src="assets/images/tiks-07.png" width="85%">
                         <mat-grid-list cols="1" rowHeight="100px">
                             <mat-grid-tile>
                                 <div class="minus">
-                                    <button type="button" mat-fab color="accent"
+                                    <button type="button" class="minus-b" mat-fab color="accent"
                                         (click)="addValueStudent('-')">-</button>
                                 </div>
                                 <p>{{buyer.studentresult}}</p>
                                 <div class="plus">
-                                    <button type="button" mat-fab color="accent"
+                                    <button type="button" class="minus-b" mat-fab color="accent"
                                         (click)="addValueStudent('+')">+</button>
                                 </div>
                             </mat-grid-tile>
@@ -57,17 +60,17 @@
                     <!--senior lippu-->
                     <div class="senior">
                         <!--senior-->
-                        <img src="assets/images/tix8-08.png" width="80%">
+                        <img src="assets/images/tiks-08.png" width="85%">
                         <mat-grid-list cols="1" rowHeight="100px">
                             <mat-grid-tile>
                                 <div class="minus">
-                                    <button type="button" mat-fab color="accent"
+                                    <button type="button" class="minus-c" mat-fab color="accent"
                                         (click)="addValueSenior('-')">-</button>
                                 </div>
                                 <p>{{buyer.seniorresult}}</p>
                                 <div class="plus">
                                     <!--type: button, jotta ei laheta form dataa-->
-                                    <button type="button" mat-fab color="accent"
+                                    <button type="button" class="minus-c" mat-fab color="accent"
                                         (click)="addValueSenior('+')">+</button>
                                 </div>
                             </mat-grid-tile>

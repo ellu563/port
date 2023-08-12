@@ -7,6 +7,18 @@ mat-form-field {
     padding: 45px;
 }
 
+.minus-a {
+    background-color: #b23860;
+}
+
+.minus-b {
+    background-color: #e27600;
+}
+
+.minus-c {
+    background-color: #af2370;
+}
+
 .buyer {
     width: 100%;
     text-align: center;
@@ -17,10 +29,6 @@ mat-form-field {
 .student,
 .senior {
     text-align: center;
-}
-
-.tickets {
-    margin: 20px;
 }
 
 .container {
@@ -36,6 +44,7 @@ mat-form-field {
 
 .big-container {
     border: 1.5px solid black;
+    margin-top: 20px;
 }
 
 .ticket-div {
@@ -86,9 +95,20 @@ mat-form-field {
 
 
 /*H2*/
-.tickets,
+.tickets1,
 .tickets2 {
     font-family: 'Kosugi';
+}
+
+.tickets1 {
+    margin: 20px;
+    font-size: 55px;
+}
+
+.tickets2 {
+    font-size: 30px;
+    text-align: left;
+    margin: 5px;
 }
 
 .mat-form-field {
