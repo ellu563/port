@@ -56,7 +56,6 @@ body {
 .item2 {
     grid-area: about;
     background-color: #c12b61;
-    padding: 30px;
 }
 
 a {
@@ -130,8 +129,7 @@ a:hover .block-web2 {
 /*about me 2*/
 .item3 {
     grid-area: aboutme;
-    background-color: #d34a7c;
-    padding: 30px;
+    background-color: #c12b61;
 }
 
 /*projects*/
@@ -182,4 +180,10 @@ h1 {
 
 .block-web-content span.hidden {
     display: none;
+}
+
+.siksak {
+    margin: 0;
+    padding: 0;
+    vertical-align: middle;
 }
