@@ -5,19 +5,11 @@ body {
 /*top nav area*/
 .item0 {
     grid-area: header0;
-    background-color: #fff9f9;
+    background-color: #f3ebeb;
     padding: 40px;
     display: block;
 }
 
-/*Name heading area*/
-.item1 {
-    grid-area: header;
-    /*background-color: #B8406B;*/
-    padding: 120px;
-    padding-bottom: 120px;
-    position: relative;
-}
 
 /*Item1 - Otsikko*/
 #heading {
@@ -50,12 +42,6 @@ body {
     font-size: 25px;
     text-align: center;
     height: 30px;
-}
-
-/*about me 1*/
-.item2 {
-    grid-area: about;
-    background-color: #c12b61;
 }
 
 a {
@@ -130,6 +116,7 @@ a:hover .block-web2 {
 .item3 {
     grid-area: aboutme;
     background-color: #c12b61;
+    padding: 5px;
 }
 
 /*projects*/
@@ -165,8 +152,6 @@ h1 {
     display: grid;
     grid-template-areas:
         'header0'
-        'header'
-        'about'
         'aboutme'
         'projects'
         'footer';
@@ -190,4 +175,8 @@ h1 {
 
 .projects-h1 {
     margin-bottom: 40px;
+}
+
+.intro-img {
+    margin: 20px;
 }
