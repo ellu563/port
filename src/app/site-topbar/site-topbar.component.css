@@ -18,21 +18,21 @@
     white-space: nowrap;
 }
 
-.topnav #yellow:hover {
-    background-color: #ff9d43;
-    color: black;
-    border-radius: 24px;
-    padding: 15px;
-}
-
 .logo {
     width: 40%;
 }
 
 #yellow {
-    background-color: #c0d34a;
+    color: black;
+    border: dotted black;
+    border-radius: 24px;
+    padding: 15px;
+}
+
+.topnav #yellow:hover {
     color: black;
     border-radius: 24px;
+    border: solid #ff9d43;
     padding: 15px;
 }
 
