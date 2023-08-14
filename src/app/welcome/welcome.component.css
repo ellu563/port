@@ -187,3 +187,7 @@ h1 {
     padding: 0;
     vertical-align: middle;
 }
+
+.projects-h1 {
+    margin-bottom: 40px;
+}
