@@ -116,7 +116,14 @@ a:hover .block-web2 {
 .item3 {
     grid-area: aboutme;
     background-color: #c12b61;
-    padding: 5px;
+}
+
+.intro-img {
+    margin: 10px;
+}
+
+.siksak {
+    width: 100%;
 }
 
 /*projects*/
@@ -175,8 +182,4 @@ h1 {
 
 .projects-h1 {
     margin-bottom: 40px;
-}
-
-.intro-img {
-    margin: 20px;
 }
