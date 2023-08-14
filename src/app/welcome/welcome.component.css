@@ -2,73 +2,11 @@ body {
     font-family: 'Kosugi';
 }
 
-.topnav {
-    overflow: hidden;
-    width: 400px;
-    margin: 0 auto;
-}
-
-.topnav a {
-    float: none;
-    color: black;
-    text-align: center;
-    text-decoration: none;
-    font-size: 17px;
-}
-
-.topnav #yellow:hover {
-    background-color: #ff9d43;
-    color: black;
-    border-radius: 10px;
-    padding: 15px;
-}
-
-#yellow {
-    padding: 15px;
-}
-
-.topnav a.active {
-    color: black;
-}
-
-/*tuplateksti-nappi*/
-#double-text {
-    border: none;
-    background: none;
-    margin: 20px;
-}
-
-
-/*teksti vaarinpain nav*/
-#upside {
-    font-size: 30px;
-    transform: rotate(180deg);
-    margin-bottom: 0;
-}
-
-#upside:hover {
-    color: #ff9d43;
-}
-
-/*teksti oikeinpain nav*/
-#normal {
-    font-size: 30px;
-    margin-bottom: 0;
-}
-
-#normal:hover {
-    color: #ff9d43;
-}
-
 /*top nav area*/
 .item0 {
     grid-area: header0;
-    background-color: #B8406B;
+    background-color: #fff9f9;
     padding: 40px;
-    background-image: url('/assets/images/logo1.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
     display: block;
 }
 
@@ -117,7 +55,7 @@ body {
 /*about me 1*/
 .item2 {
     grid-area: about;
-    background-color: #a92555;
+    background-color: #c12b61;
     padding: 30px;
 }
 

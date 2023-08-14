@@ -40,6 +40,7 @@ import { TicketsComponent } from './tickets/tickets.component';
 
 import { MatGridListModule } from '@angular/material/grid-list';
 import { QuestionComponent } from './question/question.component';
+import { SiteTopbarComponent } from './site-topbar/site-topbar.component';
 
 
 @NgModule({
@@ -62,6 +63,7 @@ import { QuestionComponent } from './question/question.component';
     ContactMeComponent,
     TicketsComponent,
     QuestionComponent,
+    SiteTopbarComponent,
   ],
   imports: [
     BrowserModule,
