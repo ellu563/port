@@ -136,6 +136,11 @@ a:hover .block-web2 {
     padding: 0;
 }
 
+.intro-img:hover {
+    transform: scale(1.1);
+    filter: brightness(110%);
+}
+
 .siksak {
     width: 100%;
     margin: 0;
