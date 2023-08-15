@@ -17,14 +17,6 @@ body {
     text-align: center;
 }
 
-.block-party-1,
-.block-party-2 {
-    display: inline-block;
-    width: 48%;
-    vertical-align: top;
-}
-
-
 #about-me {
     font-size: 50px;
     padding-bottom: 20px;
@@ -66,7 +58,6 @@ a:hover .block-web2 {
     background-color: #ca98c5;
 }
 
-
 /*hide button padding, border, and background*/
 #blocks {
     width: 400px;
@@ -107,23 +98,27 @@ a:hover .block-web2 {
     border-radius: 20px;
 }
 
+.block-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    width: 100%;
+}
+
 .block-party-1,
 .block-party-2 {
-    width: 48%;
+    flex: 0 0 calc(50% - 20px);
     padding: 20px;
     box-sizing: border-box;
 }
 
 @media (max-width: 480px) {
-
-    /* blockeille!! */
-    .block-party-1,
-    .block-party-2 {
-        width: 100%;
-        margin-bottom: 20px;
-        box-sizing: border-box;
+    .block-container {
+        flex-direction: column;
     }
 }
+
 
 /*web-dev <p>*/
 #p-web {
