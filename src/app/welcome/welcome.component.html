@@ -1,5 +1,6 @@
 <head>
     <link href='https://fonts.googleapis.com/css?family=Kosugi' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
@@ -37,27 +38,27 @@
                         <a routerLink="/web-development" routerLinkActive="active">
                             <div class="block-web1"></div>
                             <div class="block-web-content">
-                                <p><span [ngClass]="{'hidden': hoverWeb}" id="p-web">web</span></p>
-                                <p><span [ngClass]="{'hidden': hoverWeb}" id="p-web">dev</span></p>
-                                <p><span [ngClass]="{'hidden': !hoverWeb}" id="p-web">step</span></p>
-                                <p><span [ngClass]="{'hidden': !hoverWeb}" id="p-web">inside</span></p>
+                                <p class="p-web"><span [ngClass]="{'hidden': hoverWeb}" id="p-web">web</span></p>
+                                <p class="p-web"><span [ngClass]="{'hidden': hoverWeb}" id="p-web">dev</span></p>
+                                <p class="p-web"><span [ngClass]="{'hidden': !hoverWeb}" id="p-web">step</span></p>
+                                <p class="p-web"><span [ngClass]="{'hidden': !hoverWeb}" id="p-web">inside</span></p>
                             </div>
                             <div class="block-web2"></div>
                         </a>
                     </button>
                 </div>
-
+                <!-- Muut .block-party-2 ja muut elementit -->
                 <div class="block-party-2">
                     <!-- graphic design-->
                     <button id="blocks" (mouseenter)="onHover()" (mouseleave)="onLeave()">
                         <a routerLink="/graphic-design" routerLinkActive="active">
                             <div class="block1">
-                                <span *ngIf="!hover">graphic</span>
-                                <span *ngIf="hover">learn</span>
+                                <p class="p-web"><span *ngIf="!hover">graphic</span></p>
+                                <p class="p-web"><span *ngIf="hover">learn</span></p>
                             </div>
                             <div class="block2">
-                                <span *ngIf="!hover">design</span>
-                                <span *ngIf="hover">more</span>
+                                <p class="p-web"><span *ngIf="!hover">design</span></p>
+                                <p class="p-web"><span *ngIf="hover">more</span></p>
                             </div>
                         </a>
                     </button>
