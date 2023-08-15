@@ -63,23 +63,11 @@ body {
 /*top nav area*/
 .item0 {
     grid-area: header0;
-    background-color: #B8406B;
+    background-color: #f3ebeb;
     padding: 40px;
-    background-image: url('/assets/images/logo1.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
     display: block;
 }
 
-/*Name heading area*/
-.item1 {
-    grid-area: header;
-    /*background-color: #B8406B;*/
-    padding: 120px;
-    padding-bottom: 120px;
-    position: relative;
-}
 
 .bottomnav {
     font-size: 25px;
@@ -140,7 +128,6 @@ a {
     display: grid;
     grid-template-areas:
         'header0'
-        'header'
         'about'
         'aboutme'
         'projects'
