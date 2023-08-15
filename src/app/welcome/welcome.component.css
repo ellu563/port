@@ -107,6 +107,24 @@ a:hover .block-web2 {
     border-radius: 20px;
 }
 
+.block-party-1,
+.block-party-2 {
+    width: 48%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+@media (max-width: 480px) {
+
+    /* blockeille!! */
+    .block-party-1,
+    .block-party-2 {
+        width: 100%;
+        margin-bottom: 20px;
+        box-sizing: border-box;
+    }
+}
+
 /*web-dev <p>*/
 #p-web {
     font-size: 70px;
