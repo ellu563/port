@@ -79,14 +79,51 @@
     color: #ff9d43;
 }
 
+/*huom! tarkasta vielä sopivat koot!!!!*/
 @media (max-width: 768px) {
+    .logo {
+        width: 60%;
+    }
+}
+
+@media (max-width: 690px) {
+    .logo {
+        width: 75%;
+    }
+}
+
+@media (max-width: 600px) {
+    .logo {
+        width: 80%;
+    }
+}
+
+@media (max-width: 560px) {
+    .logo {
+        width: 85%;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        width: 90%;
+    }
+}
+
+/* Suuremmille näytöille */
+@media (min-width: 961px) {
+    .logo {
+        width: 30%;
+    }
+}
+
+@media (max-width: 360px) {
     .logo {
         width: 70%;
     }
 }
 
-/*tarkista toimiiko*/
-@media (max-width: 480px) {
+@media (max-width: 320px) {
     .logo {
         width: 80%;
     }
