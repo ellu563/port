@@ -132,7 +132,7 @@ a {
 /*angular*/
 .item3 {
     grid-area: aboutme;
-    background-color: #B8406B;
+    background-color: #d34a7c;
     padding: 90px;
 }
 
@@ -148,7 +148,7 @@ a {
 /*footer*/
 .item5 {
     grid-area: footer;
-    background-color: #B8406B;
+    background-color: #c12b61;
     padding: 20px;
 }
 

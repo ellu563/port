@@ -16,48 +16,8 @@ body {
     font-size: 17px;
 }
 
-.topnav #yellow:hover {
-    background-color: #DEA615;
-    color: black;
-    border-radius: 10px;
-    padding: 15px;
-}
-
-#yellow {
-    padding: 15px;
-}
-
 .topnav a.active {
     color: black;
-}
-
-/*tuplateksti-nappi*/
-#double-text {
-    border: none;
-    background: none;
-    margin: 20px;
-}
-
-
-/*teksti vaarinpain nav*/
-#upside {
-    font-size: 30px;
-    transform: rotate(180deg);
-    margin-bottom: 0;
-}
-
-#upside:hover {
-    color: #DEA615;
-}
-
-/*teksti oikeinpain nav*/
-#normal {
-    font-size: 30px;
-    margin-bottom: 0;
-}
-
-#normal:hover {
-    color: #DEA615;
 }
 
 /*top nav area*/
@@ -83,7 +43,7 @@ body {
 /*graphic-design*/
 .item2 {
     grid-area: about;
-    background-color: #DEA615;
+    background-color: #d34a7c;
     padding: 20px;
     padding-bottom: 0;
     position: relative;
@@ -104,14 +64,14 @@ a {
 /*kuvat*/
 .item3 {
     grid-area: aboutme;
-    background-color: #B8406B;
+    background-color: #EF8F5A;
     padding: 90px;
 }
 
 /*bottom yellow*/
 .item4 {
     grid-area: projects;
-    background-color: #DEA615;
+    background-color: #d34a7c;
     padding: 30px;
     font-size: 22px;
 }
@@ -119,7 +79,7 @@ a {
 /*footer*/
 .item5 {
     grid-area: footer;
-    background-color: #B8406B;
+    background-color: #c12b61;
     padding: 20px;
 }
 
