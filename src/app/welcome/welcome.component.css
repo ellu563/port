@@ -113,17 +113,40 @@ a:hover .block-web2 {
 }
 
 /*about me 2*/
-.item3 {
+.item2 {
     grid-area: aboutme;
     background-color: #c12b61;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px;
+    width: 100%;
 }
 
 .intro-img {
-    margin: 10px;
+    flex: 0 0 calc(33.33% - 20px);
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 .siksak {
     width: 100%;
+    margin: 0;
+    padding: 0;
+    vertical-align: middle;
+}
+
+/*siksak*/
+.item3 {
+    grid-area: siksak;
+    background-color: #c12b61;
 }
 
 /*projects*/
@@ -160,6 +183,7 @@ h1 {
     grid-template-areas:
         'header0'
         'aboutme'
+        'siksak'
         'projects'
         'footer';
 }
@@ -172,12 +196,6 @@ h1 {
 
 .block-web-content span.hidden {
     display: none;
-}
-
-.siksak {
-    margin: 0;
-    padding: 0;
-    vertical-align: middle;
 }
 
 .projects-h1 {
