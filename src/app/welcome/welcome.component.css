@@ -75,18 +75,19 @@ a:hover .block-web2 {
     background: none;
 }
 
+/*huom! width nyt yrityksenä saada se skaalautumaan!!*/
+/*skaalautuvuuden ja devtools ongelma mitä ilmeisemmin
+palkkien isosta koosta kiinni: kun palkit poisti niin sivu skaalautui.
+nyt yritetään saada ne sillä tavalla että ne skaalautuu mukana
+samoin se fontti, jota pitää pistää tuonne media queryihin vielä pienemmäksi
+    nyt myös fontti vähän tuossa rajoilla, kun on liian iso
+    */
+
 /*graphic design*/
 .block1 {
     background-color: #f86bb4;
     padding: 50px;
     border-radius: 30px;
-    /*huom! width nyt yrityksenä saada se skaalautumaan!!*/
-    /*skaalautuvuuden ja devtools ongelma mitä ilmeisemmin
-    palkkien isosta koosta kiinni: kun palkit poisti niin sivu skaalautui.
-    nyt yritetään saada ne sillä tavalla että ne skaalautuu mukana
-    samoin se fontti, jota pitää pistää tuonne media queryihin vielä pienemmäksi
-    nyt myös fontti vähän tuossa rajoilla, kun on liian iso
-    */
     width: 30vw;
     margin-bottom: 0;
 }
@@ -118,25 +119,47 @@ a:hover .block-web2 {
 
 /*p-web is font-size for: block1, block2, block-web1 and block-web-2*/
 .p-web {
-    font-size: 4em;
+    font-size: 5em;
 }
 
 .block-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding: 30px;
 }
 
 .block-party-1,
 .block-party-2 {
-    width: 48%;
-    flex: 0 0 calc(50% - 20px);
+    flex: 1;
+    margin: 5px;
     padding: 10px;
     box-sizing: border-box;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+
+    .p-web {
+        font-size: 3.5em;
+    }
+
+    h1 {
+        font-size: 4rem;
+    }
+
+    .image-container {
+        padding: 30px;
+    }
+
+    .intro-img {
+        margin-bottom: 15px;
+    }
+
+    .block-container {
+        padding: 20px;
+    }
+
 }
 
 @media (max-width: 480px) {
@@ -173,25 +196,6 @@ a:hover .block-web2 {
 
     .block-web2 {
         background-color: #f86bb4;
-    }
-}
-
-@media (max-width: 768px) {
-
-    h1 {
-        font-size: 4rem;
-    }
-
-    .image-container {
-        padding: 30px;
-    }
-
-    .intro-img {
-        margin-bottom: 15px;
-    }
-
-    .block-container {
-        padding: 20px;
     }
 
 }
