@@ -2,15 +2,27 @@
 <div class="carousel-container2">
     <div class="carousel2">
         <div class="carousel-inner2" [style.transform]="'translateX(' + translateValue2 + '%)'">
-            <div *ngFor="let image of images2" class="slide2">
-                <img src="{{ image.src }}" alt="{{ image.alt }}">
-            </div>
+            <ng-container *ngFor="let image of images2">
+                <div class="slide2">
+                    <img src="{{ image.src }}" alt="{{ image.alt }}">
+                </div>
+            </ng-container>
+            <ng-container *ngFor="let image of images2">
+                <div class="slide2">
+                    <img src="{{ image.src }}" alt="{{ image.alt }}">
+                </div>
+            </ng-container>
         </div>
     </div>
-    <button class="arrow2 arrow-prev2" (click)="prevSlide2()"><mat-icon id="mat1"
-            style="transform: rotate(180deg);">arrow_forward</mat-icon></button>
-    <button class="arrow2 arrow-next2" (click)="nextSlide2()"><mat-icon id="mat2">arrow_forward</mat-icon></button>
+    <button class="arrow2 arrow-prev2" (click)="prevSlide2()">
+        <mat-icon id="mat1" style="transform: rotate(180deg);">arrow_forward</mat-icon>
+    </button>
+    <button class="arrow2 arrow-next2" (click)="nextSlide2()">
+        <mat-icon id="mat2">arrow_forward</mat-icon>
+    </button>
 </div>
+
+
 
 <!--alempi-->
 <div class="carousel-container">

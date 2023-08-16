@@ -55,6 +55,8 @@ export class GraphicCarouselComponent implements OnInit {
     }
   ];
 
+
+
   translateValue = 0;
   translateValue2 = 0;
 
@@ -64,6 +66,26 @@ export class GraphicCarouselComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+
+    /* ladataan kuvat etukateen */
+    const imagesToPreload = [
+      'assets/images/space-1.JPG',
+      'assets/images/teapot3-01.jpg',
+      'assets/images/girlanddog.jpg',
+      'assets/images/pinkitkukat.jpg',
+      'assets/images/hrilainen.jpg',
+      'assets/images/mads.jpg',
+      'assets/images/game-hall.jpg',
+      'assets/images/super.jpg',
+      'assets/images/avaruusdubet.jpg',
+      'assets/images/pekka-long.jpg',
+    ];
+
+    imagesToPreload.forEach(imageUrl => {
+      const img = new Image();
+      img.src = imageUrl;
+    });
+
     // käynnistää ajastimen, joka suorittaa nextSlide() -metodin joka 3. sekunti
 
     /*alempi*/
@@ -97,6 +119,7 @@ export class GraphicCarouselComponent implements OnInit {
   }
 
   /*ylemmän*/
+  /*ylemmän*/
   prevSlide2() {
     if (this.translateValue2 === 0) {
       this.translateValue2 = -66.66;
@@ -113,5 +136,6 @@ export class GraphicCarouselComponent implements OnInit {
       this.translateValue2 -= 33.33;
     }
   }
+
 
 }

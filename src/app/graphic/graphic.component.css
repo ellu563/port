@@ -97,3 +97,22 @@ a {
 a:hover #contact-p {
     color: #DEA615;
 }
+
+@media (max-width: 600px) {
+    #graphic-design {
+        font-size: 50px;
+        padding-top: 30px;
+    }
+}
+
+@media (max-width: 500px) {
+    #graphic-design {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 320px) {
+    #graphic-design {
+        font-size: 25px;
+    }
+}
