@@ -140,37 +140,28 @@ samoin se fontti, jota pitää pistää tuonne media queryihin vielä pienemmäk
 
 @media (max-width: 768px) {
 
-    .p-web {
-        font-size: 3.5em;
-    }
 
-    h1 {
+    .projects-h1 {
         font-size: 4rem;
     }
 
-    .image-container {
-        padding: 30px;
-    }
 
     .intro-img {
         margin-bottom: 15px;
     }
 
-    .block-container {
-        padding: 20px;
+    .p-web {
+        font-size: 30px;
+        text-align: center;
     }
 
 }
 
 @media (max-width: 480px) {
 
-    /* blockeille!! */
-    .block-party-1,
-    .block-party-2 {
-        width: 100%;
-        margin-bottom: 20px;
-        box-sizing: border-box;
-        justify-content: center;
+    /* blockeille!! laitetaan ne allekkain*/
+    .block-container {
+        flex-direction: column;
         align-items: center;
     }
 
@@ -178,27 +169,43 @@ samoin se fontti, jota pitää pistää tuonne media queryihin vielä pienemmäk
         margin-top: 20px;
     }
 
-    .block1 {
-        background-color: #f86bb4;
-        border-radius: 20px;
-    }
+    /*alla oleville blockeille säädetty*/
 
-    .block2 {
-        background-color: #f86bb4;
-        border-radius: 20px;
-    }
-
-    /*web-dev*/
-
-    .block-web1 {
-        background-color: #f86bb4;
-    }
-
+    .block-web1,
     .block-web2 {
-        background-color: #f86bb4;
+        border-radius: 15px;
+        width: 50vw;
+    }
+
+    .block1,
+    .block2 {
+        padding: 30px;
+        border-radius: 20px;
+        width: 50vw;
+    }
+
+    /*projects otsikko*/
+    .p-web {
+        font-size: 40px;
+    }
+
+    /*dev-kuville*/
+    .image-container {
+        display: flex;
+        flex-direction: column;
+        /*pysty*/
+        align-items: center;
+    }
+
+    .intro-img {
+        width: 80%;
+        margin: 10px auto;
+        /*välimatkaa kuvien väliin ja keskittää ne vaakasuunnassa */
     }
 
 }
+
+
 
 /*about me 2*/
 .item2 {
