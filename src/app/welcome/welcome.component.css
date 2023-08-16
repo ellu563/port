@@ -169,6 +169,7 @@ samoin se fontti, jota pitää pistää tuonne media queryihin vielä pienemmäk
 
     .intro-img {
         margin-bottom: 15px;
+        height: auto;
     }
 
     .p-web {
