@@ -138,6 +138,27 @@ samoin se fontti, jota pitää pistää tuonne media queryihin vielä pienemmäk
     text-align: center;
 }
 
+@media (max-width: 989px) {
+    .p-web {
+        font-size: 3.4rem;
+        text-align: center;
+    }
+
+    .block-web1,
+    .block-web2 {
+        border-radius: 15px;
+        width: 30vw;
+    }
+
+    .block1,
+    .block2 {
+        padding: 30px;
+        border-radius: 20px;
+        width: 30vw;
+    }
+}
+
+
 @media (max-width: 768px) {
 
 
