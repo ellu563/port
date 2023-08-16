@@ -86,7 +86,7 @@ samoin se fontti, jota pitää pistää tuonne media queryihin vielä pienemmäk
 /*graphic design*/
 .block1 {
     background-color: #f86bb4;
-    padding: 50px;
+    padding: 30px;
     border-radius: 30px;
     width: 30vw;
     margin-bottom: 0;
@@ -95,7 +95,7 @@ samoin se fontti, jota pitää pistää tuonne media queryihin vielä pienemmäk
 /*graphic design*/
 .block2 {
     background-color: #ca98c5;
-    padding: 50px;
+    padding: 30px;
     width: 30vw;
     border-radius: 30px;
 }
