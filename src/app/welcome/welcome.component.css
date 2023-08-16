@@ -210,6 +210,24 @@ samoin se fontti, jota pitää pistää tuonne media queryihin vielä pienemmäk
         filter: brightness(105%);
     }
 
+    /*vaihdetaan myös näille activet vaikka ne ei luultavasti oikein näy*/
+    a:active .block1 {
+        background-color: #ca98c5;
+    }
+
+    a:active .block2 {
+        background-color: #f86bb4;
+    }
+
+
+    a:active .block-web1 {
+        background-color: #f86bb4;
+    }
+
+    a:active .block-web2 {
+        background-color: #ca98c5;
+    }
+
 }
 
 
