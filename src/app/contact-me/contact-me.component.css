@@ -18,3 +18,14 @@
 a:hover #contact-p {
     color: #DEA615;
 }
+
+@media (max-width: 480px) {
+    .bird-img {
+        width: 20%;
+    }
+
+    #contact-p {
+        font-size: 1.8rem;
+
+    }
+}
