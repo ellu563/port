@@ -19,6 +19,30 @@ a:hover #contact-p {
     color: #DEA615;
 }
 
+@media (max-width: 989px) {
+    .bird-img {
+        width: 6%;
+    }
+}
+
+@media (max-width: 766px) {
+    .bird-img {
+        width: 7%;
+    }
+}
+
+@media (max-width: 695px) {
+    .bird-img {
+        width: 8%;
+    }
+}
+
+@media (max-width: 600px) {
+    .bird-img {
+        width: 9%;
+    }
+}
+
 @media (max-width: 480px) {
     .bird-img {
         width: 20%;
