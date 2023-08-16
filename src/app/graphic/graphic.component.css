@@ -65,7 +65,7 @@ a {
 .item3 {
     grid-area: aboutme;
     background-color: #EF8F5A;
-    padding: 90px;
+    padding: 75px;
 }
 
 /*bottom yellow*/
@@ -98,10 +98,20 @@ a:hover #contact-p {
     color: #DEA615;
 }
 
+@media (max-width: 768px) {
+    .item3 {
+        padding: 25px;
+    }
+}
+
 @media (max-width: 600px) {
     #graphic-design {
         font-size: 50px;
         padding-top: 30px;
+    }
+
+    .item3 {
+        padding: 20px;
     }
 }
 
@@ -109,10 +119,18 @@ a:hover #contact-p {
     #graphic-design {
         font-size: 40px;
     }
+
+    .item3 {
+        padding: 0px;
+    }
 }
 
 @media (max-width: 320px) {
     #graphic-design {
         font-size: 25px;
+    }
+
+    .item3 {
+        padding: 0px;
     }
 }
