@@ -203,6 +203,13 @@ samoin se fontti, jota pitää pistää tuonne media queryihin vielä pienemmäk
         /*välimatkaa kuvien väliin ja keskittää ne vaakasuunnassa */
     }
 
+    /*laitetaan tähän :active, että kun sitä on painanut tulee nuo,
+    eikä kun hoveroidaan*/
+    .intro-img:active {
+        transform: scale(1.3);
+        filter: brightness(105%);
+    }
+
 }
 
 
