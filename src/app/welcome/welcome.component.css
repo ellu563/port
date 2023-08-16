@@ -230,6 +230,21 @@ samoin se fontti, jota pitää pistää tuonne media queryihin vielä pienemmäk
 
 }
 
+/*370 palikat alkaa menemää vähä kasaan jo*/
+@media (max-width: 380px) {
+
+    .block-web1,
+    .block-web2 {
+        width: 58vw;
+    }
+
+    .block1,
+    .block2 {
+        padding: 30px;
+        width: 58vw;
+    }
+}
+
 
 
 /*about me 2*/
