@@ -317,6 +317,10 @@ samoin se fontti, jota pitää pistää tuonne media queryihin vielä pienemmäk
         padding: 30px;
         width: 58vw;
     }
+
+    .projects-h1 {
+        font-size: 4rem;
+    }
 }
 
 
