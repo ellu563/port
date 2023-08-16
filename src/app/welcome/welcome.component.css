@@ -142,7 +142,7 @@ samoin se fontti, jota pitää pistää tuonne media queryihin vielä pienemmäk
 
 
     .projects-h1 {
-        font-size: 4rem;
+        font-size: 5rem;
     }
 
 
@@ -151,11 +151,63 @@ samoin se fontti, jota pitää pistää tuonne media queryihin vielä pienemmäk
     }
 
     .p-web {
-        font-size: 30px;
+        font-size: 2.9rem;
+        text-align: center;
+    }
+
+    .block-web1,
+    .block-web2 {
+        border-radius: 15px;
+        width: 30vw;
+    }
+
+    .block1,
+    .block2 {
+        padding: 30px;
+        border-radius: 20px;
+        width: 30vw;
+    }
+
+}
+
+@media (max-width: 695px) {
+
+    .block-web1,
+    .block-web2 {
+        border-radius: 15px;
+        width: 37vw;
+    }
+
+    .block1,
+    .block2 {
+        padding: 30px;
+        border-radius: 20px;
+        width: 37vw;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .block-web1,
+    .block-web2 {
+        border-radius: 15px;
+        width: 39vw;
+    }
+
+    .block1,
+    .block2 {
+        padding: 30px;
+        border-radius: 20px;
+        width: 39vw;
+    }
+
+    .p-web {
+        font-size: 2.7rem;
         text-align: center;
     }
 
 }
+
 
 @media (max-width: 480px) {
 
