@@ -4,12 +4,12 @@
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    /* Tämä pitää elementit vierekkäin */
+    /*pitää elementit vierekkäin*/
     align-items: center;
     padding: 10px 20px;
-    /* Lisää tilaa ylä- ja alareunalle */
+    /*lisää tilaa ylä- ja alareunalle*/
     box-sizing: border-box;
-    /* Sisältää paddingin leveyteen ja korkeuteen */
+    /*sisältää paddingin leveyteen ja korkeuteen*/
 }
 
 .topnav a {
@@ -109,13 +109,46 @@
 
 @media (max-width: 480px) {
     .topnav {
+        flex-direction: row;
+        align-items: center;
+        padding: 0;
+
+    }
+
+    .logo {
+        width: 80%;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        /* Lisää tilaa napin ja logon väliin */
+    }
+}
+
+@media (max-width: 426px) {
+    .topnav {
+        flex-direction: row;
+        align-items: center;
+        padding: 0;
+    }
+
+    .logo {
+        width: 90%;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        /* Lisää tilaa napin ja logon väliin */
+    }
+}
+
+@media (max-width: 385px) {
+    .topnav {
         flex-direction: column;
         align-items: center;
+        padding: 0;
     }
 
     .logo {
         width: 60%;
         margin-bottom: 10px;
+        margin-top: 10px;
         /* Lisää tilaa napin ja logon väliin */
     }
 }
