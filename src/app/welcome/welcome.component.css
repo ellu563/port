@@ -179,14 +179,14 @@ samoin se fontti, jota pitää pistää tuonne media queryihin vielä pienemmäk
     .block-web1,
     .block-web2 {
         border-radius: 15px;
-        width: 30vw;
+        width: 33vw;
     }
 
     .block1,
     .block2 {
         padding: 30px;
         border-radius: 20px;
-        width: 30vw;
+        width: 33vw;
     }
 
 }
