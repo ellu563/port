@@ -138,20 +138,36 @@
     }
 }
 
+.logo-mobile {
+    display: none;
+}
+
+/* for mobile logo */
 @media (max-width: 385px) {
-    .topnav {
-        flex-direction: column;
-        align-items: center;
-        padding: 0;
-    }
 
     .logo {
-        width: 60%;
-        margin-bottom: 10px;
-        margin-top: 10px;
-        /* Lisää tilaa napin ja logon väliin */
+        display: none;
+    }
+
+    .logo-mobile {
+        display: flex;
+        width: 50%;
+        margin: 10px auto;
     }
 }
+
+@media (max-width: 340px) {
+    .logo {
+        display: none;
+    }
+
+    .logo-mobile {
+        display: flex;
+        width: 70%;
+        margin: 10px auto;
+    }
+}
+
 
 /* Suuremmille näytöille */
 @media (min-width: 961px) {
