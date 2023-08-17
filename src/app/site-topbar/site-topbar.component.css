@@ -22,7 +22,11 @@
 }
 
 .logo {
-    width: 40%;
+    max-width: 40%;
+    /*huom!! media queryjen tilalle vaihdettu tuo min-width!!*/
+    min-width: 11em;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 .logo:hover {
@@ -82,7 +86,9 @@
     color: #ff9d43;
 }
 
+
 /*huom! tarkasta vielä sopivat koot!!!!*/
+/*
 @media (max-width: 768px) {
     .logo {
         width: 50%;
@@ -119,7 +125,6 @@
         width: 80%;
         margin-bottom: 10px;
         margin-top: 10px;
-        /* Lisää tilaa napin ja logon väliin */
     }
 }
 
@@ -134,9 +139,9 @@
         width: 90%;
         margin-bottom: 10px;
         margin-top: 10px;
-        /* Lisää tilaa napin ja logon väliin */
     }
 }
+*/
 
 .logo-mobile {
     display: none;
@@ -152,6 +157,7 @@
     .logo-mobile {
         display: flex;
         width: 50%;
+        min-width: 5em;
         margin: 10px auto;
     }
 }
