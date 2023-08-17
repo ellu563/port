@@ -87,7 +87,7 @@
 }
 
 
-/*huom! tarkasta vielä sopivat koot!!!!*/
+/*media querys irrelevant if using min-width*/
 /*
 @media (max-width: 768px) {
     .logo {
@@ -147,7 +147,7 @@
     display: none;
 }
 
-/* for mobile logo */
+/* IN HERE we move to mobile-logo */
 @media (max-width: 385px) {
 
     .logo {
@@ -157,19 +157,8 @@
     .logo-mobile {
         display: flex;
         width: 50%;
-        min-width: 5em;
-        margin: 10px auto;
-    }
-}
-
-@media (max-width: 340px) {
-    .logo {
-        display: none;
-    }
-
-    .logo-mobile {
-        display: flex;
-        width: 70%;
+        min-width: 4.5em;
+        /*pitää sen keskessä*/
         margin: 10px auto;
     }
 }
