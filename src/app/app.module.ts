@@ -41,6 +41,7 @@ import { TicketsComponent } from './tickets/tickets.component';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { QuestionComponent } from './question/question.component';
 import { SiteTopbarComponent } from './site-topbar/site-topbar.component';
+import { ThisPortfolioComponent } from './this-portfolio/this-portfolio.component';
 
 
 @NgModule({
@@ -64,6 +65,7 @@ import { SiteTopbarComponent } from './site-topbar/site-topbar.component';
     TicketsComponent,
     QuestionComponent,
     SiteTopbarComponent,
+    ThisPortfolioComponent,
   ],
   imports: [
     BrowserModule,

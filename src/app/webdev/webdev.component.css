@@ -286,25 +286,3 @@ a:hover #contact-p {
 #plus {
     padding: 10px;
 }
-
-#pic-herd {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-#tab4-contents img {
-    margin: 5px;
-}
-
-
-
-#p-container {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    width: 65%;
-    margin: 0 auto;
-    margin-bottom: 20px;
-}
