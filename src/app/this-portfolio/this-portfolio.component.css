@@ -1,5 +1,7 @@
 .flex-container {
     display: flex;
+    width: 75%;
+    margin: 0 auto;
 }
 
 .white-box {
@@ -15,4 +17,6 @@
     padding: 10px;
     text-align: center;
     color: white;
+    justify-content: center;
+    align-items: center;
 }
