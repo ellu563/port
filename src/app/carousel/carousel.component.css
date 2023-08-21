@@ -76,6 +76,18 @@
     padding-top: 20px;
 }
 
+@media (max-width: 1000px) {
+    #carouselExampleControls img {
+        width: 70%;
+    }
+}
+
+@media (max-width: 850px) {
+    #carouselExampleControls img {
+        width: 80%;
+    }
+}
+
 @media (max-width: 768px) {
     #carouselExampleControls img {
         width: 100%;
