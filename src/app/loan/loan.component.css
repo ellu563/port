@@ -1,8 +1,19 @@
+.whole-thing {
+    width: 67%;
+    /*keskittää sen mat-tabissa*/
+    margin: 0 auto;
+}
+
 .container {
     margin: 20px;
     padding: 50px;
     background-color: #f4f3f3;
     margin: 0 auto;
+}
+
+.white-bg {
+    background-color: white;
+    padding: 20px;
 }
 
 .container-fordata {
@@ -62,20 +73,9 @@ button {
     align-items: center;
 }
 
-.white-bg {
-    background-color: white;
-    padding: 20px;
-}
-
 .headline {
     text-align: center;
     font-size: 50px;
-}
-
-.whole-thing {
-    width: 67%;
-    /*keskittää sen mat-tabissa*/
-    margin: 0 auto;
 }
 
 .send-b {
