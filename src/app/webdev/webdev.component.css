@@ -1,4 +1,6 @@
-body {
+#food,
+.description,
+#web-dev-p {
     font-family: 'Kosugi';
 }
 
@@ -290,14 +292,22 @@ a:hover #contact-p {
     padding: 10px;
 }
 
+/*pistää sisällön keskelle mut ottaa myös esim. kosugin*/
 .mobile-content {
-    text-align: center;
     justify-content: center;
+    align-items: center;
+}
+
+/*alignaa buttonit*/
+.b-buttons {
+    text-align: center;
 }
 
 .next-next {
     background-color: #A480C0;
     padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     border: none;
     border-radius: 10px;
     margin: 10px;
@@ -312,6 +322,8 @@ a:hover #contact-p {
     background-color: #EF8F5A;
     padding: 10px;
     border: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
     border-radius: 10px;
 }
 
