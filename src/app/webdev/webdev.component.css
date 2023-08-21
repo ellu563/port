@@ -290,18 +290,33 @@ a:hover #contact-p {
     padding: 10px;
 }
 
+.mobile-content {
+    text-align: center;
+    justify-content: center;
+}
+
 .next-next {
-    background: #A480C0;
+    background-color: #A480C0;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    margin: 10px;
+    margin-bottom: 5px;
+}
+
+.next-next:active {
+    background-color: #EF8F5A;
+}
+
+.prev-prev {
+    background-color: #EF8F5A;
     padding: 10px;
     border: none;
     border-radius: 10px;
 }
 
-.prev-prev {
-    background: #EF8F5A;
-    padding: 10px;
-    border: none;
-    border-radius: 10px;
+.prev-prev:active {
+    background-color: #A480C0;
 }
 
 /*ns. päämobiiliosio, missä vähän kaikkea nyt kesken*/
@@ -366,6 +381,10 @@ a:hover #contact-p {
     #little-text,
     #little-text2 {
         font-size: 20px;
+    }
+
+    #angular {
+        margin: 20px;
     }
 
 }
