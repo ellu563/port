@@ -2,24 +2,41 @@
     display: flex;
     width: 75%;
     margin: 0 auto;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 .white-box {
     background-color: #FFFBFB;
     flex: 50;
-    padding: 10px;
-    text-align: center;
+    text-align: left;
     border-radius: 20px;
 }
 
 .blue-box {
     background-color: #6678DC;
     flex: 50;
-    padding: 10px;
-    text-align: center;
     color: white;
     justify-content: center;
     align-items: center;
     border-radius: 20px;
+    display: flex;
+}
+
+.blue-box,
+.white-box {
+    box-sizing: border-box;
+}
+
+.centered-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.h1-portfolio {
+    text-align: center;
+}
+
+.white-text {
+    padding: 2.6rem;
 }
