@@ -75,3 +75,17 @@
     width: 100%;
     padding-top: 20px;
 }
+
+@media (max-width: 768px) {
+    #carouselExampleControls img {
+        width: 100%;
+    }
+
+    #prev {
+        left: 2%;
+    }
+
+    #next {
+        right: 2%;
+    }
+}
