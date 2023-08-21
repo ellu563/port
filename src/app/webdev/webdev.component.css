@@ -235,35 +235,6 @@ a:hover #full-p2 {
     width: 300px;
 }
 
-
-@media (max-width: 768px) {
-
-    /*nämä kaikki säännöt on vasta tuolle oranssille osiolle!!*/
-    /*hyvä!*/
-    .button-classi {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    /*entiiä näistä vielä, liittyy siis tuohon oranssiin kokonaiskuvaan*/
-    .grid-container {
-        width: 90%;
-    }
-
-    .app-container {
-        width: 100%;
-        padding: 20px;
-    }
-
-    #fronttikuva,
-    #backkikuva {
-        /*keskittää nuo*/
-        margin: 10px auto;
-    }
-
-    /*oranssi osio päättyy*/
-}
-
 a:hover #contact-p {
     color: #DEA615;
 }
@@ -317,4 +288,100 @@ a:hover #contact-p {
 
 #plus {
     padding: 10px;
+}
+
+/*ns. päämobiiliosio, missä vähän kaikkea nyt kesken*/
+@media (max-width: 768px) {
+
+    /*nämä kaikki säännöt on vasta tuolle oranssille osiolle!!*/
+    /*PISTÄÄ nuo QR- napit allekkain*/
+    .button-classi {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /*entiiä näistä vielä, liittyy siis tuohon oranssiin kokonaiskuvaan*/
+    .grid-container {
+        width: 100%;
+    }
+
+    .app-container {
+        width: 100%;
+        padding: 20px;
+    }
+
+    #fronttikuva,
+    #backkikuva {
+        /*keskittää nuo*/
+        margin: 10px auto;
+    }
+
+    /*oranssi osio päättyy*/
+
+
+    /*LIITTYY oleellisesti nyt tuohon mat-tabi osion säätöön!!*/
+    .item3 {
+        padding: 0px;
+    }
+
+    /*ei tunnu tekevän mitään..*/
+    .item4 {
+        font-size: 55px;
+    }
+
+
+    /*restaurant-food-ordering-app otsikko*/
+    #food {
+        /*tuo font size-toimii*/
+        font-size: 28px;
+        padding-bottom: 20px;
+        padding-top: 20px;
+    }
+
+    /*toimii!!*/
+    #little-text3 {
+        font-size: 20px;
+        display: block;
+        /*width säätää tuota pikku tekstin aluetta*/
+        /*ylempänä se on määritetty pienemmäksi, koska haluan sen olevan keskellä
+        tuota joutuu vielä säätämään noihin pienempiin!!! ja tähän*/
+        width: 90%;
+    }
+
+    #little-text,
+    #little-text2 {
+        font-size: 20px;
+    }
+
+}
+
+/*web-dev otsikkoa varten*/
+@media (max-width: 600px) {
+    #web-dev-p {
+        font-size: 50px;
+        padding-top: 30px;
+    }
+
+    /*graphicsissa on piennennetty tuota paddingia kokoajan alaspain..*/
+    .item3 {
+        padding: 20px;
+    }
+}
+
+/*web-dev otsikkoa varten*/
+@media (max-width: 500px) {
+    #web-dev-p {
+        font-size: 40px;
+    }
+
+    .item3 {
+        padding: 0px;
+    }
+}
+
+/*web-dev otsikkoa varten*/
+@media (max-width: 320px) {
+    #web-dev-p {
+        font-size: 25px;
+    }
 }
