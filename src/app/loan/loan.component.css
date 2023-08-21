@@ -2,6 +2,7 @@
     margin: 20px;
     padding: 50px;
     background-color: #f4f3f3;
+    margin: 0 auto;
 }
 
 mat-slider {
@@ -17,19 +18,31 @@ button {
     display: flex;
 }
 
+.inside-flex-blue {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inside-flex-yellow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .yellow-box {
     background-color: #cba006;
     flex: 60;
     padding: 20px;
-    text-align: center;
 }
 
 .blue-box {
     background-color: #3878b1;
     flex: 40;
     padding: 10px;
-    text-align: center;
     color: white;
+    justify-content: center;
+    align-items: center;
 }
 
 .white-bg {
@@ -44,6 +57,8 @@ button {
 
 .whole-thing {
     width: 70%;
+    /*keskittää sen mat-tabissa*/
+    margin: 0 auto;
 }
 
 .send-b {

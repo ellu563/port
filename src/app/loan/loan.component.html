@@ -2,12 +2,14 @@
 
     <div class="flex-container">
         <div class="yellow-box">
-            <img src="assets/images/piggy-bank.png" width="17%">
-            Pankki
+            <div class="inside-flex-yellow">
+                <img src="assets/images/piggy-bank.png" width="14%">
+            </div>
         </div>
         <div class="blue-box">
-            <img src="assets/images/card.png" width="33%">
-            Hanki kortti tänään
+            <div class="inside-flex-blue">
+                <img src="assets/images/card.png" width="31%">
+            </div>
         </div>
     </div>
 
@@ -100,7 +102,7 @@
                     <mat-checkbox class="example-margin" name="box" #box="ngModel" [(ngModel)]="loaner.box"
                         required>Olen
                         hyväksynyt
-                        sopimusehdot ja annan suostumukseni henkilötietojeni käsittelyyn.
+                        sopimusehdot ja annan suostumukseni tietojeni käsittelyyn.
                         <mat-error *ngIf="box?.touched && box?.invalid">Ehdot on hyväksyttävä.</mat-error>
                     </mat-checkbox>
                 </div>
