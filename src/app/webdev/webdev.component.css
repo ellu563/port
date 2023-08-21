@@ -290,6 +290,20 @@ a:hover #contact-p {
     padding: 10px;
 }
 
+.next-next {
+    background: #A480C0;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+}
+
+.prev-prev {
+    background: #EF8F5A;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+}
+
 /*ns. päämobiiliosio, missä vähän kaikkea nyt kesken*/
 @media (max-width: 768px) {
 

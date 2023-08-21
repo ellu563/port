@@ -48,6 +48,12 @@
 
                 <!--mobiilille oma!!-->
                 <div class="mobile-content" *ngIf="isMobileView">
+                    <!--nuolipainikkeet -->
+                    <button class="next-next" (click)="prevComponent()"
+                        *ngIf="currentIndex > 0"><mat-icon>chevron_left</mat-icon></button>
+                    <button class="prev-prev" (click)="nextComponent()"
+                        *ngIf="currentIndex < maxIndex"><mat-icon>chevron_right</mat-icon></button>
+
                     <ng-container *ngIf="currentIndex === 0">
                         <app-tickets></app-tickets>
                     </ng-container>
@@ -68,10 +74,6 @@
                     <ng-container *ngIf="currentIndex === 4">
                         <app-this-portfolio></app-this-portfolio>
                     </ng-container>
-
-                    <!--nuolipainikkeet -->
-                    <button (click)="prevComponent()" *ngIf="currentIndex > 0">Edellinen</button>
-                    <button (click)="nextComponent()" *ngIf="currentIndex < maxIndex">Seuraava</button>
                 </div>
 
             </div>
