@@ -5,6 +5,23 @@
     margin: 0 auto;
 }
 
+.container-fordata {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.bank-div {
+    background-color: #cba006;
+    width: 20%;
+}
+
+.data-div {
+    width: 80%;
+    padding: 35px;
+    background-color: #f4f3f3;
+}
+
 mat-slider {
     width: 30%;
 }
@@ -56,7 +73,7 @@ button {
 }
 
 .whole-thing {
-    width: 70%;
+    width: 67%;
     /*keskittää sen mat-tabissa*/
     margin: 0 auto;
 }
@@ -64,4 +81,21 @@ button {
 .send-b {
     background-color: #cba006;
     color: black;
+}
+
+.mat-form-block {
+    display: block;
+    width: 100%;
+}
+
+.mat-form-field {
+    width: 100%;
+}
+
+.custom-width {
+    width: 30%;
+}
+
+.ohje-text {
+    color: #757575;
 }

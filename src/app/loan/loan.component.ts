@@ -16,6 +16,11 @@ export class LoanComponent implements OnInit {
 
   interest: any;
 
+  /* näytetään tiedot vasta kun tarvitaan */
+  loanerSubmitted: boolean = false;
+  /* laitetaan nuo tiedot nyt tuonne loanDataan, niin voidaan esittää ne sivulla */
+  loanData: any = {};
+
   constructor(private loanService: LoanService) {
 
     this.loaner = new Loaner();
@@ -39,8 +44,10 @@ export class LoanComponent implements OnInit {
 
   // lähetä tieto servicelle
   onSubmit(e: any) {
-    this.loanService.onSubmit(e.value);
-    // laitetaan lähetyksen jälkeen vielä alkuarvot lomakkeelle määrään, aikaan, ja summaan
+    this.loanerSubmitted = true;
+    // laitetaan tuonne ne lomakkeen tiedot
+    this.loanData = { ...e.value };
+
     // jotta lomake tyhjenee
     this.amount = 0;
     this.time = 0;
