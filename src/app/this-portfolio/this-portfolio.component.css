@@ -40,3 +40,23 @@
 .white-text {
     padding: 2.6rem;
 }
+
+.logo {
+    width: 70%;
+}
+
+
+@media (max-width: 768px) {
+    .flex-container {
+        flex-direction: column;
+    }
+
+    .blue-box {
+        padding: 10px;
+    }
+
+    .logo {
+        width: 40%;
+    }
+
+}
