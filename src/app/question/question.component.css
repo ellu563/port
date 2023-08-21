@@ -108,6 +108,18 @@
     margin-top: 20px;
 }
 
+@media (max-width: 768px) {
+
+    /*toimii, vastauksille!!*/
+    .vastaus-vaihtoehdot {
+        display: flex;
+        flex-direction: column;
+        /* kysymys *blockit* pystysuuntaisia mobiilissa */
+        margin-top: 20px;
+    }
+}
+
+
 .vastaus-vaihtoehto {
     text-align: center;
     cursor: pointer;
