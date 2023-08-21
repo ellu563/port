@@ -21,28 +21,59 @@
 
             <p id="angular">angular</p>
             <div class="tab-group">
-                <mat-tab-group>
+
+                <!--desktop ja tabletti-->
+                <mat-tab-group *ngIf="!isMobileView">
                     <mat-tab label="Tickets" id="tab1">
-                        <!--<app-tickets></app-tickets>-->
+                        <app-tickets></app-tickets>
                     </mat-tab>
                     <mat-tab label="Today app with Firebase" id="tab3">
-                        <!--<div class="app-container">
+                        <div class="app-container">
                             <app-top-bar-today></app-top-bar-today>
                             <app-today-is></app-today-is>
                             <app-task></app-task>
                             <app-to-do></app-to-do>
-                        </div>-->
+                        </div>
                     </mat-tab>
                     <mat-tab label="Which The Wire character are you?" id="tab3">
-                        <!--<app-question></app-question>-->
+                        <app-question></app-question>
                     </mat-tab>
                     <mat-tab label="Loan calculator" id="tab2">
-                        <!--<app-loan></app-loan>-->
+                        <app-loan></app-loan>
                     </mat-tab>
                     <mat-tab label="This portfolio" id="tab4">
-                        <!--<app-this-portfolio></app-this-portfolio>-->
+                        <app-this-portfolio></app-this-portfolio>
                     </mat-tab>
                 </mat-tab-group>
+
+                <!--mobiilille oma!!-->
+                <div class="mobile-content" *ngIf="isMobileView">
+                    <ng-container *ngIf="currentIndex === 0">
+                        <app-tickets></app-tickets>
+                    </ng-container>
+                    <ng-container *ngIf="currentIndex === 1">
+                        <div class="app-container">
+                            <app-top-bar-today></app-top-bar-today>
+                            <app-today-is></app-today-is>
+                            <app-task></app-task>
+                            <app-to-do></app-to-do>
+                        </div>
+                    </ng-container>
+                    <ng-container *ngIf="currentIndex === 2">
+                        <app-question></app-question>
+                    </ng-container>
+                    <ng-container *ngIf="currentIndex === 3">
+                        <app-loan></app-loan>
+                    </ng-container>
+                    <ng-container *ngIf="currentIndex === 4">
+                        <app-this-portfolio></app-this-portfolio>
+                    </ng-container>
+
+                    <!--nuolipainikkeet -->
+                    <button (click)="prevComponent()" *ngIf="currentIndex > 0">Edellinen</button>
+                    <button (click)="nextComponent()" *ngIf="currentIndex < maxIndex">Seuraava</button>
+                </div>
+
             </div>
         </div>
 

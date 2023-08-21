@@ -16,9 +16,38 @@ import { trigger, transition, style, animate } from '@angular/animations';
 })
 export class WebdevComponent implements OnInit {
 
+  isMobileView: boolean | undefined;
+
+  currentIndex: number = 0;
+  maxIndex: number = 4; // komponenttien mr (index!)
+
   constructor() { }
 
   ngOnInit(): void {
+    // tarkistaa ikkunan leveyden + päivitä isMobileView-muuttuja
+    this.checkIfMobileView();
+
+    //tila seuraavien ikkunan koon muutosten tunnistamiseen
+    window.addEventListener('resize', () => {
+      this.checkIfMobileView();
+    });
+  }
+
+  checkIfMobileView() {
+    this.isMobileView = window.innerWidth <= 768;
+  }
+
+  // mobilea varten
+  prevComponent() {
+    if (this.currentIndex > 0) {
+      this.currentIndex--;
+    }
+  }
+
+  nextComponent() {
+    if (this.currentIndex < this.maxIndex) {
+      this.currentIndex++;
+    }
   }
 
 
