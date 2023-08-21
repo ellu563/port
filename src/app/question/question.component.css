@@ -16,13 +16,7 @@
 }
 
 .aloitus-laatikko {
-    background-color: #1976D2;
-    border-radius: 20px;
-    padding: 0px;
-    height: 500px;
-    width: 500px;
     text-align: center;
-    overflow: auto;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -91,12 +85,7 @@
 
 .kysymys-laatikko,
 .tulos-laatikko {
-    background-color: #1976D2;
-    border-radius: 20px;
-    padding: 20px;
-    width: 500px;
     text-align: center;
-    overflow: auto;
     margin: 0 auto;
     position: relative;
 }
@@ -117,6 +106,16 @@
         /* kysymys *blockit* pystysuuntaisia mobiilissa */
         margin-top: 20px;
     }
+
+    .kysely-container {
+        width: 80%;
+    }
+
+    .aloitus-kuva {
+        max-width: 85%;
+    }
+
+
 }
 
 

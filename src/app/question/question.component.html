@@ -1,45 +1,48 @@
-<div *ngIf="!kyselyAloitettu" class="kysely-container">
-    <div class="aloitus-sivu">
-        <div class="aloitus-laatikko">
-            <h2>Mikä hahmo olisit The Wire sarjasta?</h2>
-            <img src="assets/images/wire.jpg" alt="Kuva" class="aloitus-kuva">
-            <button (click)="aloitaKysely()" class="aloita-button">Aloita</button>
-        </div>
-    </div>
-</div>
-
-<div *ngIf="!tulos && kyselyAloitettu" class="kysely-container">
-    <!--<div *ngIf="nykyinenKysymysIndeksi > 0">
-        <button (click)="siirryEdelliseenKysymykseen()">Edellinen</button>
-    </div>-->
-    <div class="kysymys-laatikko">
-        <img [src]="kysymykset[nykyinenKysymysIndeksi].kysymysKuvaUrl" alt="Kysymys Kuva" class="kysymys-kuva">
-        <h2>{{ kysymykset[nykyinenKysymysIndeksi].kysymys }}</h2>
-        <div class="vastaus-vaihtoehdot">
-            <div *ngFor="let vaihtoehto of kysymykset[nykyinenKysymysIndeksi].vaihtoehdot; let i = index"
-                class="vastaus-vaihtoehto" (click)="tallennaVastaus(vaihtoehto.teksti)">
-                <p>{{ vaihtoehto.teksti }}</p>
+<div class="kysely-container">
+    <div *ngIf="!kyselyAloitettu">
+        <div class="aloitus-sivu">
+            <div class="aloitus-laatikko">
+                <h2>Mikä hahmo olisit The Wire sarjasta?</h2>
+                <img src="assets/images/wire.jpg" alt="Kuva" class="aloitus-kuva">
+                <button (click)="aloitaKysely()" class="aloita-button">Aloita</button>
             </div>
         </div>
     </div>
-    <!--
+
+    <div *ngIf="!tulos && kyselyAloitettu">
+        <!--<div *ngIf="nykyinenKysymysIndeksi > 0">
+        <button (click)="siirryEdelliseenKysymykseen()">Edellinen</button>
+    </div>-->
+        <div class="kysymys-laatikko">
+            <img [src]="kysymykset[nykyinenKysymysIndeksi].kysymysKuvaUrl" alt="Kysymys Kuva" class="kysymys-kuva">
+            <h2>{{ kysymykset[nykyinenKysymysIndeksi].kysymys }}</h2>
+            <div class="vastaus-vaihtoehdot">
+                <div *ngFor="let vaihtoehto of kysymykset[nykyinenKysymysIndeksi].vaihtoehdot; let i = index"
+                    class="vastaus-vaihtoehto" (click)="tallennaVastaus(vaihtoehto.teksti)">
+                    <p>{{ vaihtoehto.teksti }}</p>
+                </div>
+            </div>
+        </div>
+        <!--
     <div class="navigointi">
         <div *ngIf="nykyinenKysymysIndeksi < kysymykset.length - 1">
             <button (click)="siirrySeuraavaanKysymykseen()">Seuraava</button>
         </div>
     </div>-->
-</div>
+    </div>
 
-<div *ngIf="tulos" class="kysely-container">
-    <div class="tulos-laatikko">
-        <h2>Tuloksesi:</h2>
-        <p>{{ tulos }}</p>
-        <img class="answer-img" *ngIf="tulos.includes('Jimmy McNulty')" src="assets/images/jimmy1.jpg"
-            alt="Jimmy McNulty">
-        <img class="answer-img" *ngIf="tulos.includes('Omar Little')" src="assets/images/omar.jpg" alt="Omar Little">
-        <img class="answer-img" *ngIf="tulos.includes('Avon Barksdale')" src="assets/images/avon.jpg"
-            alt="Avon Barksdale">
-        <img class="answer-img" *ngIf="tulos.includes('Bubbles')" src="assets/images/bubbles.jpg" alt="Bubbles">
-        <button (click)="nollaaTulos()" class="nollaa-button">Aloita testi uudelleen</button>
+    <div *ngIf="tulos">
+        <div class="tulos-laatikko">
+            <h2>Tuloksesi:</h2>
+            <p>{{ tulos }}</p>
+            <img class="answer-img" *ngIf="tulos.includes('Jimmy McNulty')" src="assets/images/jimmy1.jpg"
+                alt="Jimmy McNulty">
+            <img class="answer-img" *ngIf="tulos.includes('Omar Little')" src="assets/images/omar.jpg"
+                alt="Omar Little">
+            <img class="answer-img" *ngIf="tulos.includes('Avon Barksdale')" src="assets/images/avon.jpg"
+                alt="Avon Barksdale">
+            <img class="answer-img" *ngIf="tulos.includes('Bubbles')" src="assets/images/bubbles.jpg" alt="Bubbles">
+            <button (click)="nollaaTulos()" class="nollaa-button">Aloita testi uudelleen</button>
+        </div>
     </div>
 </div>
