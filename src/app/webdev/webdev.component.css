@@ -331,17 +331,14 @@ a:hover #contact-p {
     background-color: #A480C0;
 }
 
-/*ns. päämobiiliosio, missä vähän kaikkea nyt kesken*/
 @media (max-width: 768px) {
 
-    /*nämä kaikki säännöt on vasta tuolle oranssille osiolle!!*/
     /*PISTÄÄ nuo QR- napit allekkain*/
     .button-classi {
         flex-direction: column;
         align-items: center;
     }
 
-    /*entiiä näistä vielä, liittyy siis tuohon oranssiin kokonaiskuvaan*/
     .grid-container {
         width: 100%;
     }
@@ -359,18 +356,9 @@ a:hover #contact-p {
 
     /*oranssi osio päättyy*/
 
-
-    /*LIITTYY oleellisesti nyt tuohon mat-tabi osion säätöön!!*/
     .item3 {
         padding: 0px;
     }
-
-    /*ei tunnu tekevän mitään..*/
-    .item4 {
-        font-size: 55px;
-        padding: 20px;
-    }
-
 
     /*restaurant-food-ordering-app otsikko*/
     #food {
@@ -380,13 +368,12 @@ a:hover #contact-p {
         padding-top: 20px;
     }
 
-    /*toimii!!*/
+    /*toimii!*/
     #little-text3 {
         font-size: 20px;
         display: block;
         /*width säätää tuota pikku tekstin aluetta*/
-        /*ylempänä se on määritetty pienemmäksi, koska haluan sen olevan keskellä
-        tuota joutuu vielä säätämään noihin pienempiin!!! ja tähän*/
+        /*ylempänä se on määritetty pienemmäksi, koska haluan sen olevan keskellä*/
         width: 90%;
     }
 
