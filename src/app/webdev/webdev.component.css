@@ -223,6 +223,9 @@ a:hover #full-p2 {
 
 .button-classi {
     text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 #buttoni {
@@ -230,6 +233,35 @@ a:hover #full-p2 {
     background: none;
     margin: 20px;
     width: 300px;
+}
+
+
+@media (max-width: 768px) {
+
+    /*nämä kaikki säännöt on vasta tuolle oranssille osiolle!!*/
+    /*hyvä!*/
+    .button-classi {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /*entiiä näistä vielä, liittyy siis tuohon oranssiin kokonaiskuvaan*/
+    .grid-container {
+        width: 90%;
+    }
+
+    .app-container {
+        width: 100%;
+        padding: 20px;
+    }
+
+    #fronttikuva,
+    #backkikuva {
+        /*keskittää nuo*/
+        margin: 10px auto;
+    }
+
+    /*oranssi osio päättyy*/
 }
 
 a:hover #contact-p {
