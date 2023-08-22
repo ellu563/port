@@ -29,7 +29,10 @@
     margin-right: 5px;
 }
 
-.logo:hover {
+.logo:hover,
+.logo:active,
+.logo-mobile:hover,
+.logo-mobile:active {
     transform: scale(1.1);
     filter: brightness(110%);
 }
@@ -63,27 +66,6 @@
     border: none;
     background: none;
     margin: 20px;
-}
-
-/*teksti vaarinpain nav*/
-#upside {
-    font-size: 30px;
-    transform: rotate(180deg);
-    margin-bottom: 0;
-}
-
-#upside:hover {
-    color: #ff9d43;
-}
-
-/*teksti oikeinpain nav*/
-#normal {
-    font-size: 30px;
-    margin-bottom: 0;
-}
-
-#normal:hover {
-    color: #ff9d43;
 }
 
 
