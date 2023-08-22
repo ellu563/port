@@ -34,21 +34,6 @@
     color: black;
 }
 
-/*tuplateksti-nappi*/
-#double-text {
-    border: none;
-    background: none;
-    margin: 20px;
-}
-
-
-/*teksti vaarinpain nav*/
-#upside {
-    font-size: 30px;
-    transform: rotate(180deg);
-    margin-bottom: 0;
-}
-
 /*top nav area*/
 .item0 {
     grid-area: header0;
@@ -66,7 +51,6 @@ mat-icon {
     font-size: 9rem;
     text-align: center;
 }
-
 
 /*web-development*/
 .item2 {
@@ -122,7 +106,7 @@ a {
 .item3 {
     grid-area: aboutme;
     background-color: #d34a7c;
-    padding: 90px;
+    padding: 50px;
 }
 
 /*orange*/
@@ -318,6 +302,20 @@ a:hover #contact-p {
 
 .prev-prev:active {
     background-color: #A480C0;
+}
+
+@media (max-width: 1070px) {
+
+    #angular {
+        padding-top: 30px;
+    }
+
+    .item3 {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        padding: 0px;
+    }
+
 }
 
 @media (max-width: 768px) {

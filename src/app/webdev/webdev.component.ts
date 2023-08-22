@@ -34,7 +34,7 @@ export class WebdevComponent implements OnInit {
   }
 
   checkIfMobileView() {
-    this.isMobileView = window.innerWidth <= 768;
+    this.isMobileView = window.innerWidth <= 962;
   }
 
   // mobilea varten
