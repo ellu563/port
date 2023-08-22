@@ -411,6 +411,10 @@ a:hover #contact-p {
     .item3 {
         padding: 0px;
     }
+
+    #food {
+        font-size: 25px;
+    }
 }
 
 /*web-dev otsikkoa varten*/
