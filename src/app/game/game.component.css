@@ -3,7 +3,11 @@
 .white-container {
     width: 100%;
     border-radius: 20px;
-    background-color: #A480C0;
+    padding-top: 5px;
+    margin-top: 5px;
+    background-color: #22343e;
+    /*H1*/
+    text-align: center;
 }
 
 .container-cards {
@@ -77,6 +81,13 @@
 /*for p*/
 #imgs {
     font-size: 14px;
+}
+
+h1 {
+    color: #fbbebf;
+    font-family: 'Kosugi';
+    font-size: 2em;
+    margin-top: 20px;
 }
 
 /*korteille media queryt*/
