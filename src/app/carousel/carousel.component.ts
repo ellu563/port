@@ -21,6 +21,17 @@ export class CarouselComponent implements OnInit {
       'assets/images/same-2.png',
       'assets/images/same-1.png'
     ];
+
+    this.preloadImages(this.slides);
+
+  }
+
+  //kuvien ennakkolataamiseen
+  preloadImages(imageUrls: string[]) {
+    imageUrls.forEach(imageUrl => {
+      const img = new Image();
+      img.src = imageUrl;
+    });
   }
 
   getSlide() {
