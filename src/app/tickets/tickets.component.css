@@ -149,6 +149,10 @@ mat-form-field {
         width: 95%;
         margin: 10px;
     }
+
+    .tix {
+        width: 100%;
+    }
 }
 
 @media (max-width: 400px) {
