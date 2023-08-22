@@ -130,7 +130,7 @@
 }
 
 /* IN HERE we move to mobile-logo */
-@media (max-width: 385px) {
+@media (max-width: 485px) {
 
     .logo {
         display: none;
@@ -138,10 +138,10 @@
 
     .logo-mobile {
         display: flex;
-        width: 50%;
-        min-width: 4.5em;
+        width: 40%;
+        min-width: 4em;
         /*pitää sen keskessä*/
-        margin: 10px auto;
+        margin: 5px auto;
     }
 }
 
