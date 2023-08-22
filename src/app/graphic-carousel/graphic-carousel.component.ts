@@ -11,23 +11,23 @@ export class GraphicCarouselComponent implements OnInit {
   images = [
     {
       src: 'assets/images/space-1.JPG',
-      alt: 'Image 1'
+      alt: 'Girl in space.'
     },
     {
       src: 'assets/images/teapot3-01.jpg',
-      alt: 'Image 2'
+      alt: 'Teapot.'
     },
     {
       src: 'assets/images/girlanddog.jpg',
-      alt: 'Image 3'
+      alt: 'Girl and dog.'
     },
     {
       src: 'assets/images/pinkitkukat.jpg',
-      alt: 'Image 4'
+      alt: 'Pink flowers.'
     },
     {
       src: 'assets/images/hrilainen.jpg',
-      alt: 'Image 5'
+      alt: 'Hamburger.'
     }
   ];
 
@@ -35,23 +35,23 @@ export class GraphicCarouselComponent implements OnInit {
   images2 = [
     {
       src: 'assets/images/mads.jpg',
-      alt: 'Image 1'
+      alt: 'Girl.'
     },
     {
       src: 'assets/images/game-hall.jpg',
-      alt: 'Image 2'
+      alt: 'Arcade hall.'
     },
     {
       src: 'assets/images/super.jpg',
-      alt: 'Image 3'
+      alt: 'Superwoman.'
     },
     {
       src: 'assets/images/avaruusdubet.jpg',
-      alt: 'Image 4'
+      alt: 'Dogs in space.'
     },
     {
       src: 'assets/images/pekka-long.jpg',
-      alt: 'Image 5'
+      alt: 'White dog.'
     }
   ];
 
