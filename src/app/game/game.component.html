@@ -1,16 +1,18 @@
-<div class="container-cards">
-    <div class="card-class" *ngFor="let card of cards">
-        <div class="card" (click)="selectCard(card)" [@cardFlip]="card.flipped ? 'flipped' : 'default'"
-            [ngClass]="{'matched': card.matched}">
-            <div class="front" *ngIf="!card.flipped">
-                <img class="f" src="{{ card.frontImage }}" alt="{{ card.title }}">
-            </div>
-            <div class="back" *ngIf="card.flipped">
-                <img class="b" src="{{ card.backImage }}" alt="Takapuoli" *ngIf="card.flipped || card.matched">
+<div class="white-container">
+    <div class="container-cards">
+        <div class="card-class" *ngFor="let card of cards">
+            <div class="card" (click)="selectCard(card)" [@cardFlip]="card.flipped ? 'flipped' : 'default'"
+                [ngClass]="{'matched': card.matched}">
+                <div class="front" *ngIf="!card.flipped">
+                    <img class="f" src="{{ card.frontImage }}" alt="{{ card.title }}">
+                </div>
+                <div class="back" *ngIf="card.flipped">
+                    <img class="b" src="{{ card.backImage }}" alt="Takapuoli" *ngIf="card.flipped || card.matched">
+                </div>
             </div>
         </div>
+        <button id="start" (click)="startGame()">
+            Uusi peli
+        </button>
     </div>
-    <button id="start" (click)="startGame()">
-        Uusi peli
-    </button>
 </div>
