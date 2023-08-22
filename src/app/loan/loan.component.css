@@ -2,6 +2,7 @@
     width: 67%;
     /*keskittää sen mat-tabissa*/
     margin: 0 auto;
+    margin-top: 5px;
 }
 
 .container {

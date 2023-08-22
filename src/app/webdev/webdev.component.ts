@@ -33,6 +33,7 @@ export class WebdevComponent implements OnInit {
     });
   }
 
+  /* made so big because of mat-tab */
   checkIfMobileView() {
     this.isMobileView = window.innerWidth <= 962;
   }
