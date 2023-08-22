@@ -80,6 +80,8 @@ export class WelcomeComponent implements OnInit {
   nextComponent() {
     if (this.currentIndex < this.maxIndex) {
       this.currentIndex++;
+    } else {
+      this.currentIndex = 0;
     }
   }
 }
