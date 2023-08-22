@@ -144,4 +144,24 @@ mat-form-field {
     }
 }
 
-@media (max-width: 475px) {}
+@media (max-width: 430px) {
+    .big-container {
+        width: 95%;
+        margin: 10px;
+    }
+}
+
+@media (max-width: 400px) {
+    .big-container {
+        width: 100%;
+        margin: 10px;
+    }
+
+    .white-section {
+        flex: 95;
+    }
+
+    .red-section {
+        flex: 5;
+    }
+}
