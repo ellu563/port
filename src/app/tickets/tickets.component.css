@@ -60,7 +60,7 @@ mat-form-field {
 /*for tickets under here*/
 /*ns.red-container vaan nimeamisen vuoksi, ei liity punaiseen*/
 .red-container {
-    padding-top: 5px;
+    padding-top: 7px;
     display: flex;
     width: 70%;
     /*keskittää*/
