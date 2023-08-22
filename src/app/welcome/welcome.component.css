@@ -384,6 +384,10 @@ h1 {
         text-align: center;
     }
 
+    .intro-img {
+        width: 60%;
+    }
+
 
 }
 
@@ -459,5 +463,9 @@ h1 {
 
     .projects-h1 {
         font-size: 4rem;
+    }
+
+    .intro-img {
+        width: 90%;
     }
 }
