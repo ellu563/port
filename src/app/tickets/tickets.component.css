@@ -143,3 +143,9 @@ mat-form-field {
         flex: 20;
     }
 }
+
+@media (max-width: 475px) {
+    .red-container {
+        width: 95%;
+    }
+}
