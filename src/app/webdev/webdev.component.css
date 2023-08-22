@@ -49,20 +49,6 @@
     margin-bottom: 0;
 }
 
-#upside:hover {
-    color: #DEA615;
-}
-
-/*teksti oikeinpain nav*/
-#normal {
-    font-size: 30px;
-    margin-bottom: 0;
-}
-
-#normal:hover {
-    color: #DEA615;
-}
-
 /*top nav area*/
 .item0 {
     grid-area: header0;
