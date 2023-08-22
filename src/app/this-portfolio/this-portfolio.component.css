@@ -49,6 +49,7 @@
 @media (max-width: 768px) {
     .flex-container {
         flex-direction: column;
+        width: 80%;
     }
 
     .blue-box {
