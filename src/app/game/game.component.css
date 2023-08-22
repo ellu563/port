@@ -60,14 +60,12 @@
     background-color: #a0255d;
     border: none;
     padding: 20px;
-    margin-top: 20px;
     border-radius: 10px;
     font-size: 20px;
     font-family: 'Kosugi';
     text-align: center;
-    align-self: center;
-    /* Keskittää napin pystysuunnassa */
 }
+
 
 /*new game button*/
 #start:hover {
@@ -92,6 +90,7 @@ h1 {
 
 /*korteille media queryt*/
 @media (max-width: 768px) {
+
     .container-cards {
         grid-template-columns: repeat(2, 1fr);
         gap: 20px;
@@ -101,6 +100,7 @@ h1 {
 @media (max-width: 480px) {
     .container-cards {
         grid-template-columns: repeat(1, 1fr);
-        grid-gap: 20px;
+        grid-gap: 10px;
     }
+
 }
