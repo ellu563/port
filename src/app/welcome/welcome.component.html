@@ -12,13 +12,27 @@
 
         <!--item 2: IMGs-->
         <div class="item2">
-
             <div class="image-container">
-                <img class="intro-img" src="assets/images/DEV2-03.png" width="30%">
-                <img class="intro-img" src="assets/images/DEV2-04.png" width="30%">
-                <img class="intro-img" src="assets/images/DEV2-05.png" width="30%">
+                <!--desktop-->
+                <ng-container *ngIf="isDesktopView; else mobileView">
+                    <img class="intro-img" src="assets/images/DEV2-03.png" width="30%">
+                    <img class="intro-img" src="assets/images/DEV2-04.png" width="30%">
+                    <img class="intro-img" src="assets/images/DEV2-05.png" width="30%">
+                </ng-container>
+
+                <!--mobile + napit-->
+                <ng-template #mobileView>
+                    <img class="intro-img" [src]="mobileImages[currentIndex]" width="100%">
+                    <div class="b-buttons">
+                        <button class="next-next" (click)="prevComponent()"
+                            *ngIf="currentIndex > 0"><mat-icon>chevron_left</mat-icon></button>
+                        <button class="prev-prev" (click)="nextComponent()"
+                            *ngIf="currentIndex < maxIndex"><mat-icon>chevron_right</mat-icon></button>
+                    </div>
+                </ng-template>
             </div>
         </div>
+
 
         <!--item3: siksak-->
         <div class="item3">

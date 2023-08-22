@@ -16,10 +16,33 @@ import { trigger, transition, style, animate } from '@angular/animations';
   ],
 })
 export class WelcomeComponent implements OnInit {
+  isMobileView = false;
+  isDesktopView = false;
+
+  currentIndex: number = 0;
+  maxIndex: number = 2;
+
+  mobileImages: string[] = [
+    'assets/images/DEV2-03.png',
+    'assets/images/DEV2-04.png',
+    'assets/images/DEV2-05.png'
+  ];
 
   constructor() { }
 
   ngOnInit(): void {
+    // tarkistaa ikkunan leveyden + päivitä isMobileView-muuttuja
+    this.checkIfMobileView();
+
+    //tila seuraavien ikkunan koon muutosten tunnistamiseen
+    window.addEventListener('resize', () => {
+      this.checkIfMobileView();
+    });
+  }
+
+  checkIfMobileView() {
+    this.isMobileView = window.innerWidth <= 695;
+    this.isDesktopView = window.innerWidth > 695;
   }
 
   /*vaihdetaan graphic-design sisalto hoveroidessa*/
@@ -44,5 +67,19 @@ export class WelcomeComponent implements OnInit {
 
   onLeaveWeb(): void {
     this.hoverWeb = false;
+  }
+
+
+  // mobilea varten
+  prevComponent() {
+    if (this.currentIndex > 0) {
+      this.currentIndex--;
+    }
+  }
+
+  nextComponent() {
+    if (this.currentIndex < this.maxIndex) {
+      this.currentIndex++;
+    }
   }
 }

@@ -235,6 +235,38 @@ h1 {
     margin-bottom: 40px;
 }
 
+.b-buttons {
+    text-align: center;
+}
+
+.next-next {
+    background-color: #A480C0;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 10px;
+    margin: 10px;
+    margin-bottom: 5px;
+}
+
+.next-next:active {
+    background-color: #EF8F5A;
+}
+
+.prev-prev {
+    background-color: #EF8F5A;
+    padding: 10px;
+    border: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.prev-prev:active {
+    background-color: #A480C0;
+}
+
 @media (max-width: 989px) {
     .p-web {
         font-size: 3.4rem;
