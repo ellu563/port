@@ -75,14 +75,6 @@ a:hover .block-web2 {
     background: none;
 }
 
-/*huom! width nyt yrityksenä saada se skaalautumaan!!*/
-/*skaalautuvuuden ja devtools ongelma mitä ilmeisemmin
-palkkien isosta koosta kiinni: kun palkit poisti niin sivu skaalautui.
-nyt yritetään saada ne sillä tavalla että ne skaalautuu mukana
-samoin se fontti, jota pitää pistää tuonne media queryihin vielä pienemmäksi
-    nyt myös fontti vähän tuossa rajoilla, kun on liian iso
-    */
-
 /*graphic design*/
 .block1 {
     background-color: #f86bb4;

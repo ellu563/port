@@ -4,10 +4,6 @@ import { Buyer } from '../buyer';
 import { TicketService } from '../services/ticket.service';
 import { NgForm } from '@angular/forms';
 
-/* Lipunvaraus lomake maatalousnayttelyyn, jossa paivittyy summa.
-   Sitä varten tehty: Buyer class.
-   Lopullinen tavoite: lähettää lomakkeen tiedot servicelle */
-
 @Component({
   selector: 'app-tickets',
   templateUrl: './tickets.component.html',
