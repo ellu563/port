@@ -63,10 +63,7 @@ export class GraphicCarouselComponent implements OnInit {
   intervalId: any;
   intervalId2: any;
 
-  constructor() { }
-
-  ngOnInit(): void {
-
+  constructor() {
     /* ladataan kuvat etukateen */
     const imagesToPreload = [
       'assets/images/space-1.JPG',
@@ -85,6 +82,9 @@ export class GraphicCarouselComponent implements OnInit {
       const img = new Image();
       img.src = imageUrl;
     });
+  }
+
+  ngOnInit(): void {
 
     // käynnistää ajastimen, joka suorittaa nextSlide() -metodin joka 3. sekunti
 
