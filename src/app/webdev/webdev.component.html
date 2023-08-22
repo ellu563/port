@@ -27,12 +27,7 @@
                         <app-tickets></app-tickets>
                     </mat-tab>
                     <mat-tab label="Today app with Firebase" id="tab3">
-                        <div class="app-container">
-                            <app-top-bar-today></app-top-bar-today>
-                            <app-today-is></app-today-is>
-                            <app-task></app-task>
-                            <app-to-do></app-to-do>
-                        </div>
+                        <app-question></app-question>
                     </mat-tab>
                     <mat-tab label="Which The Wire character are you?" id="tab3">
                         <app-question></app-question>
@@ -59,12 +54,7 @@
                         <app-tickets></app-tickets>
                     </ng-container>
                     <ng-container *ngIf="currentIndex === 1">
-                        <div class="app-container">
-                            <app-top-bar-today></app-top-bar-today>
-                            <app-today-is></app-today-is>
-                            <app-task></app-task>
-                            <app-to-do></app-to-do>
-                        </div>
+                        <app-question></app-question>
                     </ng-container>
                     <ng-container *ngIf="currentIndex === 2">
                         <app-question></app-question>

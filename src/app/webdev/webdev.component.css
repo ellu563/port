@@ -236,20 +236,6 @@ a:hover #contact-p {
     width: 54%;
 }
 
-.app-container {
-    margin: auto;
-    margin-top: 20px;
-    margin-bottom: 15px;
-    padding: 50px;
-    background-color: #f9f3ed;
-    /*today apin taustavari*/
-    width: 65%;
-    align-items: center;
-    box-shadow: 9px 12px;
-    border: 1px solid;
-    border-radius: 10px;
-}
-
 #tab4-contents {
     padding: 30px;
 }
@@ -328,11 +314,6 @@ a:hover #contact-p {
 
     .grid-container {
         width: 100%;
-    }
-
-    .app-container {
-        width: 100%;
-        padding: 20px;
     }
 
     #fronttikuva,

@@ -30,10 +30,6 @@ import { ReactiveFormsModule } from '@angular/forms';
 
 import { AngularFireModule } from '@angular/fire/compat';
 import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
-import { TodayIsComponent } from './today-is/today-is.component';
-import { TaskComponent } from './task/task.component';
-import { TopBarTodayComponent } from './top-bar-today/top-bar-today.component';
-import { ToDoComponent } from './to-do/to-do.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { ContactMeComponent } from './contact-me/contact-me.component';
 import { TicketsComponent } from './tickets/tickets.component';
@@ -56,10 +52,6 @@ import { ThisPortfolioComponent } from './this-portfolio/this-portfolio.componen
     SideGameButtonComponent,
     GraphicCarouselComponent,
     LoanComponent,
-    TodayIsComponent,
-    TaskComponent,
-    TopBarTodayComponent,
-    ToDoComponent,
     PageNotFoundComponent,
     ContactMeComponent,
     TicketsComponent,
