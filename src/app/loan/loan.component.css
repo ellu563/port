@@ -99,3 +99,14 @@ button {
 .ohje-text {
     color: #757575;
 }
+
+@media (max-width: 768px) {
+
+    .whole-thing {
+        width: 90%;
+    }
+
+    .headline {
+        font-size: 30px;
+    }
+}
