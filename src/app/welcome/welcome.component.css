@@ -151,12 +151,11 @@ samoin se fontti, jota pitää pistää tuonne media queryihin vielä pienemmäk
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 80px;
+    padding: 70px;
     width: 100%;
 }
 
 .intro-img {
-    flex: 0 0 calc(33.33% - 20px);
     max-width: 100vw;
     /*käytä viewport-yksikköä tässä */
     margin: 0;
