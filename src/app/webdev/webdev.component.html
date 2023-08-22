@@ -26,8 +26,8 @@
                     <mat-tab label="Tickets" id="tab1">
                         <app-tickets></app-tickets>
                     </mat-tab>
-                    <mat-tab label="Today app with Firebase" id="tab3">
-                        <app-question></app-question>
+                    <mat-tab label="Memory game" id="tab3">
+                        <app-game></app-game>
                     </mat-tab>
                     <mat-tab label="Which The Wire character are you?" id="tab3">
                         <app-question></app-question>
@@ -54,7 +54,7 @@
                         <app-tickets></app-tickets>
                     </ng-container>
                     <ng-container *ngIf="currentIndex === 1">
-                        <app-question></app-question>
+                        <app-game></app-game>
                     </ng-container>
                     <ng-container *ngIf="currentIndex === 2">
                         <app-question></app-question>
@@ -126,10 +126,6 @@
                 <app-carousel></app-carousel>
             </div>
         </div>
-
-
-        <!--go up-->
-        <app-side-game-button></app-side-game-button>
 
         <!--bottom nav-->
         <div class="item5">
