@@ -90,31 +90,32 @@ h1 {
 
 @media (max-width: 938px) {
 
+    /*tämä kohta nyt vaan pienentää noita gappeja koko jutulle!*/
     .container-cards {
         gap: 15px;
         padding: 10px;
     }
 
-    .card {
-        position: relative;
-        padding: 0;
-        width: 100%;
-        height: 100%;
-        max-width: 190px;
-        max-height: 240px;
-        margin: 0 auto;
-    }
-
-    .front img,
-    .back img {
-        /*tässä kohtaa leikkaa kiinni ja huom. 938 jälkeen*/
-        /*kortti siis kääntyy vaarinpain taman jalkeen*/
+    /*vaihdettu käyttämään .f & .b, front img ja back img kääntää sen !!!*/
+    .f {
         max-width: 100%;
         max-height: 100%;
-        object-fit: cover;
+        object-fit: contain;
         width: 100%;
         height: 100%;
         border-radius: 10px;
+    }
+
+    /*tässä kohtaa leikkaa kiinni ja huom. 938 jälkeen*/
+    /*kortti siis kääntyy vaarinpain taman jalkeen*/
+    .b {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: contain;
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        transform: rotateY(0deg);
     }
 
 }
@@ -122,31 +123,10 @@ h1 {
 /*korteille media queryt*/
 @media (max-width: 768px) {
 
-
     .container-cards {
         gap: 10px;
         margin: 5px;
         padding: 10px;
-    }
-
-    .card {
-        position: relative;
-        padding: 0;
-        width: 100%;
-        height: 100%;
-        max-width: 190px;
-        max-height: 240px;
-        margin: 0 auto;
-    }
-
-    .front img,
-    .back img {
-        max-width: 100%;
-        max-height: 100%;
-        object-fit: contain;
-        width: auto;
-        height: auto;
-        border-radius: 10px;
     }
 
 }

@@ -29,7 +29,7 @@ interface Card {
         transform: 'none'
       })),
       state('flipped', style({
-        transform: 'perspective(1000px) rotateY(180deg) scaleX(-1)'
+        transform: 'perspective(1000px) rotateY(0deg) scaleX(-1)'
       })),
       transition('default => flipped', animate('300ms ease-out')),
       transition('flipped => default', animate('300ms ease-in'))
