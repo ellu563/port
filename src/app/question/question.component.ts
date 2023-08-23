@@ -25,6 +25,26 @@ export class QuestionComponent implements OnInit {
     bubbles: 0
   };
 
+  constructor() {
+    const imageUrlsToPreload = [
+      'assets/images/thewire1.jpg',
+      'assets/images/wire2.jpg',
+      'assets/images/wire3.jpg',
+      'assets/images/wire4.jpg',
+      'assets/images/wire5.jpg',
+      'assets/images/wire6.jpg',
+    ];
+
+    this.preloadImages(imageUrlsToPreload);
+  }
+
+  private preloadImages(imageUrls: string[]) {
+    imageUrls.forEach(imageUrl => {
+      const img = new Image();
+      img.src = imageUrl;
+    });
+  }
+
   kysymykset: Kysymys[] = [
     {
       kysymys: 'Uutislähetyksessä kerrotaan kulmakioskin ryöstöstä, oletko sinä...',
