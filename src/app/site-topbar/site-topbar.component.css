@@ -37,7 +37,8 @@
     filter: brightness(110%);
 }
 
-#yellow {
+#nav-button-webdev,
+#nav-button-graphic {
     color: black;
     border: solid #ff9d43;
     border-radius: 24px;
@@ -45,11 +46,13 @@
     transition: box-shadow 0.3s ease;
 }
 
-#yellow:active {
+#nav-button-webdev:active,
+#nav-button-graphic:active {
     box-shadow: 0px 5px 8px #ff9d43;
 }
 
-.topnav #yellow:hover {
+.topnav #nav-button-webdev:hover,
+.topnav #nav-button-graphic:hover {
     color: black;
     border-radius: 24px;
     border: solid #d34a7c;
@@ -59,13 +62,6 @@
 
 .topnav a.active {
     color: black;
-}
-
-/*tuplateksti-nappi*/
-#double-text {
-    border: none;
-    background: none;
-    margin: 20px;
 }
 
 
