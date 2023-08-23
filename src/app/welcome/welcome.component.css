@@ -70,8 +70,9 @@ a:hover .block-web2 {
 }
 
 /*hide button padding, border, and background*/
-/*tää on nyt kokonaisuudessaan toi *1* blockki palikka*/
-#blocks {
+/*muutettu blocks > blocks1 & blocks2 jotta saadaan eri id*/
+#blocks1,
+#blocks2 {
     border: none;
     background: none;
     /*tuo ton mustan korkeuden!*/
