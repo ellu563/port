@@ -258,6 +258,14 @@ h1 {
     background-color: #A480C0;
 }
 
+.next-next:hover {
+    background-color: #c12b61;
+}
+
+.prev-prev:hover {
+    background-color: #c12b61;
+}
+
 @media (max-width: 989px) {
     .p-web {
         font-size: 3.4rem;
