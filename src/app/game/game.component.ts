@@ -73,6 +73,7 @@ export class GameComponent implements OnInit {
       'assets/images/mustikka.jpeg',
       'assets/images/fruit.jpeg',
       'assets/images/marja.jpeg',
+      'assets/images/tikkari.jpg'
     ];
 
     imageUrls.forEach(imageUrl => {
