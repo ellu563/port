@@ -44,9 +44,9 @@
                 <div class="mobile-content" *ngIf="isMobileView">
                     <!--nuolipainikkeet -->
                     <div class="b-buttons">
-                        <button class="next-next" (click)="prevComponent()"
+                        <button class="next-next" aria-label="previous button" (click)="prevComponent()"
                             *ngIf="currentIndex > 0"><mat-icon>chevron_left</mat-icon></button>
-                        <button class="prev-prev" (click)="nextComponent()"
+                        <button class="prev-prev" aria-label="next button" (click)="nextComponent()"
                             *ngIf="currentIndex < maxIndex"><mat-icon>chevron_right</mat-icon></button>
                     </div>
 
@@ -68,9 +68,9 @@
 
                     <!--nuolipainikkeet -->
                     <div class="b-buttons">
-                        <button class="next-next" (click)="prevComponent()"
+                        <button class="next-next" aria-label="previous button" (click)="prevComponent()"
                             *ngIf="currentIndex > 0"><mat-icon>chevron_left</mat-icon></button>
-                        <button class="prev-prev" (click)="nextComponent()"
+                        <button class="prev-prev" aria-label="next button" (click)="nextComponent()"
                             *ngIf="currentIndex < maxIndex"><mat-icon>chevron_right</mat-icon></button>
                     </div>
                 </div>
@@ -98,7 +98,7 @@
 
             <div class="button-classi">
 
-                <button id="buttoni">
+                <button id="buttoni" aria-label="Go to github, see backend">
                     <a href="https://github.com/ellu563/GastroAPI" target="_blank" rel="noopener">
                         <div id="full-p2">
                             <p id="backki-p">Backend</p>
@@ -110,7 +110,7 @@
                     <p id="little-text2">C# & .NET</p>
                 </button>
 
-                <button id="buttoni">
+                <button id="buttoni" aria-label="Go to github, see frontend">
                     <a href="https://github.com/elinasylvia/GastroBar-Saimaa---sovellus" target="_blank" rel="noopener">
                         <div id="full-p1">
                             <p id="frontti-p">Frontend</p>

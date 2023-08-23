@@ -24,9 +24,9 @@
                 <ng-template #mobileView>
                     <img class="intro-img" [src]="mobileImages[currentIndex]" width="100%">
                     <div class="b-buttons">
-                        <button class="next-next" (click)="prevComponent()"
+                        <button class="next-next" aria-label="previous button" (click)="prevComponent()"
                             *ngIf="currentIndex > 0"><mat-icon>chevron_left</mat-icon></button>
-                        <button class="prev-prev" (click)="nextComponent()"
+                        <button class="prev-prev" aria-label="next button" (click)="nextComponent()"
                             *ngIf="currentIndex < maxIndex"><mat-icon>chevron_right</mat-icon></button>
                     </div>
                 </ng-template>
@@ -46,7 +46,8 @@
             <div class="block-container">
                 <div class="block-party-1">
                     <!--web-dev-->
-                    <button id="blocks1" (mouseenter)="onHoverWeb()" (mouseleave)="onLeaveWeb()">
+                    <button id="blocks1" aria-label="web development" (mouseenter)="onHoverWeb()"
+                        (mouseleave)="onLeaveWeb()">
                         <a routerLink="/web-development" routerLinkActive="active">
                             <div class="block-web1"></div>
                             <div class="block-web-content">
@@ -61,7 +62,7 @@
                 </div>
                 <div class="block-party-2">
                     <!-- graphic design-->
-                    <button id="blocks2" (mouseenter)="onHover()" (mouseleave)="onLeave()">
+                    <button id="blocks2" aria-label="graphic design" (mouseenter)="onHover()" (mouseleave)="onLeave()">
                         <a routerLink="/graphic-design" routerLinkActive="active">
                             <div class="block1">
                                 <p class="p-web"><span *ngIf="!hover">graphic</span></p>
