@@ -237,7 +237,7 @@ a:hover #contact-p {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 54%;
+    width: 50%;
 }
 
 #tab4-contents {
@@ -296,6 +296,10 @@ a:hover #contact-p {
 
 @media (max-width: 1070px) {
 
+    #little-text3 {
+        width: 65%;
+    }
+
     #angular {
         padding-top: 20px;
     }
@@ -308,6 +312,24 @@ a:hover #contact-p {
         padding: 20px;
     }
 
+}
+
+@media (max-width: 975px) {
+    #little-text3 {
+        width: 68%;
+    }
+}
+
+@media (max-width: 920px) {
+    #little-text3 {
+        width: 75%;
+    }
+}
+
+@media (max-width: 855px) {
+    #little-text3 {
+        width: 80%;
+    }
 }
 
 @media (max-width: 768px) {
