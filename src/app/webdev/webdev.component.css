@@ -281,6 +281,10 @@ a:hover #contact-p {
     background-color: #EF8F5A;
 }
 
+.next-next:hover {
+    background-color: #c12b61;
+}
+
 .prev-prev {
     background-color: #EF8F5A;
     padding: 10px;
@@ -288,6 +292,10 @@ a:hover #contact-p {
     margin-top: 10px;
     margin-bottom: 10px;
     border-radius: 10px;
+}
+
+.prev-prev:hover {
+    background-color: #c12b61;
 }
 
 .prev-prev:active {
