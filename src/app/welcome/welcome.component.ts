@@ -22,13 +22,21 @@ export class WelcomeComponent implements OnInit {
   currentIndex: number = 0;
   maxIndex: number = 2;
 
+  imageUrls: string[] = [
+    'assets/images/DEV2-03.png',
+    'assets/images/DEV2-04.png',
+    'assets/images/DEV2-05.png'
+  ];
+
   mobileImages: string[] = [
     'assets/images/DEV2-03.png',
     'assets/images/DEV2-04.png',
     'assets/images/DEV2-05.png'
   ];
 
-  constructor() { }
+  constructor() {
+    this.preloadImages(this.imageUrls);
+  }
 
   ngOnInit(): void {
     // tarkistaa ikkunan leveyden + päivitä isMobileView-muuttuja
@@ -37,6 +45,13 @@ export class WelcomeComponent implements OnInit {
     //tila seuraavien ikkunan koon muutosten tunnistamiseen
     window.addEventListener('resize', () => {
       this.checkIfMobileView();
+    });
+  }
+
+  preloadImages(imageUrls: string[]) {
+    imageUrls.forEach(imageUrl => {
+      const img = new Image();
+      img.src = imageUrl;
     });
   }
 
