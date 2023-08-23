@@ -225,7 +225,7 @@ h1 {
     font-family: 'Kosugi';
     font-size: 7rem;
     text-align: center;
-    padding-bottom: 25px;
+    padding-bottom: 30px;
     padding-top: 18px;
 }
 
@@ -261,7 +261,7 @@ h1 {
 }
 
 .projects-h1 {
-    margin-bottom: 40px;
+    margin-bottom: 50px;
 }
 
 .b-buttons {
@@ -374,7 +374,7 @@ h1 {
 
 }
 
-@media (max-width: 695px) {
+@media (max-width: 696px) {
 
     .block-web1,
     .block-web2 {
@@ -427,7 +427,7 @@ h1 {
         padding: 30px;
         border-radius: 20px;
         width: 35vw;
-        height: 110px;
+        height: 107px;
     }
 
     .p-web,
@@ -444,7 +444,7 @@ h1 {
 }
 
 
-@media (max-width: 480px) {
+@media (max-width: 485px) {
 
     /* blockeille!! laitetaan ne allekkain*/
     .block-container {
