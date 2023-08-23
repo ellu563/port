@@ -259,11 +259,11 @@ h1 {
 }
 
 .next-next:hover {
-    background-color: #c12b61;
+    background-color: #DEA615;
 }
 
 .prev-prev:hover {
-    background-color: #c12b61;
+    background-color: #DEA615;
 }
 
 @media (max-width: 989px) {
