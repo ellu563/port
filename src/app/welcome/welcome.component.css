@@ -70,15 +70,27 @@ a:hover .block-web2 {
 }
 
 /*hide button padding, border, and background*/
+/*tää on nyt kokonaisuudessaan toi *1* blockki palikka*/
 #blocks {
     border: none;
     background: none;
+    /*tuo ton mustan korkeuden!*/
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
+
 
 /*graphic design*/
 .block1 {
     background-color: #f86bb4;
-    padding: 31px;
+
+    /*lisätty, pistää tekstin keskelle ja lopettaa sen tilan varaamisen !!!*/
+    height: 146px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     border-radius: 30px;
     width: 30vw;
     margin-bottom: 0;
@@ -87,18 +99,27 @@ a:hover .block-web2 {
 /*graphic design*/
 .block2 {
     background-color: #ca98c5;
-    padding: 31px;
-    width: 30vw;
+    /*lisätty, pistää tekstin keskelle ja lopettaa sen tilan varaamisen !!!!!!*/
+    height: 146px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     border-radius: 30px;
+    width: 30vw;
+    margin-bottom: 0;
 }
 
+/*web-dev*/
 /*web-dev*/
 .block-web1 {
     background-color: #ca98c5;
     border-radius: 20px;
-    /*huom! width nyt yrityksenä saada se skaalautumaan*/
     width: 30vw;
-    padding: 30px;
+    height: 65px;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
 }
 
 /*web-dev*/
@@ -106,28 +127,45 @@ a:hover .block-web2 {
     background-color: #f86bb4;
     border-radius: 20px;
     width: 30vw;
-    padding: 30px;
+    height: 65px;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
 }
+
 
 /*p-web is font-size for: block1, block2, block-web1 and block-web-2*/
 .p-web {
     font-size: 4.5em;
+    margin: 0;
 }
 
+.p-web2 {
+    font-size: 4.5em;
+    margin: 0;
+}
+
+
+/*koko kontti*/
 .block-container {
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 30px;
+    padding: 10px;
 }
 
 .block-party-1,
 .block-party-2 {
-    flex: 1;
-    margin: 5px;
-    padding: 10px;
+    height: 300px;
+    margin: 40px;
     box-sizing: border-box;
     text-align: center;
+}
+
+.block-web-content {
+    margin: 0;
+    padding: 12px;
 }
 
 /*about me 2*/
@@ -179,6 +217,7 @@ a:hover .block-web2 {
     background-color: #ff9d43;
     padding-top: 90px;
     font-size: 22px;
+    padding-bottom: 90px;
 }
 
 /*projects h1*/
@@ -186,7 +225,8 @@ h1 {
     font-family: 'Kosugi';
     font-size: 7rem;
     text-align: center;
-    padding-bottom: 30px;
+    padding-bottom: 10px;
+    padding-top: 10px;
 }
 
 .bottomnav {
@@ -214,8 +254,6 @@ h1 {
 
 .block-web-content span {
     display: inline-block;
-    margin: 0;
-    font-size: inherit;
 }
 
 .block-web-content span.hidden {
@@ -280,7 +318,7 @@ h1 {
 
     .block1,
     .block2 {
-        padding: 30px;
+        /**poistettu: padding: 30px;**/
         border-radius: 20px;
         width: 30vw;
     }
