@@ -9,7 +9,6 @@
     padding: 10px 20px;
     /*lisää tilaa ylä- ja alareunalle*/
     box-sizing: border-box;
-    /*sisältää paddingin leveyteen ja korkeuteen*/
 }
 
 .topnav a {

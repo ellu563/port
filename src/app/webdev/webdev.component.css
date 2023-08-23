@@ -253,7 +253,6 @@ a:hover #contact-p {
     padding: 10px;
 }
 
-/*pistää sisällön keskelle mut ottaa myös esim. kosugin*/
 .mobile-content {
     justify-content: center;
     align-items: center;

@@ -14,7 +14,6 @@ import { MatExpansionModule } from '@angular/material/expansion';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { WebdevComponent } from './webdev/webdev.component';
 import { GraphicComponent } from './graphic/graphic.component';
-import { ProjectsComponent } from './projects/projects.component';
 import { GameComponent } from './game/game.component';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { CarouselComponent } from './carousel/carousel.component';
@@ -46,7 +45,6 @@ import { ThisPortfolioComponent } from './this-portfolio/this-portfolio.componen
     WelcomeComponent,
     WebdevComponent,
     GraphicComponent,
-    ProjectsComponent,
     GameComponent,
     CarouselComponent,
     SideGameButtonComponent,
