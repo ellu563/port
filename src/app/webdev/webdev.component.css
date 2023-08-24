@@ -205,7 +205,8 @@ a:hover #full-p2 {
     justify-content: center;
 }
 
-#buttoni {
+#buttoni1,
+#buttoni2 {
     border: none;
     background: none;
     margin: 20px;
