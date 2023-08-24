@@ -31,7 +31,7 @@ export class QuestionComponent implements OnInit {
   kysymykset: Kysymys[] = [
     {
       kysymys: 'Uutislähetyksessä kerrotaan kulmakioskin ryöstöstä, oletko sinä...',
-      kysymysKuvaUrl: 'assets/images/thewire1.jpg',
+      kysymysKuvaUrl: 'assets/imgs/wire-1.jpg',
       vaihtoehdot: [
         { teksti: 'Yrittämässä saada varasta kiinni.' },
         { teksti: 'Ohikulkumatkalla ja jäät katsomaan tapahtumia.' },
@@ -41,7 +41,7 @@ export class QuestionComponent implements OnInit {
     },
     {
       kysymys: 'Joku yrittää ryöstää sinut kadulla, mitä teet?',
-      kysymysKuvaUrl: 'assets/images/wire2.jpg',
+      kysymysKuvaUrl: 'assets/imgs/wire-3.jpg',
       vaihtoehdot: [
         { teksti: 'Soitat poliisille.' },
         { teksti: 'Soitat kaverit apuun.' },
@@ -51,7 +51,7 @@ export class QuestionComponent implements OnInit {
     },
     {
       kysymys: 'Muut ihmiset ovat mielestäsi...',
-      kysymysKuvaUrl: 'assets/images/wire3.jpg',
+      kysymysKuvaUrl: 'assets/imgs/wire-4.jpg',
       vaihtoehdot: [
         { teksti: 'Yleensä mukavia ja ystävällisiä.' },
         { teksti: 'Riippuu aina henkilöstä.' },
@@ -61,7 +61,7 @@ export class QuestionComponent implements OnInit {
     },
     {
       kysymys: 'Uusi asukas muuttaa naapurustoosi ja käyttäytyy ylimielisesti sinua kohtaan, sinä...',
-      kysymysKuvaUrl: 'assets/images/wire5.jpg',
+      kysymysKuvaUrl: 'assets/imgs/wire-5.jpg',
       vaihtoehdot: [
         { teksti: 'Yrität olla isompi ihminen ja unohtaa asian.' },
         { teksti: 'Pyydät naapuria olemaan hieman kohteliaampi.' },
@@ -71,7 +71,7 @@ export class QuestionComponent implements OnInit {
     },
     {
       kysymys: 'Olet varastanut käynnissä olevan auton, mikä näistä kuvaa sinua parhaiten...',
-      kysymysKuvaUrl: 'assets/images/wire4.jpg',
+      kysymysKuvaUrl: 'assets/imgs/wire-6.jpg',
       vaihtoehdot: [
         { teksti: 'Kaverisi yllyttänyt sinut siihen.' },
         { teksti: 'Sinun on saatava rahaa auton myynnistä.' },
@@ -81,7 +81,7 @@ export class QuestionComponent implements OnInit {
     },
     {
       kysymys: 'Sinun on valvottava syyn X takia koko yö, sinä...',
-      kysymysKuvaUrl: 'assets/images/wire6.jpg',
+      kysymysKuvaUrl: 'assets/imgs/wire-7.jpg',
       vaihtoehdot: [
         { teksti: 'Juot kahvia ja yrität pysyä hereillä.' },
         { teksti: 'Saatat torkahtaa välillä, mutta saat valvottua melkein koko yön.' },

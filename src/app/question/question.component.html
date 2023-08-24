@@ -3,7 +3,7 @@
         <div class="aloitus-sivu">
             <div class="aloitus-laatikko">
                 <h2>Mikä hahmo olisit The Wire sarjasta?</h2>
-                <img src="assets/images/wire.jpg" alt="Kuva" class="aloitus-kuva">
+                <img src="assets/imgs/wire-start.jpg" alt="The Wire Questionnaire" class="aloitus-kuva">
                 <button (click)="aloitaKysely()" class="aloita-button">Aloita</button>
             </div>
         </div>
@@ -35,13 +35,12 @@
         <div class="tulos-laatikko">
             <h2>Tuloksesi:</h2>
             <p>{{ tulos }}</p>
-            <img class="answer-img" *ngIf="tulos.includes('Jimmy McNulty')" src="assets/images/jimmy1.jpg"
+            <img class="answer-img" *ngIf="tulos.includes('Jimmy McNulty')" src="assets/imgs/jimmy2.jpg"
                 alt="Jimmy McNulty">
-            <img class="answer-img" *ngIf="tulos.includes('Omar Little')" src="assets/images/omar.jpg"
-                alt="Omar Little">
-            <img class="answer-img" *ngIf="tulos.includes('Avon Barksdale')" src="assets/images/avon.jpg"
+            <img class="answer-img" *ngIf="tulos.includes('Omar Little')" src="assets/imgs/omar1.jpg" alt="Omar Little">
+            <img class="answer-img" *ngIf="tulos.includes('Avon Barksdale')" src="assets/imgs/avon1.jpg"
                 alt="Avon Barksdale">
-            <img class="answer-img" *ngIf="tulos.includes('Bubbles')" src="assets/images/bubbles.jpg" alt="Bubbles">
+            <img class="answer-img" *ngIf="tulos.includes('Bubbles')" src="assets/imgs/bubbles1.jpg" alt="Bubbles">
             <button (click)="nollaaTulos()" class="nollaa-button">Aloita testi uudelleen</button>
         </div>
     </div>
