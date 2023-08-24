@@ -8,8 +8,6 @@ body {
     font-family: 'Kosugi', sans-serif;
     line-height: 1.5;
     font-size: 16px;
-    width: 100%;
-    width: 100vw;
     max-width: 100%;
 }
 
@@ -19,13 +17,6 @@ body {
     background-color: #f3ebeb;
     padding: 40px;
     display: block;
-}
-
-
-/*Item1 - Otsikko*/
-#heading {
-    font-size: 9rem;
-    text-align: center;
 }
 
 #about-me {
@@ -134,18 +125,12 @@ a:hover .block-web2 {
 
 
 /*p-web is font-size for: block1, block2, block-web1 and block-web-2*/
-.p-web {
-    font-size: 4.5em;
-    margin: 0;
-    text-align: center;
-}
-
+.p-web,
 .p-web2 {
     font-size: 4.5em;
     margin: 0;
     text-align: center;
 }
-
 
 /*koko kontti*/
 .block-container {
@@ -294,10 +279,7 @@ h1 {
     background-color: #A480C0;
 }
 
-.next-next:hover {
-    background-color: #DEA615;
-}
-
+.next-next:hover,
 .prev-prev:hover {
     background-color: #DEA615;
 }
