@@ -7,6 +7,10 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class CarouselComponent implements OnInit {
 
+  getAltText() {
+    return `Slide ${this.i + 1}`;
+  }
+
   slides: string[];
   i: number;
 

@@ -3,7 +3,7 @@
         <div class="aloitus-sivu">
             <div class="aloitus-laatikko">
                 <h2>Mikä hahmo olisit The Wire sarjasta?</h2>
-                <img src="assets/imgs/wire-start.jpg" alt="The Wire Questionnaire" class="aloitus-kuva">
+                <img src="assets/imgs/wire-start.jpg" loading="lazy" alt="The Wire Questionnaire" class="aloitus-kuva">
                 <button (click)="aloitaKysely()" class="aloita-button">Aloita</button>
             </div>
         </div>
@@ -14,7 +14,8 @@
         <button (click)="siirryEdelliseenKysymykseen()">Edellinen</button>
     </div>-->
         <div class="kysymys-laatikko">
-            <img [src]="kysymykset[nykyinenKysymysIndeksi].kysymysKuvaUrl" alt="Kysymys Kuva" class="kysymys-kuva">
+            <img [src]="kysymykset[nykyinenKysymysIndeksi].kysymysKuvaUrl" loading="lazy" alt="Kysymys Kuva"
+                class="kysymys-kuva">
             <h2>{{ kysymykset[nykyinenKysymysIndeksi].kysymys }}</h2>
             <div class="vastaus-vaihtoehdot">
                 <div *ngFor="let vaihtoehto of kysymykset[nykyinenKysymysIndeksi].vaihtoehdot; let i = index"
@@ -35,12 +36,14 @@
         <div class="tulos-laatikko">
             <h2>Tuloksesi:</h2>
             <p>{{ tulos }}</p>
-            <img class="answer-img" *ngIf="tulos.includes('Jimmy McNulty')" src="assets/imgs/jimmy2.jpg"
+            <img class="answer-img" loading="lazy" *ngIf="tulos.includes('Jimmy McNulty')" src="assets/imgs/jimmy2.jpg"
                 alt="Jimmy McNulty">
-            <img class="answer-img" *ngIf="tulos.includes('Omar Little')" src="assets/imgs/omar1.jpg" alt="Omar Little">
-            <img class="answer-img" *ngIf="tulos.includes('Avon Barksdale')" src="assets/imgs/avon1.jpg"
+            <img class="answer-img" loading="lazy" *ngIf="tulos.includes('Omar Little')" src="assets/imgs/omar1.jpg"
+                alt="Omar Little">
+            <img class="answer-img" loading="lazy" *ngIf="tulos.includes('Avon Barksdale')" src="assets/imgs/avon1.jpg"
                 alt="Avon Barksdale">
-            <img class="answer-img" *ngIf="tulos.includes('Bubbles')" src="assets/imgs/bubbles1.jpg" alt="Bubbles">
+            <img class="answer-img" loading="lazy" *ngIf="tulos.includes('Bubbles')" src="assets/imgs/bubbles1.jpg"
+                alt="Bubbles">
             <button (click)="nollaaTulos()" class="nollaa-button">Aloita testi uudelleen</button>
         </div>
     </div>

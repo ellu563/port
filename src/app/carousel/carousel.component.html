@@ -1,7 +1,9 @@
 <div class="container-carousel">
     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner" role="listbox">
-            <img src="{{ getSlide() }}" alt="Slide" />
+        <div class="carousel-inner" role="listbox" aria-label="Karuselli">
+            <div class="carousel-item active" role="option">
+                <img src="{{ getSlide() }}" alt="{{ getAltText() }}" loading="lazy" />
+            </div>
         </div>
         <button id="prev" (click)="getPrev()" aria-label="Previous"><mat-icon
                 id="mat-right">keyboard_arrow_left</mat-icon></button>
