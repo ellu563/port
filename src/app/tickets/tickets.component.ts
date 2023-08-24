@@ -11,15 +11,6 @@ import { NgForm } from '@angular/forms';
 })
 export class TicketsComponent implements OnInit {
 
-  imageUrls: string[] = [
-    'assets/images/LIPUT-ELINA-05.png',
-    'assets/images/tiks-08.png',
-    'assets/images/tiks-07.png',
-    'assets/images/tiks-06.png',
-    'assets/images/boll-09.png',
-    '/assets/images/made.jpg'
-  ];
-
   buyer: Buyer;
 
   // lippujen hinnat
@@ -39,16 +30,8 @@ export class TicketsComponent implements OnInit {
     this.buyer.seniorresult;
     this.buyer.finalPrice;
 
-    this.preloadImages(this.imageUrls);
-
   }
 
-  preloadImages(imageUrls: string[]): void {
-    imageUrls.forEach(imageUrl => {
-      const img = new Image();
-      img.src = imageUrl;
-    });
-  }
 
   ngOnInit(): void {
   }

@@ -25,29 +25,8 @@ export class QuestionComponent implements OnInit {
   };
 
   constructor() {
-    const imageUrlsToPreload = [
-      'assets/images/wire.jpg',
-      'assets/images/thewire1.jpg',
-      'assets/images/wire2.jpg',
-      'assets/images/wire3.jpg',
-      'assets/images/wire4.jpg',
-      'assets/images/wire5.jpg',
-      'assets/images/wire6.jpg',
-      'assets/images/jimmy1.jpg',
-      'assets/images/omar.jpg',
-      'assets/images/avon.jpg',
-      'assets/images/bubbles.jpg'
-    ];
-
-    this.preloadImages(imageUrlsToPreload);
   }
 
-  private preloadImages(imageUrls: string[]) {
-    imageUrls.forEach(imageUrl => {
-      const img = new Image();
-      img.src = imageUrl;
-    });
-  }
 
   kysymykset: Kysymys[] = [
     {

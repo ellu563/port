@@ -22,19 +22,6 @@ export class WebdevComponent implements OnInit {
   maxIndex: number = 4; // komponenttien mr (index!)
 
   constructor() {
-    const imageUrlsToPreload = [
-      'assets/images/frontend.png',
-      'assets/images/api.png',
-    ];
-
-    this.preloadImages(imageUrlsToPreload);
-  }
-
-  private preloadImages(imageUrls: string[]) {
-    imageUrls.forEach(imageUrl => {
-      const img = new Image();
-      img.src = imageUrl;
-    });
   }
 
   ngOnInit(): void {

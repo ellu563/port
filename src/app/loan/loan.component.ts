@@ -21,11 +21,6 @@ export class LoanComponent implements OnInit {
   /* laitetaan nuo tiedot nyt tuonne loanDataan, niin voidaan esittää ne sivulla */
   loanData: any = {};
 
-  imageUrls: string[] = [
-    'assets/images/piggy-bank.png',
-    'assets/images/card.png',
-  ];
-
   constructor(private loanService: LoanService) {
 
     this.loaner = new Loaner();
@@ -42,15 +37,6 @@ export class LoanComponent implements OnInit {
     this.time = 0;
 
     this.interest = 0;
-
-    this.preloadImages(this.imageUrls);
-  }
-
-  preloadImages(imageUrls: string[]): void {
-    imageUrls.forEach(imageUrl => {
-      const img = new Image();
-      img.src = imageUrl;
-    });
   }
 
   ngOnInit(): void {

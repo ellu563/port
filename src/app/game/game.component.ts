@@ -49,7 +49,6 @@ export class GameComponent implements OnInit {
   matchedCards: any[] = [];
 
   constructor() {
-    this.preloadImages();
     this.loadCards();
   }
 
@@ -66,22 +65,6 @@ export class GameComponent implements OnInit {
       { id: 8, title: 'Marja', backImage: 'assets/images/marja.jpeg', frontImage: 'assets/images/tikkari.jpg', flipped: false, matched: false },
     ];
   }
-
-  preloadImages() {
-    const imageUrls = [
-      'assets/images/mansikka.jpeg',
-      'assets/images/mustikka.jpeg',
-      'assets/images/fruit.jpeg',
-      'assets/images/marja.jpeg',
-      'assets/images/tikkari.jpg'
-    ];
-
-    imageUrls.forEach(imageUrl => {
-      const img = new Image();
-      img.src = imageUrl;
-    });
-  }
-
 
   // kutsutaan shuffleCards()-metodia ennen korttien tilan nollaamista
   ngOnInit(): void {

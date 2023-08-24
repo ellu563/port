@@ -64,24 +64,6 @@ export class GraphicCarouselComponent implements OnInit {
   intervalId2: any;
 
   constructor() {
-    /* ladataan kuvat etukateen */
-    const imagesToPreload = [
-      'assets/images/space-1.JPG',
-      'assets/images/teapot3-01.jpg',
-      'assets/images/girlanddog.jpg',
-      'assets/images/pinkitkukat.jpg',
-      'assets/images/hrilainen.jpg',
-      'assets/images/mads.jpg',
-      'assets/images/game-hall.jpg',
-      'assets/images/super.jpg',
-      'assets/images/avaruusdubet.jpg',
-      'assets/images/pekka-long.jpg',
-    ];
-
-    imagesToPreload.forEach(imageUrl => {
-      const img = new Image();
-      img.src = imageUrl;
-    });
   }
 
   ngOnInit(): void {
