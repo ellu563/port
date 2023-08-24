@@ -21,7 +21,21 @@ export class WebdevComponent implements OnInit {
   currentIndex: number = 0;
   maxIndex: number = 4; // komponenttien mr (index!)
 
-  constructor() { }
+  constructor() {
+    const imageUrlsToPreload = [
+      'assets/images/frontend.png',
+      'assets/images/api.png',
+    ];
+
+    this.preloadImages(imageUrlsToPreload);
+  }
+
+  private preloadImages(imageUrls: string[]) {
+    imageUrls.forEach(imageUrl => {
+      const img = new Image();
+      img.src = imageUrl;
+    });
+  }
 
   ngOnInit(): void {
     // tarkistaa ikkunan leveyden + päivitä isMobileView-muuttuja

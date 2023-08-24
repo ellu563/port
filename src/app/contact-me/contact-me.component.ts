@@ -8,10 +8,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContactMeComponent implements OnInit {
 
+  imageUrls: string[] = [
+    'assets/images/birtd-email.png',
+  ];
+
   /*for contact me*/
   waveActive: boolean = false;
 
-  constructor() { }
+  constructor() {
+    this.preloadImages(this.imageUrls);
+  }
+
+  preloadImages(imageUrls: string[]): void {
+    imageUrls.forEach(imageUrl => {
+      const img = new Image();
+      img.src = imageUrl;
+    });
+  }
 
   ngOnInit(): void {
   }
