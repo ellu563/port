@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 
 interface VastausVaihtoehto {
   teksti: string;
-  kuvaUrl: string;
 }
 
 interface Kysymys {
@@ -27,12 +26,17 @@ export class QuestionComponent implements OnInit {
 
   constructor() {
     const imageUrlsToPreload = [
+      'assets/images/wire.jpg',
       'assets/images/thewire1.jpg',
       'assets/images/wire2.jpg',
       'assets/images/wire3.jpg',
       'assets/images/wire4.jpg',
       'assets/images/wire5.jpg',
       'assets/images/wire6.jpg',
+      'assets/images/jimmy1.jpg',
+      'assets/images/omar.jpg',
+      'assets/images/avon.jpg',
+      'assets/images/bubbles.jpg'
     ];
 
     this.preloadImages(imageUrlsToPreload);
@@ -50,60 +54,60 @@ export class QuestionComponent implements OnInit {
       kysymys: 'Uutislähetyksessä kerrotaan kulmakioskin ryöstöstä, oletko sinä...',
       kysymysKuvaUrl: 'assets/images/thewire1.jpg',
       vaihtoehdot: [
-        { teksti: 'Yrittämässä saada varasta kiinni.', kuvaUrl: 'assets/images/ang.png' },
-        { teksti: 'Ohikulkumatkalla ja jäät katsomaan tapahtumia.', kuvaUrl: 'assets/images/ang.png' },
-        { teksti: 'Sinulla saattoi ehkä olla jotain tekemistä asian kanssa.', kuvaUrl: 'assets/images/ang.png' },
-        { teksti: 'Olit ryöstäjä.', kuvaUrl: 'assets/images/ang.png' }
+        { teksti: 'Yrittämässä saada varasta kiinni.' },
+        { teksti: 'Ohikulkumatkalla ja jäät katsomaan tapahtumia.' },
+        { teksti: 'Sinulla saattoi ehkä olla jotain tekemistä asian kanssa.' },
+        { teksti: 'Olit ryöstäjä.' }
       ]
     },
     {
       kysymys: 'Joku yrittää ryöstää sinut kadulla, mitä teet?',
       kysymysKuvaUrl: 'assets/images/wire2.jpg',
       vaihtoehdot: [
-        { teksti: 'Soitat poliisille.', kuvaUrl: 'assets/images/ts.png' },
-        { teksti: 'Soitat kaverit apuun.', kuvaUrl: 'assets/images/ts.png' },
-        { teksti: 'Ryöstät itse ryöstäjän.', kuvaUrl: 'assets/images/ts.png' },
-        { teksti: 'Yrität juosta karkuun.', kuvaUrl: 'assets/images/ts.png' }
+        { teksti: 'Soitat poliisille.' },
+        { teksti: 'Soitat kaverit apuun.' },
+        { teksti: 'Ryöstät itse ryöstäjän.' },
+        { teksti: 'Yrität juosta karkuun.' }
       ]
     },
     {
       kysymys: 'Muut ihmiset ovat mielestäsi...',
       kysymysKuvaUrl: 'assets/images/wire3.jpg',
       vaihtoehdot: [
-        { teksti: 'Yleensä mukavia ja ystävällisiä.', kuvaUrl: 'assets/images/pekkull.jpg' },
-        { teksti: 'Riippuu aina henkilöstä.', kuvaUrl: 'assets/images/pekkull.jpg' },
-        { teksti: 'Useimmiten töykeitä.', kuvaUrl: 'assets/images/pekkull.jpg' },
-        { teksti: 'Et voi sietää heitä.', kuvaUrl: 'assets/images/pekkull.jpg' }
+        { teksti: 'Yleensä mukavia ja ystävällisiä.' },
+        { teksti: 'Riippuu aina henkilöstä.' },
+        { teksti: 'Useimmiten töykeitä.' },
+        { teksti: 'Et voi sietää heitä.' }
       ]
     },
     {
       kysymys: 'Uusi asukas muuttaa naapurustoosi ja käyttäytyy ylimielisesti sinua kohtaan, sinä...',
       kysymysKuvaUrl: 'assets/images/wire5.jpg',
       vaihtoehdot: [
-        { teksti: 'Yrität olla isompi ihminen ja unohtaa asian.', kuvaUrl: 'assets/images/super.jpg' },
-        { teksti: 'Pyydät naapuria olemaan hieman kohteliaampi.', kuvaUrl: 'assets/images/super.jpg' },
-        { teksti: 'Varoitat naapuria tylystä käytöksestä.', kuvaUrl: 'assets/images/super.jpg' },
-        { teksti: 'Näytät uudelle naapurille oman paikkansa.', kuvaUrl: 'assets/images/super.jpg' }
+        { teksti: 'Yrität olla isompi ihminen ja unohtaa asian.' },
+        { teksti: 'Pyydät naapuria olemaan hieman kohteliaampi.' },
+        { teksti: 'Varoitat naapuria tylystä käytöksestä.' },
+        { teksti: 'Näytät uudelle naapurille oman paikkansa.' }
       ]
     },
     {
       kysymys: 'Olet varastanut käynnissä olevan auton, mikä näistä kuvaa sinua parhaiten...',
       kysymysKuvaUrl: 'assets/images/wire4.jpg',
       vaihtoehdot: [
-        { teksti: 'Kaverisi yllyttänyt sinut siihen.', kuvaUrl: 'assets/images/birtd-email.png' },
-        { teksti: 'Sinun on saatava rahaa auton myynnistä.', kuvaUrl: 'assets/images/birtd-email.png' },
-        { teksti: 'Et normaalisti varastaisi autoa, mutta sinulla on käynnissä hätätilanne joka vaatii sitä.', kuvaUrl: 'assets/images/birtd-email.png' },
-        { teksti: 'Auto on luultavasti jonkun rikkaan kuka ei kaipaa sitä, joten näit tilaisuutesi tulleen.', kuvaUrl: 'assets/images/birtd-email.png' }
+        { teksti: 'Kaverisi yllyttänyt sinut siihen.' },
+        { teksti: 'Sinun on saatava rahaa auton myynnistä.' },
+        { teksti: 'Et normaalisti varastaisi autoa, mutta sinulla on käynnissä hätätilanne joka vaatii sitä.' },
+        { teksti: 'Auto on luultavasti jonkun rikkaan kuka ei kaipaa sitä, joten näit tilaisuutesi tulleen.' }
       ]
     },
     {
       kysymys: 'Sinun on valvottava syyn X takia koko yö, sinä...',
       kysymysKuvaUrl: 'assets/images/wire6.jpg',
       vaihtoehdot: [
-        { teksti: 'Juot kahvia ja yrität pysyä hereillä.', kuvaUrl: 'assets/images/super.jpg' },
-        { teksti: 'Saatat torkahtaa välillä, mutta saat valvottua melkein koko yön.', kuvaUrl: 'assets/images/super.jpg' },
-        { teksti: 'Lepuutat silmiäsi puolet yöstä.', kuvaUrl: 'assets/images/super.jpg' },
-        { teksti: 'Nukahdat vahingossa koko yöksi.', kuvaUrl: 'assets/images/super.jpg' }
+        { teksti: 'Juot kahvia ja yrität pysyä hereillä.' },
+        { teksti: 'Saatat torkahtaa välillä, mutta saat valvottua melkein koko yön.' },
+        { teksti: 'Lepuutat silmiäsi puolet yöstä.' },
+        { teksti: 'Nukahdat vahingossa koko yöksi.' }
       ]
     }
   ];
