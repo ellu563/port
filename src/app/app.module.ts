@@ -24,11 +24,8 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatInputModule } from '@angular/material/input';
 import { LoanComponent } from './loan/loan.component';
 import { FormsModule } from '@angular/forms';
-import { environment } from 'src/environments/environment';
 import { ReactiveFormsModule } from '@angular/forms';
 
-import { AngularFireModule } from '@angular/fire/compat';
-import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { ContactMeComponent } from './contact-me/contact-me.component';
 import { TicketsComponent } from './tickets/tickets.component';
@@ -37,7 +34,6 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import { QuestionComponent } from './question/question.component';
 import { SiteTopbarComponent } from './site-topbar/site-topbar.component';
 import { ThisPortfolioComponent } from './this-portfolio/this-portfolio.component';
-import { NgOptimizedImage } from '@angular/common';
 
 
 @NgModule({
@@ -75,10 +71,7 @@ import { NgOptimizedImage } from '@angular/common';
     MatInputModule,
     FormsModule,
     ReactiveFormsModule,
-    AngularFireModule.initializeApp(environment.firebaseConfig),
-    AngularFirestoreModule,
     MatGridListModule,
-    NgOptimizedImage
   ],
   providers: [],
   bootstrap: [AppComponent]

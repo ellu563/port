@@ -34,7 +34,8 @@ export class GraphicCarouselComponent implements OnInit {
   /*ylempi*/
   images2 = [
     {
-      src: 'assets/imgs/madelaine.jpg',
+      /** kuvaa pienennetty > 41 > 43 */
+      src: 'assets/imgs/madelow.jpg',
       alt: 'Girl.'
     },
     {
