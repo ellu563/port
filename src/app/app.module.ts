@@ -77,7 +77,8 @@ import { NgOptimizedImage } from '@angular/common';
     ReactiveFormsModule,
     AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFirestoreModule,
-    MatGridListModule
+    MatGridListModule,
+    NgOptimizedImage
   ],
   providers: [],
   bootstrap: [AppComponent]
