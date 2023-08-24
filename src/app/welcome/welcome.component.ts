@@ -23,9 +23,9 @@ export class WelcomeComponent implements OnInit {
   maxIndex: number = 2;
 
   mobileImages: string[] = [
-    'assets/images/DEV2-03.png',
-    'assets/images/DEV2-04.png',
-    'assets/images/DEV2-05.png'
+    'assets/imgs/DEV1.png',
+    'assets/imgs/DEV2.png',
+    'assets/imgs/DEV3.png'
   ];
 
   constructor() {
