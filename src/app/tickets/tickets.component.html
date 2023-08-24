@@ -2,14 +2,14 @@
 <div class="red-container">
 
     <div class="red-section">
-        <div class="image-overlay"></div>
+        <div class="image-overlay" alt="Picture on the side"></div>
         <!--kuva-->
     </div>
 
     <div class="white-section">
 
         <h2 class="tickets1">TICKETS</h2>
-        <img src="assets/images/boll-09.png" class="boll" alt="black line" width="50%">
+        <img src="assets/imgs/bolls.png" class="boll" alt="black line" width="60%">
         <h2 class="tickets2">OLYMPIC STADION 2023</h2>
         <h2 class="tickets2">ELINA FESTIVAL</h2>
 
@@ -26,12 +26,12 @@
                         <mat-grid-list cols="1" rowHeight="100px">
                             <mat-grid-tile>
                                 <div class="minus">
-                                    <button type="button" class="minus-a" mat-fab color="accent"
+                                    <button type="button" class="minus-a" mat-fab color="accent" aria-label="-"
                                         (click)="addValue('-')">-</button>
                                 </div>
                                 <p>{{buyer.result}}</p>
                                 <div class="plus">
-                                    <button type="button" class="minus-a" mat-fab color="accent"
+                                    <button type="button" class="minus-a" mat-fab color="accent" aria-label="+"
                                         (click)="addValue('+')">+</button>
                                 </div>
                             </mat-grid-tile>
@@ -45,12 +45,12 @@
                         <mat-grid-list cols="1" rowHeight="100px">
                             <mat-grid-tile>
                                 <div class="minus">
-                                    <button type="button" class="minus-b" mat-fab color="accent"
+                                    <button type="button" class="minus-b" mat-fab color="accent" aria-label="-"
                                         (click)="addValueStudent('-')">-</button>
                                 </div>
                                 <p>{{buyer.studentresult}}</p>
                                 <div class="plus">
-                                    <button type="button" class="minus-b" mat-fab color="accent"
+                                    <button type="button" class="minus-b" mat-fab color="accent" aria-label="+"
                                         (click)="addValueStudent('+')">+</button>
                                 </div>
                             </mat-grid-tile>
@@ -64,13 +64,13 @@
                         <mat-grid-list cols="1" rowHeight="100px">
                             <mat-grid-tile>
                                 <div class="minus">
-                                    <button type="button" class="minus-c" mat-fab color="accent"
+                                    <button type="button" class="minus-c" mat-fab color="accent" aria-label="-"
                                         (click)="addValueSenior('-')">-</button>
                                 </div>
                                 <p>{{buyer.seniorresult}}</p>
                                 <div class="plus">
                                     <!--type: button, jotta ei laheta form dataa-->
-                                    <button type="button" class="minus-c" mat-fab color="accent"
+                                    <button type="button" class="minus-c" mat-fab color="accent" aria-label="+"
                                         (click)="addValueSenior('+')">+</button>
                                 </div>
                             </mat-grid-tile>
@@ -114,7 +114,7 @@
                         <mat-error *ngIf="lname.hasError('pattern')">Must be valid last name</mat-error>
                     </mat-form-field>
 
-                    <button type="submit" class="send-button" mat-raised-button color="accent"
+                    <button type="submit" class="send-button" mat-raised-button color="accent" aria-label="Buy tickets"
                         [disabled]="form1.invalid">OSTA
                         LIPUT</button>
 

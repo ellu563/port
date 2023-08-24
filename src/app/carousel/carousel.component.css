@@ -80,11 +80,27 @@
     #carouselExampleControls img {
         width: 70%;
     }
+
+    #prev {
+        left: 16%;
+    }
+
+    #next {
+        right: 16%;
+    }
 }
 
 @media (max-width: 850px) {
     #carouselExampleControls img {
         width: 80%;
+    }
+
+    #prev {
+        left: 11%;
+    }
+
+    #next {
+        right: 11%;
     }
 }
 
