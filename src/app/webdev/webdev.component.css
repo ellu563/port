@@ -26,10 +26,6 @@
     padding: 15px;
 }
 
-#yellow {
-    padding: 15px;
-}
-
 .topnav a.active {
     color: black;
 }
@@ -44,12 +40,6 @@
 
 mat-icon {
     transform: scale(2);
-}
-
-/*Item1 - Otsikko*/
-#heading {
-    font-size: 9rem;
-    text-align: center;
 }
 
 /*web-development*/
