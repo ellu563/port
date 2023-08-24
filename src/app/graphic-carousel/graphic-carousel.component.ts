@@ -10,23 +10,23 @@ export class GraphicCarouselComponent implements OnInit {
   /*alempi*/
   images = [
     {
-      src: 'assets/images/space-1.JPG',
+      src: 'assets/imgs/greengirl.jpg',
       alt: 'Girl in space.'
     },
     {
-      src: 'assets/images/teapot3-01.jpg',
+      src: 'assets/imgs/tepot.jpg',
       alt: 'Teapot.'
     },
     {
-      src: 'assets/images/girlanddog.jpg',
+      src: 'assets/imgs/girl-dog.jpg',
       alt: 'Girl and dog.'
     },
     {
-      src: 'assets/images/pinkitkukat.jpg',
+      src: 'assets/imgs/flow.jpg',
       alt: 'Pink flowers.'
     },
     {
-      src: 'assets/images/hrilainen.jpg',
+      src: 'assets/imgs/hrilainen-01.jpg',
       alt: 'Hamburger.'
     }
   ];
@@ -34,23 +34,23 @@ export class GraphicCarouselComponent implements OnInit {
   /*ylempi*/
   images2 = [
     {
-      src: 'assets/images/mads.jpg',
+      src: 'assets/imgs/madelaine.jpg',
       alt: 'Girl.'
     },
     {
-      src: 'assets/images/game-hall.jpg',
+      src: 'assets/imgs/arcadehall.jpg',
       alt: 'Arcade hall.'
     },
     {
-      src: 'assets/images/super.jpg',
+      src: 'assets/imgs/girlspace.jpg',
       alt: 'Superwoman.'
     },
     {
-      src: 'assets/images/avaruusdubet.jpg',
+      src: 'assets/imgs/dubs.jpg',
       alt: 'Dogs in space.'
     },
     {
-      src: 'assets/images/pekka-long.jpg',
+      src: 'assets/imgs/pekkaboy.jpg',
       alt: 'White dog.'
     }
   ];
