@@ -13,13 +13,13 @@ export class CarouselComponent implements OnInit {
   constructor() {
     this.i = 0;
     this.slides = [
-      'assets/images/same-7.png',
-      'assets/images/same-6.png',
-      'assets/images/same-5.png',
-      'assets/images/same-4.png',
-      'assets/images/same-uus.png',
-      'assets/images/same-2.png',
-      'assets/images/same-1.png'
+      'assets/imgs/gastro-7.png',
+      'assets/imgs/gastro-6.png',
+      'assets/imgs/gastro-5.png',
+      'assets/imgs/gastro-4.png',
+      'assets/imgs/gastro-uus.png',
+      'assets/imgs/gastro-2.png',
+      'assets/imgs/gastro-1.png'
     ];
 
   }
