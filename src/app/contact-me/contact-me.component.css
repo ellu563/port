@@ -16,6 +16,12 @@ a:hover #contact-p {
     color: #DEA615;
 }
 
+.bird-img:active,
+.bird-img:hover {
+    transform: scale(1.1);
+    filter: brightness(110%);
+}
+
 @media (max-width: 989px) {
     .bird-img {
         width: 6%;
