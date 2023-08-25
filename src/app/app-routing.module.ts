@@ -10,8 +10,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { QuestionComponent } from './question/question.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: 'welcome', pathMatch: 'full' },
-  { path: 'welcome', component: WelcomeComponent },
+  { path: '', component: WelcomeComponent },
   { path: 'web-development', component: WebdevComponent },
   { path: 'graphic-design', component: GraphicComponent },
   { path: 'game', component: GameComponent },
