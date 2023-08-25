@@ -39,48 +39,25 @@
         'footer';
 }
 
-#about-me {
-    font-size: 50px;
-    padding-bottom: 20px;
-    padding-top: 20px;
-    text-align: center;
-}
-
-#intro {
-    font-size: 25px;
-    text-align: center;
-}
-
-#intro2 {
-    font-size: 25px;
-    text-align: center;
-    height: 30px;
-}
-
 a {
     text-decoration: none;
     color: black;
 }
 
-a:hover .block1 {
+a:hover .block1,
+a:hover .block-web2,
+a:active .block1,
+a:active .block-web2 {
     background-color: #ca98c5;
 }
 
-a:hover .block2 {
+a:hover .block-web1,
+a:hover .block2,
+a:active .block2,
+a:active .block-web1 {
     background-color: #f86bb4;
 }
 
-
-a:hover .block-web1 {
-    background-color: #f86bb4;
-}
-
-a:hover .block-web2 {
-    background-color: #ca98c5;
-}
-
-/*hide button padding, border, and background*/
-/*muutettu blocks > blocks1 & blocks2 jotta saadaan eri id*/
 #blocks1,
 #blocks2 {
     border: none;
@@ -90,58 +67,46 @@ a:hover .block-web2 {
     height: 100%;
 }
 
-
-/*graphic design*/
-.block1 {
-    background-color: #f86bb4;
-
-    /*lisätty*/
+.block1,
+.block2 {
     height: 146px;
     display: flex;
     justify-content: center;
     align-items: center;
-
     border-radius: 30px;
     width: 30vw;
     margin-bottom: 0;
+}
+
+/*graphic design*/
+.block1 {
+    background-color: #f86bb4;
 }
 
 /*graphic design*/
 .block2 {
     background-color: #ca98c5;
-    /*lisätty*/
-    height: 146px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+}
 
-    border-radius: 30px;
+.block-web1,
+.block-web2 {
+    border-radius: 20px;
     width: 30vw;
-    margin-bottom: 0;
+    height: 65px;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
 }
 
 /*web-dev*/
 .block-web1 {
     background-color: #ca98c5;
-    border-radius: 20px;
-    width: 30vw;
-    height: 65px;
-    overflow: hidden;
-    margin: 0;
-    padding: 0;
 }
 
 /*web-dev*/
 .block-web2 {
     background-color: #f86bb4;
-    border-radius: 20px;
-    width: 30vw;
-    height: 65px;
-    overflow: hidden;
-    margin: 0;
-    padding: 0;
 }
-
 
 /*p-web is font-size for: block1, block2, block-web1 and block-web-2*/
 .p-web,
@@ -185,6 +150,7 @@ h1 {
     text-align: center;
     padding-bottom: 30px;
     padding-top: 18px;
+    margin-bottom: 50px;
 }
 
 .block-web-content span {
@@ -193,10 +159,6 @@ h1 {
 
 .block-web-content span.hidden {
     display: none;
-}
-
-.projects-h1 {
-    margin-bottom: 50px;
 }
 
 @media (max-width: 989px) {
@@ -332,23 +294,6 @@ h1 {
     .p-web,
     .p-web2 {
         font-size: 40px;
-    }
-
-    a:active .block1 {
-        background-color: #ca98c5;
-    }
-
-    a:active .block2 {
-        background-color: #f86bb4;
-    }
-
-
-    a:active .block-web1 {
-        background-color: #f86bb4;
-    }
-
-    a:active .block-web2 {
-        background-color: #ca98c5;
     }
 
 }
