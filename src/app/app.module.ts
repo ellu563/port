@@ -34,6 +34,7 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import { QuestionComponent } from './question/question.component';
 import { SiteTopbarComponent } from './site-topbar/site-topbar.component';
 import { ThisPortfolioComponent } from './this-portfolio/this-portfolio.component';
+import { WebdevGastroComponent } from './webdev-gastro/webdev-gastro.component';
 
 
 @NgModule({
@@ -53,6 +54,7 @@ import { ThisPortfolioComponent } from './this-portfolio/this-portfolio.componen
     QuestionComponent,
     SiteTopbarComponent,
     ThisPortfolioComponent,
+    WebdevGastroComponent,
   ],
   imports: [
     BrowserModule,

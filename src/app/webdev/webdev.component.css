@@ -34,10 +34,6 @@
         'footer';
 }
 
-mat-icon {
-    transform: scale(2);
-}
-
 #web-dev-p {
     font-size: 60px;
     padding-top: 70px;
@@ -62,91 +58,12 @@ mat-toolbar {
 
 mat-icon {
     background: none;
+    transform: scale(2);
 }
 
-a {
-    text-decoration: none;
-    color: black;
-}
-
+/*Memory game*/
 #tab0 {
     padding: 10px;
-}
-
-#food {
-    font-family: 'Kosugi';
-    text-align: center;
-    font-size: 35px;
-    padding-bottom: 20px;
-    padding-top: 20px;
-}
-
-a:hover #full-p1 {
-    background-color: #A480C0;
-}
-
-a:hover #full-p2 {
-    background-color: #A480C0;
-}
-
-#full-p1 {
-    background-color: #d34a7c;
-    padding: 30px;
-    border-radius: 20px;
-    font-size: 23px;
-    font-family: 'Kosugi';
-    text-align: center;
-}
-
-#full-p2 {
-    background-color: #d34a7c;
-    padding: 30px;
-    border-radius: 20px;
-    font-size: 23px;
-    font-family: 'Kosugi';
-    text-align: center;
-}
-
-#little-text {
-    padding-top: 20px;
-    font-family: 'Kosugi';
-    font-size: 22px;
-    text-align: center;
-}
-
-#little-text2 {
-    font-family: 'Kosugi';
-    font-size: 22px;
-    text-align: center;
-}
-
-#little-text3 {
-    font-size: 22px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-}
-
-#fronttikuva,
-#backkikuva {
-    width: 170px;
-    height: 170px;
-}
-
-.button-classi {
-    text-align: center;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-#buttoni1,
-#buttoni2 {
-    border: none;
-    background: none;
-    margin: 20px;
-    width: 300px;
 }
 
 .mat-tab-group {
@@ -196,10 +113,6 @@ a:hover #full-p2 {
 
 @media (max-width: 1070px) {
 
-    #little-text3 {
-        width: 65%;
-    }
-
     #angular {
         padding-top: 20px;
     }
@@ -214,68 +127,16 @@ a:hover #full-p2 {
 
 }
 
-@media (max-width: 975px) {
-    #little-text3 {
-        width: 68%;
-    }
-}
-
-@media (max-width: 920px) {
-    #little-text3 {
-        width: 75%;
-    }
-}
-
-@media (max-width: 855px) {
-    #little-text3 {
-        width: 80%;
-    }
-}
-
 @media (max-width: 768px) {
-
-    /*PISTÄÄ nuo QR- napit allekkain*/
-    .button-classi {
-        flex-direction: column;
-        align-items: center;
-    }
 
     .grid-container {
         width: 100%;
-    }
-
-    #fronttikuva,
-    #backkikuva {
-        /*keskittää nuo*/
-        margin: 10px auto;
     }
 
     /*oranssi osio päättyy*/
 
     #tab0 {
         padding: 5px;
-    }
-
-    /*restaurant-food-ordering-app otsikko*/
-    #food {
-        /*tuo font size-toimii*/
-        font-size: 28px;
-        padding-bottom: 20px;
-        padding-top: 20px;
-    }
-
-    /*toimii!*/
-    #little-text3 {
-        font-size: 20px;
-        display: block;
-        /*width säätää tuota pikku tekstin aluetta*/
-        /*ylempänä se on määritetty pienemmäksi, koska haluan sen olevan keskellä*/
-        width: 90%;
-    }
-
-    #little-text,
-    #little-text2 {
-        font-size: 20px;
     }
 
     #angular {
@@ -337,6 +198,5 @@ a:hover #full-p2 {
     #web-dev-p {
         font-size: 25px;
     }
-
 
 }
