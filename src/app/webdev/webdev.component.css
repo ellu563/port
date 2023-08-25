@@ -174,9 +174,6 @@ mat-icon {
 
 @media (max-width: 380px) {
 
-    #web-dev-p {
-        font-size: 30px;
-    }
 
     #food {
         font-size: 24px;
