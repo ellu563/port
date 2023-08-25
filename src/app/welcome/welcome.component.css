@@ -4,7 +4,6 @@
     box-sizing: border-box;
 }
 
-/*about me 2*/
 .item2 {
     grid-area: aboutme;
     background-color: #c12b61;
@@ -13,13 +12,11 @@
     align-items: center;
 }
 
-/*siksak*/
 .item3 {
     grid-area: siksak;
     background-color: #c12b61;
 }
 
-/*projects*/
 .item4 {
     grid-area: projects;
     background-color: #ff9d43;
@@ -28,7 +25,6 @@
     padding-bottom: 90px;
 }
 
-/*grid-container*/
 .grid-container {
     display: grid;
     grid-template-areas:
@@ -44,6 +40,8 @@ a {
     color: black;
 }
 
+.block2,
+.block-web1,
 a:hover .block1,
 a:hover .block-web2,
 a:active .block1,
@@ -51,6 +49,8 @@ a:active .block-web2 {
     background-color: #ca98c5;
 }
 
+.block1,
+.block-web2,
 a:hover .block-web1,
 a:hover .block2,
 a:active .block2,
@@ -78,16 +78,6 @@ a:active .block-web1 {
     margin-bottom: 0;
 }
 
-/*graphic design*/
-.block1 {
-    background-color: #f86bb4;
-}
-
-/*graphic design*/
-.block2 {
-    background-color: #ca98c5;
-}
-
 .block-web1,
 .block-web2 {
     border-radius: 20px;
@@ -98,17 +88,6 @@ a:active .block-web1 {
     padding: 0;
 }
 
-/*web-dev*/
-.block-web1 {
-    background-color: #ca98c5;
-}
-
-/*web-dev*/
-.block-web2 {
-    background-color: #f86bb4;
-}
-
-/*p-web is font-size for: block1, block2, block-web1 and block-web-2*/
 .p-web,
 .p-web2 {
     font-size: 4.5em;
@@ -116,7 +95,6 @@ a:active .block-web1 {
     text-align: center;
 }
 
-/*koko kontti*/
 .block-container {
     display: flex;
     flex-direction: row;
@@ -143,7 +121,6 @@ a:active .block-web1 {
     vertical-align: middle;
 }
 
-/*projects h1*/
 h1 {
     font-family: 'Kosugi';
     font-size: 7rem;
@@ -168,7 +145,6 @@ h1 {
         font-size: 3.4rem;
     }
 
-    /*web-dev*/
     .block-web1,
     .block-web2 {
         border-radius: 15px;
@@ -176,10 +152,8 @@ h1 {
         height: 55px;
     }
 
-    /*graphic*/
     .block1,
     .block2 {
-        /**poistettu: padding: 30px;**/
         border-radius: 20px;
         width: 30vw;
         height: 130px;
@@ -196,60 +170,46 @@ h1 {
     .p-web,
     .p-web2 {
         font-size: 2.9rem;
-        text-align: center;
     }
 
     /*web-dev*/
     .block-web1,
     .block-web2 {
-        border-radius: 15px;
         width: 33vw;
-        height: 55px;
     }
 
     /*graphic*/
     .block1,
     .block2 {
         padding: 30px;
-        border-radius: 20px;
         width: 33vw;
         height: 120px;
     }
-
 }
 
 @media (max-width: 696px) {
 
     .block-web1,
     .block-web2 {
-        border-radius: 15px;
         width: 37vw;
     }
 
     .block1,
     .block2 {
-        padding: 30px;
-        border-radius: 20px;
         width: 37vw;
     }
-
 }
 
 @media (max-width: 600px) {
 
-    /*wd*/
     .block-web1,
     .block-web2 {
-        border-radius: 15px;
         width: 35vw;
         height: 50px;
     }
 
-    /*graphic*/
     .block1,
     .block2 {
-        padding: 30px;
-        border-radius: 20px;
         width: 35vw;
         height: 107px;
     }
@@ -257,15 +217,12 @@ h1 {
     .p-web,
     .p-web2 {
         font-size: 2.4rem;
-        text-align: center;
     }
-
 }
 
 
 @media (max-width: 485px) {
 
-    /* blockit allekkain*/
     .block-container {
         flex-direction: column;
         align-items: center;
@@ -275,30 +232,23 @@ h1 {
         margin-top: 20px;
     }
 
-    /*alla oleville blockeille säädetty*/
-
     .block-web1,
     .block-web2 {
-        border-radius: 15px;
         width: 50vw;
     }
 
     .block1,
     .block2 {
         padding: 30px;
-        border-radius: 20px;
         width: 50vw;
     }
 
-    /*projects otsikko*/
     .p-web,
     .p-web2 {
         font-size: 40px;
     }
-
 }
 
-/*370 palikat alkaa menemää vähä kasaan jo*/
 @media (max-width: 380px) {
 
     .block-web1,
@@ -308,12 +258,10 @@ h1 {
 
     .block1,
     .block2 {
-        padding: 30px;
         width: 58vw;
     }
 
     .projects-h1 {
         font-size: 4rem;
     }
-
 }
