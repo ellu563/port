@@ -10,7 +10,7 @@ export class GraphicCarouselComponent implements OnInit {
   /*alempi*/
   images = [
     {
-      src: 'assets/imgs/greengirl.jpg',
+      src: 'assets/imgs/space-low.jpg',
       alt: 'Girl in space.'
     },
     {
@@ -22,7 +22,7 @@ export class GraphicCarouselComponent implements OnInit {
       alt: 'Girl and dog.'
     },
     {
-      src: 'assets/imgs/flow.jpg',
+      src: 'assets/imgs/flow700.jpg',
       alt: 'Pink flowers.'
     },
     {
@@ -34,7 +34,6 @@ export class GraphicCarouselComponent implements OnInit {
   /*ylempi*/
   images2 = [
     {
-      /** kuvaa pienennetty > 41 > 43 */
       src: 'assets/imgs/madelow.jpg',
       alt: 'Girl.'
     },
