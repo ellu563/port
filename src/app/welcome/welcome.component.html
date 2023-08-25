@@ -7,25 +7,7 @@
 
         <!--item 2: IMGs-->
         <div class="item2">
-            <div class="image-container">
-                <!--desktop-->
-                <ng-container *ngIf="isDesktopView; else mobileView">
-                    <img class="intro-img" src="assets/imgs/DEV1.png" width="30%" alt="Elina.">
-                    <img class="intro-img" src="assets/imgs/DEV2.png" width="30%" alt="Developer.">
-                    <img class="intro-img" src="assets/imgs/DEV3.png" width="30%" alt="Graphic designer.">
-                </ng-container>
-
-                <!--mobile + napit-->
-                <ng-template #mobileView>
-                    <img class="intro-img" [src]="mobileImages[currentIndex]" width="100%" alt="Me">
-                    <div class="b-buttons">
-                        <button class="next-next" aria-label="previous button" (click)="prevComponent()"
-                            *ngIf="currentIndex > 0"><mat-icon>chevron_left</mat-icon></button>
-                        <button class="prev-prev" aria-label="next button" (click)="nextComponent()"
-                            *ngIf="currentIndex < maxIndex"><mat-icon>chevron_right</mat-icon></button>
-                    </div>
-                </ng-template>
-            </div>
+            <app-welcome-imgs></app-welcome-imgs>
         </div>
 
 

@@ -35,6 +35,7 @@ import { QuestionComponent } from './question/question.component';
 import { SiteTopbarComponent } from './site-topbar/site-topbar.component';
 import { ThisPortfolioComponent } from './this-portfolio/this-portfolio.component';
 import { WebdevGastroComponent } from './webdev-gastro/webdev-gastro.component';
+import { WelcomeImgsComponent } from './welcome-imgs/welcome-imgs.component';
 
 
 @NgModule({
@@ -55,6 +56,7 @@ import { WebdevGastroComponent } from './webdev-gastro/webdev-gastro.component';
     SiteTopbarComponent,
     ThisPortfolioComponent,
     WebdevGastroComponent,
+    WelcomeImgsComponent,
   ],
   imports: [
     BrowserModule,

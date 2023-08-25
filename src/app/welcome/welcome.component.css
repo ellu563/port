@@ -39,14 +39,12 @@
         'footer';
 }
 
-
 #about-me {
     font-size: 50px;
     padding-bottom: 20px;
     padding-top: 20px;
     text-align: center;
 }
-
 
 #intro {
     font-size: 25px;
@@ -173,26 +171,6 @@ a:hover .block-web2 {
     padding: 12px;
 }
 
-.image-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 70px;
-    width: 100%;
-}
-
-.intro-img {
-    max-width: 100vw;
-    margin: 0;
-    padding: 0;
-    transition: transform 0.3s, filter 0.3s;
-}
-
-.intro-img:hover {
-    transform: scale(1.1);
-    filter: brightness(105%);
-}
-
 .siksak {
     width: 100%;
     margin: 0;
@@ -221,15 +199,6 @@ h1 {
     margin-bottom: 50px;
 }
 
-.prev-prev:active {
-    background-color: #A480C0;
-}
-
-.next-next:hover,
-.prev-prev:hover {
-    background-color: #DEA615;
-}
-
 @media (max-width: 989px) {
 
     .p-web,
@@ -253,15 +222,10 @@ h1 {
         width: 30vw;
         height: 130px;
     }
-
-    .image-container {
-        padding: 23px;
-    }
 }
 
 
 @media (max-width: 768px) {
-
 
     .projects-h1 {
         font-size: 5rem;
@@ -290,14 +254,6 @@ h1 {
         height: 120px;
     }
 
-    .image-container {
-        padding: 25px;
-    }
-
-    .intro-img {
-        width: 30%;
-    }
-
 }
 
 @media (max-width: 696px) {
@@ -313,24 +269,6 @@ h1 {
         padding: 30px;
         border-radius: 20px;
         width: 37vw;
-    }
-
-    /*dev-kuville*/
-    .image-container {
-        display: flex;
-        flex-direction: column;
-        /*pysty*/
-        align-items: center;
-        padding: 30px;
-    }
-
-    .intro-img {
-        width: 50%;
-    }
-
-    .intro-img:active {
-        transform: scale(1.3);
-        filter: brightness(105%);
     }
 
 }
@@ -359,11 +297,6 @@ h1 {
         font-size: 2.4rem;
         text-align: center;
     }
-
-    .intro-img {
-        width: 60%;
-    }
-
 
 }
 
@@ -418,9 +351,6 @@ h1 {
         background-color: #ca98c5;
     }
 
-    .intro-img {
-        width: 80%;
-    }
 }
 
 /*370 palikat alkaa menemää vähä kasaan jo*/
@@ -441,7 +371,4 @@ h1 {
         font-size: 4rem;
     }
 
-    .intro-img {
-        width: 90%;
-    }
 }
