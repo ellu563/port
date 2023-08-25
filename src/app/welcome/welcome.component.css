@@ -252,10 +252,7 @@ h1 {
 @media (max-width: 380px) {
 
     .block-web1,
-    .block-web2 {
-        width: 58vw;
-    }
-
+    .block-web2,
     .block1,
     .block2 {
         width: 58vw;
