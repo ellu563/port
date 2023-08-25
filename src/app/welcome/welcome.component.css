@@ -4,13 +4,40 @@
     box-sizing: border-box;
 }
 
-body {
-    font-family: 'Kosugi', sans-serif;
-    line-height: 1.5;
-    font-size: 16px;
-    max-width: 100%;
+/*about me 2*/
+.item2 {
+    grid-area: aboutme;
+    background-color: #c12b61;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+/*siksak*/
+.item3 {
+    grid-area: siksak;
+    background-color: #c12b61;
+}
+
+/*projects*/
+.item4 {
+    grid-area: projects;
+    background-color: #ff9d43;
+    padding-top: 90px;
+    font-size: 22px;
+    padding-bottom: 90px;
+}
+
+/*grid-container*/
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        'header0'
+        'aboutme'
+        'siksak'
+        'projects'
+        'footer';
+}
 
 
 #about-me {
@@ -146,15 +173,6 @@ a:hover .block-web2 {
     padding: 12px;
 }
 
-/*about me 2*/
-.item2 {
-    grid-area: aboutme;
-    background-color: #c12b61;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .image-container {
     display: flex;
     justify-content: space-between;
@@ -182,21 +200,6 @@ a:hover .block-web2 {
     vertical-align: middle;
 }
 
-/*siksak*/
-.item3 {
-    grid-area: siksak;
-    background-color: #c12b61;
-}
-
-/*projects*/
-.item4 {
-    grid-area: projects;
-    background-color: #ff9d43;
-    padding-top: 90px;
-    font-size: 22px;
-    padding-bottom: 90px;
-}
-
 /*projects h1*/
 h1 {
     font-family: 'Kosugi';
@@ -204,17 +207,6 @@ h1 {
     text-align: center;
     padding-bottom: 30px;
     padding-top: 18px;
-}
-
-/*grid-container*/
-.grid-container {
-    display: grid;
-    grid-template-areas:
-        'header0'
-        'aboutme'
-        'siksak'
-        'projects'
-        'footer';
 }
 
 .block-web-content span {

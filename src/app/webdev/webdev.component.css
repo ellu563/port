@@ -1,14 +1,3 @@
-#food,
-.description,
-#web-dev-p,
-.item0 {
-    font-family: 'Kosugi';
-}
-
-mat-icon {
-    transform: scale(2);
-}
-
 /*web-development*/
 .item2 {
     grid-area: about;
@@ -16,6 +5,37 @@ mat-icon {
     padding: 20px;
     padding-bottom: 0;
     position: relative;
+}
+
+/*angular*/
+.item3 {
+    grid-area: aboutme;
+    background-color: #d34a7c;
+    padding: 50px;
+}
+
+/*orange*/
+.item4 {
+    grid-area: projects;
+    background-color: #EF8F5A;
+    padding: 30px;
+    height: auto;
+    font-size: 22px;
+}
+
+/*grid-container*/
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        'header0'
+        'about'
+        'aboutme'
+        'projects'
+        'footer';
+}
+
+mat-icon {
+    transform: scale(2);
 }
 
 #web-dev-p {
@@ -40,11 +60,6 @@ mat-toolbar {
     background-color: #EF8F5A;
 }
 
-#nav-p {
-    font-family: 'Kosugi';
-    font-size: 17px;
-}
-
 mat-icon {
     background: none;
 }
@@ -54,37 +69,8 @@ a {
     color: black;
 }
 
-/*angular*/
-.item3 {
-    grid-area: aboutme;
-    background-color: #d34a7c;
-    padding: 50px;
-}
-
 #tab0 {
     padding: 10px;
-}
-
-/*orange*/
-.item4 {
-    grid-area: projects;
-    background-color: #EF8F5A;
-    padding: 30px;
-    height: auto;
-    font-size: 22px;
-}
-
-
-/*grid-container*/
-.grid-container {
-    display: grid;
-    grid-template-areas:
-        'header0'
-        'about'
-        'aboutme'
-        'projects'
-        'footer';
-
 }
 
 #food {
@@ -134,11 +120,15 @@ a:hover #full-p2 {
     text-align: center;
 }
 
-#fronttikuva {
-    width: 170px;
-    height: 170px;
+#little-text3 {
+    font-size: 22px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
 }
 
+#fronttikuva,
 #backkikuva {
     width: 170px;
     height: 170px;
@@ -159,10 +149,6 @@ a:hover #full-p2 {
     width: 300px;
 }
 
-a:hover #contact-p {
-    color: #DEA615;
-}
-
 .mat-tab-group {
     font-size: 17px;
     justify-content: center;
@@ -177,14 +163,6 @@ a:hover #contact-p {
 .tab-group {
     justify-content: center;
     align-items: center;
-}
-
-#little-text3 {
-    font-size: 22px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
 }
 
 #tab4-contents {
@@ -207,11 +185,7 @@ a:hover #contact-p {
     height: 100%;
 }
 
-.next-next:hover {
-    background-color: #c12b61;
-}
-
-
+.next-next:hover,
 .prev-prev:hover {
     background-color: #c12b61;
 }
