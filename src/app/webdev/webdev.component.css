@@ -72,11 +72,6 @@ mat-icon {
     align-items: center;
 }
 
-.mat-tab-label {
-    font-family: 'Kosugi';
-    font-size: 35px;
-}
-
 .tab-group {
     justify-content: center;
     align-items: center;
