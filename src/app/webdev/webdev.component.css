@@ -5,39 +5,6 @@
     font-family: 'Kosugi';
 }
 
-.topnav {
-    overflow: hidden;
-    width: 400px;
-    margin: 0 auto;
-}
-
-.topnav a {
-    float: none;
-    color: black;
-    text-align: center;
-    text-decoration: none;
-    font-size: 17px;
-}
-
-.topnav #yellow:hover {
-    background-color: #DEA615;
-    color: black;
-    border-radius: 10px;
-    padding: 15px;
-}
-
-.topnav a.active {
-    color: black;
-}
-
-/*top nav area*/
-.item0 {
-    grid-area: header0;
-    background-color: #f3ebeb;
-    padding: 40px;
-    display: block;
-}
-
 mat-icon {
     transform: scale(2);
 }
@@ -62,11 +29,6 @@ mat-icon {
     font-size: 35px;
     font-family: 'Kosugi';
     color: black;
-    text-align: center;
-}
-
-.bottomnav {
-    font-size: 25px;
     text-align: center;
 }
 
@@ -112,12 +74,6 @@ a {
     font-size: 22px;
 }
 
-/*footer*/
-.item5 {
-    grid-area: footer;
-    background-color: #c12b61;
-    padding: 20px;
-}
 
 /*grid-container*/
 .grid-container {
@@ -251,38 +207,10 @@ a:hover #contact-p {
     height: 100%;
 }
 
-/*alignaa buttonit*/
-.b-buttons {
-    text-align: center;
-}
-
-.next-next {
-    background-color: #A480C0;
-    padding: 10px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    border: none;
-    border-radius: 10px;
-    margin: 10px;
-    margin-bottom: 5px;
-}
-
-.next-next:active {
-    background-color: #EF8F5A;
-}
-
 .next-next:hover {
     background-color: #c12b61;
 }
 
-.prev-prev {
-    background-color: #EF8F5A;
-    padding: 10px;
-    border: none;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    border-radius: 10px;
-}
 
 .prev-prev:hover {
     background-color: #c12b61;

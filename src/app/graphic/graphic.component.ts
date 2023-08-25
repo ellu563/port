@@ -4,7 +4,7 @@ import { trigger, transition, style, animate } from '@angular/animations';
 @Component({
   selector: 'app-graphic',
   templateUrl: './graphic.component.html',
-  styleUrls: ['./graphic.component.css'],
+  styleUrls: ['./graphic.component.css', '../../shared-styles.css'],
   animations: [
     trigger('slideInLeft', [
       transition(':enter', [

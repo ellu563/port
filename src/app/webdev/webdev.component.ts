@@ -4,7 +4,7 @@ import { trigger, transition, style, animate } from '@angular/animations';
 @Component({
   selector: 'app-webdev',
   templateUrl: './webdev.component.html',
-  styleUrls: ['./webdev.component.css'],
+  styleUrls: ['./webdev.component.css', '../../shared-styles.css'],
   animations: [
     trigger('slideInLeft', [
       transition(':enter', [
