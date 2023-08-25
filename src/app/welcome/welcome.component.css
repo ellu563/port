@@ -206,12 +206,6 @@ h1 {
     padding-top: 18px;
 }
 
-.bottomnav {
-    font-size: 25px;
-    text-align: center;
-}
-
-
 /*grid-container*/
 .grid-container {
     display: grid;
