@@ -1,5 +1,5 @@
 <body>
-    <div class="grid-container">
+    <div class="grid">
         <!--item0: top nav-->
         <div class="item0">
             <app-site-topbar></app-site-topbar>
@@ -12,14 +12,14 @@
 
         <!--item3: siksak-->
         <div class="item3">
-            <img class="siksak" src="assets/images/siksakki-02.png" width="100%" alt="Siksak pattern" loading="lazy">
+            <img class="sik" src="assets/images/siksakki-02.png" width="100%" alt="Siksak pattern" loading="lazy">
         </div>
 
         <!--item4: projects-->
         <div class="item4">
             <h1 class="pr-h1">PROJECTS</h1>
 
-            <div class="b-container">
+            <div class="b-cont">
                 <div class="b-party-1">
                     <!--web-dev-->
                     <button id="blocks1" aria-label="web development" (mouseenter)="onHoverWeb()"
@@ -27,10 +27,10 @@
                         <a routerLink="/web-development" routerLinkActive="active">
                             <div class="bw1"></div>
                             <div class="bw-content">
-                                <p class="p-web2"><span [ngClass]="{'hidden': hoverWeb}">web</span></p>
-                                <p class="p-web2"><span [ngClass]="{'hidden': hoverWeb}">dev</span></p>
-                                <p class="p-web2"><span [ngClass]="{'hidden': !hoverWeb}">step</span></p>
-                                <p class="p-web2"><span [ngClass]="{'hidden': !hoverWeb}">inside</span></p>
+                                <p class="p-w2"><span [ngClass]="{'hidden': hoverWeb}">web</span></p>
+                                <p class="p-w2"><span [ngClass]="{'hidden': hoverWeb}">dev</span></p>
+                                <p class="p-w2"><span [ngClass]="{'hidden': !hoverWeb}">step</span></p>
+                                <p class="p-w2"><span [ngClass]="{'hidden': !hoverWeb}">inside</span></p>
                             </div>
                             <div class="bw2"></div>
                         </a>
@@ -41,12 +41,12 @@
                     <button id="blocks2" aria-label="graphic design" (mouseenter)="onHover()" (mouseleave)="onLeave()">
                         <a routerLink="/graphic-design" routerLinkActive="active">
                             <div class="b1">
-                                <p class="p-web"><span *ngIf="!hover">graphic</span></p>
-                                <p class="p-web"><span *ngIf="hover">learn</span></p>
+                                <p class="p-w"><span *ngIf="!hover">graphic</span></p>
+                                <p class="p-w"><span *ngIf="hover">learn</span></p>
                             </div>
                             <div class="b2">
-                                <p class="p-web"><span *ngIf="!hover">design</span></p>
-                                <p class="p-web"><span *ngIf="hover">more</span></p>
+                                <p class="p-w"><span *ngIf="!hover">design</span></p>
+                                <p class="p-w"><span *ngIf="hover">more</span></p>
                             </div>
                         </a>
                     </button>

@@ -25,7 +25,7 @@
     padding-bottom: 90px;
 }
 
-.grid-container {
+.grid {
     display: grid;
     grid-template-areas:
         'header0'
@@ -88,14 +88,14 @@ a {
     color: black;
 }
 
-.p-web,
-.p-web2 {
+.p-w,
+.p-w2 {
     font-size: 4.5em;
     margin: 0;
     text-align: center;
 }
 
-.b-container {
+.b-cont {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -108,7 +108,7 @@ a {
     margin: 30px;
 }
 
-.siksak {
+.sik {
     margin: 0;
     padding: 0;
     vertical-align: middle;
@@ -138,8 +138,8 @@ h1 {
 
 @media (max-width: 989px) {
 
-    .p-web,
-    .p-web2 {
+    .p-w,
+    .p-w2 {
         font-size: 3.4rem;
     }
 
@@ -160,12 +160,12 @@ h1 {
 
 
 @media (max-width: 768px) {
-    .pr-h1 {
+    h1 {
         font-size: 5rem;
     }
 
-    .p-web,
-    .p-web2 {
+    .p-w,
+    .p-w2 {
         font-size: 2.9rem;
     }
 
@@ -206,15 +206,15 @@ h1 {
         height: 107px;
     }
 
-    .p-web,
-    .p-web2 {
+    .p-w,
+    .p-w2 {
         font-size: 2.4rem;
     }
 }
 
 
 @media (max-width: 485px) {
-    .b-container {
+    .b-cont {
         flex-direction: column;
         align-items: center;
     }
@@ -230,8 +230,8 @@ h1 {
         width: 50vw;
     }
 
-    .p-web,
-    .p-web2 {
+    .p-w,
+    .p-w2 {
         font-size: 40px;
     }
 }
@@ -245,7 +245,7 @@ h1 {
         width: 58vw;
     }
 
-    .pr-h1 {
+    h1 {
         font-size: 4rem;
     }
 }
