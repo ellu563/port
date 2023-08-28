@@ -14,15 +14,7 @@ a:hover #full-p2 {
     background-color: #A480C0;
 }
 
-#full-p1 {
-    background-color: #d34a7c;
-    padding: 30px;
-    border-radius: 20px;
-    font-size: 23px;
-    font-family: 'Kosugi';
-    text-align: center;
-}
-
+#full-p1,
 #full-p2 {
     background-color: #d34a7c;
     padding: 30px;
@@ -53,10 +45,13 @@ a {
 
 #little-text3 {
     font-size: 22px;
+}
+
+.description {
+    width: 50%;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
 }
 
 #fronttikuva,
@@ -81,26 +76,25 @@ a {
 }
 
 @media (max-width: 1070px) {
-
-    #little-text3 {
+    .description {
         width: 65%;
     }
 }
 
 @media (max-width: 975px) {
-    #little-text3 {
+    .description {
         width: 68%;
     }
 }
 
 @media (max-width: 920px) {
-    #little-text3 {
+    .description {
         width: 75%;
     }
 }
 
 @media (max-width: 855px) {
-    #little-text3 {
+    .description {
         width: 80%;
     }
 }
@@ -123,17 +117,14 @@ a {
     #food {
         /*tuo font size-toimii*/
         font-size: 28px;
-        padding-bottom: 20px;
-        padding-top: 20px;
     }
 
     /*toimii!*/
-    #little-text3 {
+    .description {
         font-size: 20px;
-        display: block;
         /*width säätää tuota pikku tekstin aluetta*/
         /*ylempänä se on määritetty pienemmäksi, koska haluan sen olevan keskellä*/
-        width: 90%;
+        width: 80%;
     }
 
     #little-text,
