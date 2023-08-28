@@ -33,6 +33,12 @@
     background-color: #DEA615;
 }
 
+@media (min-width: 1100px) {
+    .image-container {
+        padding: 120px;
+    }
+}
+
 @media (max-width: 989px) {
     .image-container {
         padding: 23px;
