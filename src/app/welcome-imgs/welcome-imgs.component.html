@@ -8,7 +8,8 @@
 
     <!--mobile + napit-->
     <ng-template #mobileView>
-        <img class="intro-img" [src]="mobileImages[currentIndex]" width="100%" alt="Me">
+        <img class="intro-img" [ngClass]="{'enlarged': isEnlarged}" (click)="toggleSize()"
+            [src]="mobileImages[currentIndex]" width="100%" alt="Me">
         <div class="b-buttons">
             <button class="next-next" aria-label="previous button" (click)="prevComponent()"
                 *ngIf="currentIndex > 0"><mat-icon>chevron_left</mat-icon></button>

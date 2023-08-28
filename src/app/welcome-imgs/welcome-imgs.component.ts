@@ -13,6 +13,8 @@ export class WelcomeImgsComponent implements OnInit {
   currentIndex: number = 0;
   maxIndex: number = 2;
 
+  isEnlarged = false;
+
   mobileImages: string[] = [
     'assets/imgs/DEV1.png',
     'assets/imgs/DEV2.png',
@@ -30,6 +32,10 @@ export class WelcomeImgsComponent implements OnInit {
     window.addEventListener('resize', () => {
       this.checkIfMobileView();
     });
+  }
+
+  toggleSize() {
+    this.isEnlarged = !this.isEnlarged;
   }
 
   checkIfMobileView() {
