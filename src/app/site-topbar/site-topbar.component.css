@@ -20,7 +20,7 @@
 }
 
 .logo {
-    max-width: 30%;
+    max-width: 25%;
     /*huom!! media queryjen tilalle vaihdettu tuo min-width!!*/
     min-width: 11em;
     margin-left: 5px;
