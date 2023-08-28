@@ -1,4 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+@font-face {
+    font-family: 'Kosugi';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Kosugi'), url(https://fonts.gstatic.com/s/kosugi/v5/pxiFyp4_v…v15.woff2) format('woff2');
+    font-display: swap;
+}
