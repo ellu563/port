@@ -25,6 +25,7 @@
     min-width: 11em;
     margin-left: 5px;
     margin-right: 5px;
+    aspect-ratio: 2.39;
 }
 
 .logo:hover,
@@ -136,6 +137,7 @@
         min-width: 4em;
         /*pitää sen keskessä*/
         margin: 5px auto;
+        aspect-ratio: 0.854;
     }
 }
 

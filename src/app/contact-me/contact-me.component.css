@@ -22,6 +22,10 @@ a:hover #contact-p {
     filter: brightness(110%);
 }
 
+.bird-img {
+    aspect-ratio: 1;
+}
+
 @media (max-width: 989px) {
     .bird-img {
         width: 6%;
