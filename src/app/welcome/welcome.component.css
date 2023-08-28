@@ -70,6 +70,7 @@ a:active .bw1 {
     align-items: center;
     border-radius: 30px;
     width: 30vw;
+    max-width: 400px;
     min-width: 150px;
 }
 
@@ -77,6 +78,7 @@ a:active .bw1 {
 .bw2 {
     border-radius: 20px;
     width: 30vw;
+    max-width: 400px;
     height: 65px;
     overflow: hidden;
     margin: 0;

@@ -45,6 +45,12 @@ a {
         'footer';
 }
 
+@media (min-width: 1500px) {
+    .item3 {
+        padding: 150px;
+    }
+}
+
 @media (max-width: 768px) {
     .item3 {
         padding: 25px;
