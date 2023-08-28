@@ -137,11 +137,11 @@ mat-form-field {
     }
 
     .white-section {
-        flex: 80;
+        flex: 85;
     }
 
     .red-section {
-        flex: 20;
+        flex: 15;
     }
 }
 
@@ -163,10 +163,10 @@ mat-form-field {
     }
 
     .white-section {
-        flex: 95;
+        flex: 100;
     }
 
     .red-section {
-        flex: 5;
+        flex: 0;
     }
 }
