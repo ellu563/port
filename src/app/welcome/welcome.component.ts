@@ -23,6 +23,8 @@ export class WelcomeComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  showTopbar: boolean = true; //alustetaan yläpalkki näkyväksi
+
   /*vaihdetaan graphic-design sisalto hoveroidessa*/
   hover: boolean = false;
 
