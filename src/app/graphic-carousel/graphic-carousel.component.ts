@@ -11,23 +11,33 @@ export class GraphicCarouselComponent implements OnInit {
   images = [
     {
       src: 'assets/imgs/space-low.jpg',
-      alt: 'Girl in space.'
+      alt: 'Girl in space.',
+      width: 400,
+      height: 291,
     },
     {
       src: 'assets/imgs/tepot.jpg',
-      alt: 'Teapot.'
+      alt: 'Teapot.',
+      width: 400,
+      height: 291,
     },
     {
       src: 'assets/imgs/girl-dog.jpg',
-      alt: 'Girl and dog.'
+      alt: 'Girl and dog.',
+      width: 400,
+      height: 291,
     },
     {
       src: 'assets/imgs/flow700.jpg',
-      alt: 'Pink flowers.'
+      alt: 'Pink flowers.',
+      width: 400,
+      height: 291,
     },
     {
       src: 'assets/imgs/hrilainen-01.jpg',
-      alt: 'Hamburger.'
+      alt: 'Hamburger.',
+      width: 400,
+      height: 291,
     }
   ];
 
@@ -35,23 +45,33 @@ export class GraphicCarouselComponent implements OnInit {
   images2 = [
     {
       src: 'assets/imgs/madelow.jpg',
-      alt: 'Girl.'
+      alt: 'Girl.',
+      width: 600,
+      height: Math.round(600 * (3000 / 2182))
     },
     {
       src: 'assets/imgs/arcadehall.jpg',
-      alt: 'Arcade hall.'
+      alt: 'Arcade hall.',
+      width: 600,
+      height: Math.round(600 * (5500 / 4000))
     },
     {
       src: 'assets/imgs/girlspace.jpg',
-      alt: 'Superwoman.'
+      alt: 'Superwoman.',
+      width: 600,
+      height: Math.round(600 * (2048 / 1489))
     },
     {
       src: 'assets/imgs/dubs.jpg',
-      alt: 'Dogs in space.'
+      alt: 'Dogs in space.',
+      width: 600,
+      height: Math.round(600 * (3000 / 2182))
     },
     {
       src: 'assets/imgs/pekkaboy.jpg',
-      alt: 'White dog.'
+      alt: 'White dog.',
+      width: 600,
+      height: Math.round(600 * (2687 / 1947))
     }
   ];
 
