@@ -75,12 +75,12 @@ a {
     width: 300px;
 }
 
-/*
-@media (max-width: 1926px) {
+
+@media (min-width: 1500px) {
     .description {
         width: 35%;
     }
-}*/
+}
 
 @media (max-width: 1070px) {
     .description {
