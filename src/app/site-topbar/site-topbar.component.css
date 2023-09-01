@@ -21,7 +21,7 @@
 
 .logo {
     width: 25%;
-    max-width: 25%;
+    max-width: 690px;
     /*huom!! media queryjen tilalle vaihdettu tuo min-width!!*/
     min-width: 11em;
     margin-left: 5px;
