@@ -10,7 +10,19 @@ body {
     background-color: #f3ebeb;
     padding: 40px;
     display: block;
+    transform: translateY(0%);
 }
+
+/* palkin rullaukseen
+.item0.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    transform: translateY(0%);
+    transition: transform 0.4s ease-in-out;
+}*/
 
 /*footer*/
 .item5 {

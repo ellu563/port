@@ -63,6 +63,7 @@ mat-form-field {
     padding-top: 7px;
     display: flex;
     width: 70%;
+    max-width: 1100px;
     /*keskittää*/
     margin: 0 auto;
 }

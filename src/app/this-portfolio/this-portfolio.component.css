@@ -1,6 +1,7 @@
 .flex-container {
     display: flex;
     width: 70%;
+    max-width: 1100px;
     margin: 0 auto;
     margin-top: 7px;
 }

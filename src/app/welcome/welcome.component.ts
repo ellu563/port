@@ -1,29 +1,40 @@
-import { Component, OnInit, ElementRef, ViewChild } from '@angular/core';
-import { trigger, transition, style, animate } from '@angular/animations';
-
+import { Component, OnInit, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-welcome',
   templateUrl: './welcome.component.html',
   styleUrls: ['./welcome.component.css', '../../shared-styles.css'],
-  animations: [
-    trigger('slideInLeft', [
-      transition(':enter', [
-        style({ transform: 'translateX(-100%)' }),
-        animate('0.7s ease', style({ transform: 'translateX(0%)' })),
-      ]),
-    ])
-  ],
 })
 export class WelcomeComponent implements OnInit {
 
-  constructor() {
-  }
+  constructor() { }
 
   ngOnInit(): void {
   }
 
-  showTopbar: boolean = true; //alustetaan yläpalkki näkyväksi
+  /*
+  isNavbarFixed = false;
+  lastScrollTop = 0;
+
+  @HostListener('window:scroll', ['$event'])
+  onScroll(event: Event): void {
+    if (window.innerWidth < 485) {
+      const st = window.scrollY;
+
+      if (st > this.lastScrollTop) {
+        this.isNavbarFixed = false;
+      } else if (st === 0) {
+        this.isNavbarFixed = false;
+      } else {
+        this.isNavbarFixed = true;
+      }
+
+      this.lastScrollTop = st;
+    }
+  }
+
+  */
+
 
   /*vaihdetaan graphic-design sisalto hoveroidessa*/
   hover: boolean = false;
