@@ -11,22 +11,22 @@ export class GraphicCarouselComponent implements OnInit {
   images = [
     {
       src: 'assets/imgs/space-low.jpg',
-      webpSrc: 'assets/imgs/space-low.webp',
+      webpSrc: 'assets/imgs/space-new.webp',
       alt: 'Girl in space.'
     },
     {
-      src: 'assets/imgs/tepot.jpg',
-      webpSrc: 'assets/imgs/teapot.webp',
+      src: 'assets/imgs/teapot.jpg',
+      webpSrc: 'assets/imgs/tea.webp',
       alt: 'Teapot.'
     },
     {
       src: 'assets/imgs/girl-dog.jpg',
-      webpSrc: 'assets/imgs/girl-dog.webp',
+      webpSrc: 'assets/imgs/girlanddog.webp',
       alt: 'Girl and dog.'
     },
     {
       src: 'assets/imgs/flow700.jpg',
-      webpSrc: 'assets/imgs/flow700.webp',
+      webpSrc: 'assets/imgs/flowers-new.webp',
       alt: 'Pink flowers.'
     },
     {
@@ -60,7 +60,7 @@ export class GraphicCarouselComponent implements OnInit {
     }
   ];
 
-
+  isWebPSupported: boolean;
 
   translateValue = 0;
   translateValue2 = 0;
@@ -69,6 +69,7 @@ export class GraphicCarouselComponent implements OnInit {
   intervalId2: any;
 
   constructor() {
+    this.isWebPSupported = this.checkWebPSupport();
   }
 
   ngOnInit(): void {
@@ -79,6 +80,18 @@ export class GraphicCarouselComponent implements OnInit {
     this.intervalId = setInterval(() => {
       this.nextSlide2();
     }, 3000);
+  }
+
+  checkWebPSupport(): boolean {
+    const elem = document.createElement('canvas');
+
+    if (elem.getContext && elem.getContext('2d')) {
+      // Canvas-tuki on käytettävissä, tarkistetaan WebP-tuki
+      return elem.toDataURL('image/webp').indexOf('data:image/webp') === 0;
+    } else {
+      // Canvas-tukea ei ole, WebP ei ole tuettu
+      return false;
+    }
   }
 
   ngOnDestroy() {

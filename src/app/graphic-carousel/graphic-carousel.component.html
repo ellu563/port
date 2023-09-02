@@ -24,12 +24,11 @@
     <div class="carousel">
         <div class="carousel-inner" [style.transform]="'translateX(' + translateValue + '%)'">
             <div *ngFor="let image of images" class="slide">
-                <picture>
-                    <!--WebP-kuva -->
-                    <source [srcset]="image.webpSrc" type="image/webp">
-                    <!--normi kuva-->
-                    <img class="bottom-img" [src]="image.src" [alt]="image.alt" loading="lazy">
-                </picture>
+                <img *ngIf="isWebPSupported; else jpgImage" class="bottom-img" [src]="image.webpSrc" [alt]="image.alt"
+                    loading="lazy" />
+                <ng-template #jpgImage>
+                    <img class="bottom-img" [src]="image.src" [alt]="image.alt" loading="lazy" />
+                </ng-template>
             </div>
         </div>
     </div>
