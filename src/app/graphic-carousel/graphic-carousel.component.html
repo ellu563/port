@@ -24,7 +24,13 @@
     <div class="carousel">
         <div class="carousel-inner" [style.transform]="'translateX(' + translateValue + '%)'">
             <div *ngFor="let image of images" class="slide">
-                <img class="bottom-img" src="{{ image.src }}" alt="{{ image.alt }}" loading="lazy">
+                <picture>
+                    <!-- WebP-kuva -->
+                    <source class="bottom-img" [srcset]="image.webpSrc" type="image/webp">
+                    <source class="bottom-img" [srcset]="image.src" type="image/jpeg">
+                    <!-- Normaali kuva (esim. JPEG) -->
+                    <img class="bottom-img" src="{{ image.src }}" alt="{{ image.alt }}" loading="lazy">
+                </picture>
             </div>
         </div>
     </div>

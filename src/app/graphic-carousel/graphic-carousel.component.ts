@@ -16,12 +16,12 @@ export class GraphicCarouselComponent implements OnInit {
     },
     {
       src: 'assets/imgs/teapot.jpg',
-      webpSrc: 'assets/imgs/tea.webp',
+      webpSrc: 'assets/imgs/tea-small.webp',
       alt: 'Teapot.'
     },
     {
       src: 'assets/imgs/girl-dog.jpg',
-      webpSrc: 'assets/imgs/girlanddog.webp',
+      webpSrc: 'assets/imgs/girldogbest.webp',
       alt: 'Girl and dog.'
     },
     {

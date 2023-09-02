@@ -25,7 +25,7 @@
     height: auto;
 }
 
-.slide img {
+.bottom-img {
     width: 100%;
     height: 100%;
     object-fit: cover;
