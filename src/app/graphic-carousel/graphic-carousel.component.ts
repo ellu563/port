@@ -11,22 +11,27 @@ export class GraphicCarouselComponent implements OnInit {
   images = [
     {
       src: 'assets/imgs/space-low.jpg',
+      webpSrc: 'assets/imgs/space-low.webp',
       alt: 'Girl in space.'
     },
     {
       src: 'assets/imgs/tepot.jpg',
+      webpSrc: 'assets/imgs/teapot.webp',
       alt: 'Teapot.'
     },
     {
       src: 'assets/imgs/girl-dog.jpg',
+      webpSrc: 'assets/imgs/girl-dog.webp',
       alt: 'Girl and dog.'
     },
     {
       src: 'assets/imgs/flow700.jpg',
+      webpSrc: 'assets/imgs/flow700.webp',
       alt: 'Pink flowers.'
     },
     {
       src: 'assets/imgs/hrilainen-01.jpg',
+      webpSrc: 'assets/imgs/hrilainen-01.webp',
       alt: 'Hamburger.'
     }
   ];

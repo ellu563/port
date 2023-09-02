@@ -12,7 +12,6 @@ export class WelcomeComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  /*
   isNavbarFixed = false;
   lastScrollTop = 0;
 
@@ -32,9 +31,6 @@ export class WelcomeComponent implements OnInit {
       this.lastScrollTop = st;
     }
   }
-
-  */
-
 
   /*vaihdetaan graphic-design sisalto hoveroidessa*/
   hover: boolean = false;

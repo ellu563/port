@@ -2,7 +2,7 @@
 <div class="carousel-container2">
     <div class="carousel2">
         <div class="carousel-inner2" [style.transform]="'translateX(' + translateValue2 + '%)'">
-            <ng-container *ngFor="let image of images2">
+            <ng-container *ngFor="let image of images2" class="slide2">
                 <div class="slide2">
                     <img class="top-img" src="{{ image.src }}" alt="{{ image.alt }}" loading="lazy">
                 </div>
@@ -24,7 +24,12 @@
     <div class="carousel">
         <div class="carousel-inner" [style.transform]="'translateX(' + translateValue + '%)'">
             <div *ngFor="let image of images" class="slide">
-                <img class="bottom-img" src="{{ image.src }}" alt="{{ image.alt }}" loading="lazy">
+                <picture>
+                    <!--WebP-kuva -->
+                    <source [srcset]="image.webpSrc" type="image/webp">
+                    <!--normi kuva-->
+                    <img class="bottom-img" [src]="image.src" [alt]="image.alt" loading="lazy">
+                </picture>
             </div>
         </div>
     </div>
