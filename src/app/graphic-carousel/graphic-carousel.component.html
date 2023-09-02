@@ -1,10 +1,11 @@
-<!--ylempi-->
 <div class="carousel-container2">
     <div class="carousel2">
+        <!--^ carousel2: [style.pointer-events]="carouselPaused ? 'none' : 'auto'"-->
         <div class="carousel-inner2" [style.transform]="'translateX(' + translateValue2 + '%)'">
             <ng-container *ngFor="let image of images2" class="slide2">
                 <div class="slide2">
                     <img class="top-img" src="{{ image.src }}" alt="{{ image.alt }}">
+                    <!--img^ (click)="toggleLightbox(image.src, image.alt)"-->
                 </div>
             </ng-container>
         </div>
@@ -16,6 +17,15 @@
         <mat-icon id="mat2">arrow_forward</mat-icon>
     </button>
 </div>
+
+<!--
+<div *ngIf="showLightbox" class="lightbox-container" (click)="closeLightbox()">
+    <div class="lightbox-content">
+        <img [src]="lightboxImageSrc" [alt]="lightboxImageAlt" class="lightbox-image"
+            [style.max-width.px]="maxImageWidth" [style.max-height.px]="maxImageHeight"
+            (load)="fitImageToScreen($event)">
+    </div>
+</div>-->
 
 
 

@@ -80,6 +80,26 @@
 .carousel2 {
     display: flex;
     overflow: hidden;
+
+    /*karusellin pysayttamista varten*/
+    transition: transform 0.5s ease-in-out;
+    pointer-events: auto;
+}
+
+.lightbox-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+}
+
+.lightbox-image {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 20px;
+    border: 10px solid #21004d;
+    box-sizing: border-box;
 }
 
 .carousel-inner2 {

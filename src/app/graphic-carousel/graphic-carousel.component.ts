@@ -137,13 +137,59 @@ export class GraphicCarouselComponent implements OnInit {
   }
 
   /*ylemmän*/
+  /** muokattu karusellin pysayttamista varten */
   nextSlide2() {
+    /*if (!this.carouselPaused) {*/
     if (this.translateValue2 === -66.66) {
       this.translateValue2 = 0;
     } else {
       this.translateValue2 -= 33.33;
     }
+    /*}*/
   }
 
+  /*
+  showLightbox: boolean = false;
+  lightboxImageSrc: string = '';
+  lightboxImageAlt: string = '';
+  carouselPaused: boolean = false;
 
+  // kuvan maksimileveys ja -korkeus
+  maxImageWidth: number = 600;
+  maxImageHeight: number = 400;
+
+  // kuvan suurentamiseen
+  openLightbox(imageSrc: string, imageAlt: string) {
+    this.showLightbox = true;
+    this.lightboxImageSrc = imageSrc;
+    this.lightboxImageAlt = imageAlt;
+    this.carouselPaused = true; // pysäytä 
+  }
+
+  closeLightbox() {
+    this.showLightbox = false;
+    this.carouselPaused = false; //käynnistä karuselli uudelleen
+  }
+
+  toggleLightbox(imageSrc: string, imageAlt: string) {
+    if (this.showLightbox && this.lightboxImageSrc === imageSrc) {
+      this.closeLightbox();
+    } else {
+      this.openLightbox(imageSrc, imageAlt);
+    }
+  }
+
+  fitImageToScreen(event: any) {
+    const img = event.target;
+    const maxWidth = this.maxImageWidth;
+    const maxHeight = this.maxImageHeight;
+
+    const widthRatio = maxWidth / img.width;
+    const heightRatio = maxHeight / img.height;
+
+    const scale = Math.min(widthRatio, heightRatio);
+
+    img.width = img.width * scale;
+    img.height = img.height * scale;
+  }*/
 }
