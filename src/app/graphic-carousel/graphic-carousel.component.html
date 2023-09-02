@@ -24,11 +24,7 @@
     <div class="carousel">
         <div class="carousel-inner" [style.transform]="'translateX(' + translateValue + '%)'">
             <div *ngFor="let image of images" class="slide">
-                <img *ngIf="isWebPSupported; else jpgImage" class="bottom-img" [src]="image.webpSrc" [alt]="image.alt"
-                    loading="lazy" />
-                <ng-template #jpgImage>
-                    <img class="bottom-img" [src]="image.src" [alt]="image.alt" loading="lazy" />
-                </ng-template>
+                <img class="bottom-img" src="{{ image.src }}" alt="{{ image.alt }}" loading="lazy">
             </div>
         </div>
     </div>
