@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Renderer2 } from '@angular/core';
 
 @Component({
   selector: 'app-graphic-carousel',
@@ -68,12 +68,20 @@ export class GraphicCarouselComponent implements OnInit {
   intervalId: any;
   intervalId2: any;
 
-  constructor() {
+  constructor(private renderer: Renderer2) {
     this.isWebPSupported = this.checkWebPSupport();
   }
 
   ngOnInit(): void {
 
+    for (let i = 0; i < 3; i++) {
+      const image = this.images2[i];
+      const linkElement = document.createElement('link');
+      linkElement.rel = 'preload';
+      linkElement.as = 'image';
+      linkElement.href = image.src;
+      document.head.appendChild(linkElement);
+    }
     // käynnistää ajastimen, joka suorittaa nextSlide() -metodin joka 3. sekunti
 
     /*alempi*/
