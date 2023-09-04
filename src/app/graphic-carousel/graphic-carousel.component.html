@@ -4,7 +4,8 @@
         <div class="carousel-inner2" [style.transform]="'translateX(' + translateValue2 + '%)'">
             <ng-container *ngFor="let image of images2" class="slide2">
                 <div class="slide2">
-                    <img class="top-img" src="{{ image.src }}" alt="{{ image.alt }}">
+                    <img class="top-img" src="{{ image.src }}" alt="{{ image.alt }}"
+                        [style.aspect-ratio]="image.aspectRatio">
                     <!--img^ (click)="toggleLightbox(image.src, image.alt)"-->
                 </div>
             </ng-container>
@@ -34,10 +35,13 @@
             <div *ngFor="let image of images" class="slide">
                 <picture>
                     <!-- WebP-kuva -->
-                    <source class="bottom-img" [srcset]="image.webpSrc" type="image/webp">
-                    <source class="bottom-img" [srcset]="image.src" type="image/jpeg">
+                    <source class="bottom-img" [srcset]="image.webpSrc" [style.aspect-ratio]="image.aspectRatio"
+                        type="image/webp">
+                    <source class="bottom-img" [srcset]="image.src" [style.aspect-ratio]="image.aspectRatio"
+                        type="image/jpeg">
                     <!-- Normaali kuva (esim. JPEG) -->
-                    <img class="bottom-img" src="{{ image.src }}" alt="{{ image.alt }}" loading="lazy">
+                    <img class="bottom-img" src="{{ image.src }}" alt="{{ image.alt }}"
+                        [style.aspect-ratio]="image.aspectRatio" loading="lazy">
                 </picture>
             </div>
         </div>

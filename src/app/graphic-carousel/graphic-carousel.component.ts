@@ -12,27 +12,32 @@ export class GraphicCarouselComponent implements OnInit {
     {
       src: 'assets/imgs/space-low.jpg',
       webpSrc: 'assets/imgs/greengirl.webp',
-      alt: 'Girl in space.'
+      alt: 'Girl in space.',
+      aspectRatio: '1.3743'
     },
     {
       src: 'assets/imgs/tea-shrink.jpg',
       webpSrc: 'assets/imgs/tea-webp-shrink.webp',
-      alt: 'Teapot.'
+      alt: 'Teapot.',
+      aspectRatio: '1.3743'
     },
     {
       src: 'assets/imgs/tyttojakoira-shrink.jpg',
       webpSrc: 'assets/imgs/girldogbest-shrik-webp.webp',
-      alt: 'Girl and dog.'
+      alt: 'Girl and dog.',
+      aspectRatio: '1.3743'
     },
     {
       src: 'assets/imgs/kukat-shrink.jpg',
       webpSrc: 'assets/imgs/flowers-shrink-webp.webp',
-      alt: 'Pink flowers.'
+      alt: 'Pink flowers.',
+      aspectRatio: '1.3743'
     },
     {
       src: 'assets/imgs/hrilainen-shrink.jpg',
       webpSrc: 'assets/imgs/hrilainen-webp-shrink.webp',
-      alt: 'Hamburger.'
+      alt: 'Hamburger.',
+      aspectRatio: '1.3743'
     }
   ];
 
@@ -40,23 +45,28 @@ export class GraphicCarouselComponent implements OnInit {
   images2 = [
     {
       src: 'assets/imgs/madelow.jpg',
-      alt: 'Girl.'
+      alt: 'Girl.',
+      aspectRatio: '0.727'
     },
     {
       src: 'assets/imgs/arcadehall.jpg',
-      alt: 'Arcade hall.'
+      alt: 'Arcade hall.',
+      aspectRatio: '0.727'
     },
     {
       src: 'assets/imgs/girlspace.jpg',
-      alt: 'Superwoman.'
+      alt: 'Superwoman.',
+      aspectRatio: '0.727'
     },
     {
       src: 'assets/imgs/dubs.jpg',
-      alt: 'Dogs in space.'
+      alt: 'Dogs in space.',
+      aspectRatio: '0.727'
     },
     {
       src: 'assets/imgs/pekkaboy.jpg',
-      alt: 'White dog.'
+      alt: 'White dog.',
+      aspectRatio: '0.727'
     }
   ];
 
