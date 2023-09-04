@@ -7,7 +7,6 @@
 .item2 {
     grid-area: aboutme;
     background-color: #c12b61;
-    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -16,13 +15,11 @@
 .item3 {
     grid-area: siksak;
     background-color: #c12b61;
-    height: 100%;
 }
 
 .item4 {
     grid-area: projects;
     background-color: #ff9d43;
-    height: 100%;
     padding-top: 90px;
     font-size: 22px;
     padding-bottom: 90px;
@@ -36,7 +33,6 @@
         'siksak'
         'projects'
         'footer';
-    height: 100vw;
 }
 
 .b2,
