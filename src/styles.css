@@ -14,6 +14,6 @@ body {
     font-family: 'Kosugi';
     font-style: normal;
     font-weight: 400;
-    src: local('Kosugi'), url(https://fonts.gstatic.com/s/kosugi/v5/pxiFyp4_v…v15.woff2) format('woff2');
+    src: url('src/assets/Kosugi-Regular.ttf') format('woff2');
     font-display: swap;
 }
