@@ -66,7 +66,7 @@ export class GraphicCarouselComponent implements OnInit {
     {
       src: 'assets/imgs/pekkaboy.jpg',
       alt: 'White dog.',
-      aspectRatio: '0.727'
+      aspectRatio: '0.724'
     }
   ];
 
