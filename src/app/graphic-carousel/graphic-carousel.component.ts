@@ -84,7 +84,7 @@ export class GraphicCarouselComponent implements OnInit {
 
   ngOnInit(): void {
 
-    for (let i = 0; i < 3; i++) {
+    for (let i = 0; i < 4; i++) {
       const image = this.images2[i];
       const linkElement = document.createElement('link');
       linkElement.rel = 'preload';
