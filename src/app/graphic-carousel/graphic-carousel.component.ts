@@ -15,23 +15,23 @@ export class GraphicCarouselComponent implements OnInit {
       alt: 'Girl in space.'
     },
     {
-      src: 'assets/imgs/teapot.jpg',
-      webpSrc: 'assets/imgs/tea-small.webp',
+      src: 'assets/imgs/tea-shrink.jpg',
+      webpSrc: 'assets/imgs/tea-webp-shrink.webp',
       alt: 'Teapot.'
     },
     {
-      src: 'assets/imgs/girl-dog.jpg',
-      webpSrc: 'assets/imgs/girldogbest.webp',
+      src: 'assets/imgs/tyttojakoira-shrink.jpg',
+      webpSrc: 'assets/imgs/girldogbest-shrik-webp.webp',
       alt: 'Girl and dog.'
     },
     {
-      src: 'assets/imgs/flow700.jpg',
-      webpSrc: 'assets/imgs/flowers.webp',
+      src: 'assets/imgs/kukat-shrink.jpg',
+      webpSrc: 'assets/imgs/flowers-shrink-webp.webp',
       alt: 'Pink flowers.'
     },
     {
-      src: 'assets/imgs/hrilainen-01.jpg',
-      webpSrc: 'assets/imgs/hrilainen-01.webp',
+      src: 'assets/imgs/hrilainen-shrink.jpg',
+      webpSrc: 'assets/imgs/hrilainen-webp-shrink.webp',
       alt: 'Hamburger.'
     }
   ];
