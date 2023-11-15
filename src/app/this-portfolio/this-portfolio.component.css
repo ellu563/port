@@ -46,6 +46,19 @@
     width: 70%;
 }
 
+.btn {
+    background-color: #ff9d43;
+    border: none;
+    font-size: 16px;
+    border-radius: 30px;
+    width: 150px;
+    height: 60px;
+    margin-top: 15px;
+}
+
+.btn:hover {
+    background-color: #d34a7c;
+}
 
 @media (max-width: 768px) {
     .flex-container {
